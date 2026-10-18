@@ -54,3 +54,15 @@ The `v2.0` release introduces a production-ready, unified CLI entry point (`doub
                    │                                                       │
                    ▼                                                       ▼
       [100% Verified Report]                                  [Context Output Terminal]
+
+## Release History
+v2.0: Finalized CLI entry point (doubtgate.py), PowerShell path standardization, and 100% benchmark verification pass rate.
+
+v1.5: Stage 4 vector retrieval engine and evaluation harness.
+
+v1.4 - v1.3: Data parsing pipeline and chunk indexing setup.
+
+## License & Contact
+Code: MIT (see LICENSE)
+
+## Maintained by: Novum Labs Pvt. Ltd.
