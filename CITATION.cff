@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark, please cite it as below."
+title: "DoubtGate: a doubt-aware retrieval-augmented QA toolkit and benchmark (answer, flag or refuse)"
+type: software
+version: "0.1.0-dev"
+date-released: "2026-10-18"
+license: MIT
+authors:
+  - given-names: "Arnab"
+    family-names: "Khan"
+    affiliation: "Novum Labs Pvt. Ltd."
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add the real ORCID iD
+  - name: "Novum Labs Pvt. Ltd."
+repository-code: "https://github.com/ORG-HANDLE/doubtgate"   # replace ORG-HANDLE with your GitHub handle
+abstract: >-
+  DoubtGate is an open toolkit and benchmark for deciding when a retrieval-based
+  question-answering system should answer, flag or refuse. It targets a small
+  physics (quantum mechanics) knowledge base with human-verified labels, and
+  measures near-miss questions matched to the wrong stored question and planted
+  factual and numeric errors, using CPU-only retrieval baselines and a SymPy
+  numeric verifier. Status: pre-alpha, no results yet.
+keywords:
+  - retrieval-augmented generation
+  - selective refusal
+  - abstention
+  - benchmark
+  - question answering
+  - physics education
