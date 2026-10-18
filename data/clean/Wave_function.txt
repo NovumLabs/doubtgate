@@ -1,0 +1,508 @@
+for a single spinless particle. The oscillations have no trajectory, but are instead represented each as waves; the vertical axis shows the real part (blue) and imaginary part (red) of the wave function. Panels ''A''–''D'' show four different standing-wave solutions of the Schrödinger equation. Panels ''E''–''F'' show two different wave functions that are solutions of the Schrödinger equation but not standing waves.]]
+
+In quantum mechanics, a '''wave function''' (or '''wavefunction''') is a mathematical description of the quantum state of an isolated quantum system. The most common symbols for a wave function are the Greek letters  and  (lower-case and capital psi, respectively).
+
+According to the superposition principle of quantum mechanics, wave functions can be added together and multiplied by complex numbers to form new wave functions and form a Hilbert space. The inner product of two wave functions is a measure of the overlap between the corresponding physical states and is used in the foundational probabilistic interpretation of quantum mechanics, the Born rule, relating transition probabilities to inner products. The Schrödinger equation determines how wave functions evolve over time, and a wave function behaves qualitatively like other waves, such as water waves or waves on a string, because the Schrödinger equation is mathematically a type of wave equation. This explains the name "wave function", and gives rise to wave–particle duality.  However, whether the wave function in quantum mechanics describes a kind of physical phenomenon is still open to different interpretations, fundamentally differentiating it from classic mechanical waves.
+
+Wave functions are complex-valued. For example, a wave function might assign a complex number to each point in a region of space. The Born rule provides the means to turn these complex probability amplitudes into actual probabilities. In one common form, it says that the squared modulus of a wave function that depends upon position is the probability density of measuring a particle as being at a given place. The integral of a wavefunction's squared modulus over all the system's degrees of freedom must be equal to 1, a condition called ''normalization''. Since the wave function is complex-valued, only its relative phase and relative magnitude can be measured; its value does not, in isolation, tell anything about the magnitudes or directions of measurable observables. One has to apply quantum operators, whose eigenvalues correspond to sets of possible results of measurements, to the wave function  and calculate the statistical distributions for measurable quantities.
+
+Wave functions can be functions of variables other than position, such as momentum. The information represented by a wave function that is dependent upon position can be converted into a wave function dependent upon momentum and vice versa, by means of a Fourier transform. Some particles, like electrons and photons, have nonzero spin, and the wave function for such particles includes spin as an intrinsic, discrete degree of freedom; other discrete variables can also be included, such as isospin. When a system has internal degrees of freedom, the wave function at each point in the continuous degrees of freedom (e.g., a point in space) assigns a complex number for ''each'' possible value of the discrete degrees of freedom (e.g., z-component of spin). These values are often displayed in a column matrix (e.g., a  column vector for a non-relativistic electron with spin {{math|}}).
+
+==Historical background==
+
+In 1900, Max Planck postulated the proportionality between the frequency f of a photon and its energy  
+and in 1916 the corresponding relation between a photon's momentum p and wavelength  {{nowrap|\lambda = \frac{h}{p},}}
+where h is the Planck constant. In 1923, De Broglie was the first to suggest that the relation {{nowrap|\lambda = \frac{h}{p},}} now called the De Broglie relation, holds for ''massive'' particles, the chief clue being Lorentz invariance, and this can be viewed as the starting point for the modern development of quantum mechanics. The equations represent wave–particle duality for both massless and massive particles.
+
+In the 1920s and 1930s, quantum mechanics was developed using calculus and linear algebra. Those who used the techniques of calculus included Louis de Broglie, Erwin Schrödinger, and others, developing "wave mechanics". Those who applied the methods of linear algebra included Werner Heisenberg, Max Born, and others, developing "matrix mechanics". Schrödinger subsequently showed that the two approaches were equivalent.
+
+In 1926, Schrödinger published the famous wave equation now named after him, the Schrödinger equation. This equation was based on classical conservation of energy using quantum operators and the de Broglie relations and the solutions of the equation are the wave functions for the quantum system. However, no one was clear on how to interpret it. At first, Schrödinger and others thought that wave functions represent particles that are spread out with most of the particle being where the wave function is large. This was shown to be incompatible with the elastic scattering of a wave packet (representing a particle) off a target; it spreads out in all directions.
+While a scattered particle may scatter in any direction, it does not break up and take off in all directions. In 1926, Born provided the perspective of probability amplitude. This relates calculations of quantum mechanics directly to probabilistic experimental observations. It is accepted as part of the Copenhagen interpretation of quantum mechanics. There are many other interpretations of quantum mechanics. In 1927, Hartree and Fock made the first step in an attempt to solve the ''N''-body wave function, and developed the ''self-consistency cycle'': an iterative algorithm to approximate the solution. Now it is also known as the Hartree–Fock method. The Slater determinant and permanent (of a matrix) was part of the method, provided by John C. Slater.
+
+Schrödinger did encounter an equation for the wave function that satisfied relativistic energy conservation ''before'' he published the non-relativistic one, but discarded it as it predicted negative probabilities and negative energies. In 1927, Klein, Gordon and Fock also found it, but incorporated the electromagnetic interaction and proved that it was Lorentz invariant. De Broglie also arrived at the same equation in 1928. This relativistic wave equation is now most commonly known as the Klein–Gordon equation.
+
+In 1927, Pauli phenomenologically found a non-relativistic equation to describe spin-1/2 particles in electromagnetic fields, now called the Pauli equation. Pauli found the wave function was not described by a single complex function of space and time, but needed two complex numbers, which respectively correspond to the spin +1/2 and −1/2 states of the fermion. Soon after in 1928, Dirac found an equation from the first successful unification of special relativity and quantum mechanics applied to the electron, now called the Dirac equation. In this, the wave function is a ''spinor'' represented by four complex-valued components: two for the electron and two for the electron's antiparticle, the positron. In the non-relativistic limit, the Dirac wave function resembles the Pauli wave function for the electron. Later, other relativistic wave equations were found.
+
+===Wave functions and wave equations in modern theories===
+The Schrödinger equation and the Pauli equation are under many circumstances excellent approximations of the relativistic variants. They are considerably easier to solve in practical problems than the relativistic counterparts.
+
+The Klein–Gordon equation and the Dirac equation, while being relativistic, do not represent full reconciliation of quantum mechanics and special relativity. The branch of quantum mechanics where these equations are studied the same way as the Schrödinger equation, often called relativistic quantum mechanics, while very successful, has its limitations (see e.g. Lamb shift) and conceptual problems (see e.g. Dirac sea).
+
+Relativity makes it inevitable that the number of particles in a system is not constant. For full reconciliation, quantum field theory is needed.
+In this theory, the wave equations and the wave functions have their place, but in a somewhat different guise. The main objects of interest are not the wave functions, but rather operators, so called ''field operators'' (or just fields where "operator" is understood) on the Hilbert space of states (to be described next section). It turns out that the original relativistic wave equations and their solutions are still needed to build the Hilbert space. Moreover, the ''free fields operators'', i.e. when interactions are assumed not to exist, turn out to (formally) satisfy the same equation as do the fields (wave functions) in many cases.
+
+Thus the Klein–Gordon equation (spin ) and the Dirac equation (spin {{math|}}) in this guise remain in the theory. Higher spin analogues include the Proca equation (spin ), Rarita–Schwinger equation (spin {{math|}}), and, more generally, the Bargmann–Wigner equations. For ''massless'' free fields two examples are the free field Maxwell equation (spin ) and the free field Einstein equation (spin ) for the field operators.
+All of them are essentially a direct consequence of the requirement of Lorentz invariance. Their solutions must transform under Lorentz transformation in a prescribed way, i.e. under a particular representation of the Lorentz group and that together with few other reasonable demands, e.g. the cluster decomposition property,
+with implications for causality is enough to fix the equations.
+
+This applies to free field equations; interactions are not included. If a Lagrangian density (including interactions) is available, then the Lagrangian formalism will yield an equation of motion at the classical level. This equation may be very complex and not amenable to solution. Any solution would refer to a ''fixed'' number of particles and would not account for the term "interaction" as referred to in these theories, which involves the creation and annihilation of particles and not external potentials as in ordinary "first quantized" quantum theory.
+
+In string theory, the situation remains analogous. For instance, a wave function in momentum space has the role of Fourier expansion coefficient in a general state of a particle (string) with momentum that is not sharply defined.
+
+=== Relativistic particles: classical vs quantum ===
+Classical particles, like bullets, rockets and planets are spatially localized, and waves in the classical sense, like sound and ocean waves are known to expand over large spatial regions. However, quantum wave-particle duality is a unique characteristic of quantum particles. For instance, spatially localized atoms are stable due to the existence of waves associate to the electrons in the atom. There is no consensus about the nature of the waves associated to quantum particles, yet there is consensus on how to calculate the mathematical expressions corresponding to these waves.
+
+In non-relativistic quantum mechanics, there is a wave associate to a spin-0 quantum particle. The Schrödinger wave equation should be solved for obtaining the mathematical expression corresponding to this "Schrödinger" wave. However, in relativistic quantum mechanics a relativistic wave equation should be solved. Alternatively, a pair of relativistic but Schrödinger-like wave equations could be solved for obtaining the mathematical expressions of the two Schrödinger-like waves associated to a spin-0 relativistic quantum particle.
+:( \Psi_1 , \Psi_2 ) = \int_{-\infty}^\infty \, \Psi_1^*(x, t)\Psi_2(x, t)\,dx < \infty.
+
+More details are given below. However,  the inner product of a wave function  with itself,
+:(\Psi,\Psi) = \|\Psi\|^2,
+is ''always'' a positive real number. The number {{math|}} (not {{math|2}}) is called the '''norm''' of the wave function .
+The separable Hilbert space being considered is infinite-dimensional, which means there is no finite set of square integrable functions which can be added together in various combinations to create every possible square integrable function.
+
+=== Position-space wave functions ===
+The state of such a particle is completely described by its wave function, \Psi(x,t)\,, where  is position and  is time. This is a complex-valued function of two real variables  and .
+
+For one spinless particle in one dimension, if the wave function is interpreted as a probability amplitude; the square modulus of the wave function, the positive real number
+ \left|\Psi(x, t)\right|^2 = \Psi^*(x, t)\Psi(x, t) = \rho(x), 
+is interpreted as the probability density for a measurement of the particle's position at a given time . The asterisk indicates the complex conjugate. If the particle's position is measured, its location cannot be determined from the wave function, but is described by a probability distribution.
+
+====Normalization condition====
+The probability that its position  will be in the interval  is the integral of the density over this interval:
+P_{a\le x\le b} (t) = \int_a^b \,|\Psi(x,t)|^2 dx 
+where  is the time at which the particle was measured. This leads to the '''normalization condition''':
+\int_{-\infty}^\infty \, |\Psi(x,t)|^2dx  = 1\,,
+because if the particle is measured, there is 100% probability that it will be ''somewhere''.
+
+For a given system, the set of all possible normalizable wave functions (at any given time) forms an abstract mathematical vector space, meaning that it is possible to add together different wave functions, and multiply wave functions by complex numbers. Technically, wave functions form a ray in a projective Hilbert space rather than an ordinary vector space.
+
+====Quantum states as vectors====
+
+At a particular instant of time, all values of the wave function  are components of a vector. There are uncountably infinitely many of them and integration is used in place of summation. In Bra–ket notation, this vector is written
+|\Psi(t)\rangle = \int\Psi(x,t) |x\rangle  dx 
+and is referred to as a "quantum state vector", or simply "quantum state". There are several advantages to understanding wave functions as representing elements of an abstract vector space:
+* All the powerful tools of linear algebra can be used to manipulate and understand wave functions. For example:
+** Linear algebra explains how a vector space can be given a basis, and then any vector in the vector space can be expressed in this basis. This explains the relationship between a wave function in position space and a wave function in momentum space and suggests that there are other possibilities too.
+** Bra–ket notation can be used to manipulate wave functions.
+* The idea that quantum states are vectors in an abstract vector space is completely general in all aspects of quantum mechanics and quantum field theory, whereas the idea that quantum states are complex-valued "wave" functions of space is only true in certain situations.
+
+The time parameter is often suppressed, and will be in the following. The  coordinate is a continuous index. The {{math|}} are called ''improper vectors'' which, unlike ''proper vectors'' that are normalizable to unity, can only be normalized to a Dirac delta function.
+(\Psi_{p},\Psi_{p'}) = \delta(p - p').
+
+For another thing, though they are linearly independent, there are too many of them (they form an uncountable set) for a basis for physical Hilbert space. They can still be used to express all functions in it using Fourier transforms as described next.
+
+=== Relations between position and momentum representations ===
+The  and  representations are
+\begin{align}
+|\Psi\rangle = I|\Psi\rangle &= \int |x\rangle \langle x|\Psi\rangle dx = \int \Psi(x) |x\rangle dx,\\
+|\Psi\rangle = I|\Psi\rangle &= \int |p\rangle \langle p|\Psi\rangle dp = \int \Phi(p) |p\rangle dp.
+\end{align}
+
+Now take the projection of the state  onto eigenfunctions of momentum using the last expression in the two equations,
+\int \Psi(x) \langle p|x\rangle dx = \int \Phi(p') \langle p|p'\rangle dp' = \int \Phi(p') \delta(p-p') dp' = \Phi(p).
+
+Then utilizing the known expression for suitably normalized eigenstates of momentum in the position representation solutions of the free Schrödinger equation
+\langle x | p \rangle = p(x) = \frac{1}{\sqrt{2\pi\hbar}}e^{\frac{i}{\hbar}px} \Rightarrow \langle p | x \rangle = \frac{1}{\sqrt{2\pi\hbar}}e^{-\frac{i}{\hbar}px},
+one obtains
+\Phi(p) = \frac{1}{\sqrt{2\pi\hbar}}\int \Psi(x)e^{-\frac{i}{\hbar}px}dx\,.
+
+Likewise, using eigenfunctions of position,
+\Psi(x) = \frac{1}{\sqrt{2\pi\hbar}}\int \Phi(p)e^{\frac{i}{\hbar}px}dp\,.
+
+The position-space and momentum-space wave functions are thus found to be Fourier transforms of each other. They are two representations of the same state; containing the same information, and either one is sufficient to calculate any property of the particle.
+
+In practice, the position-space wave function is used much more often than the momentum-space wave function. The potential entering the relevant equation (Schrödinger, Dirac, etc.) determines in which basis the description is easiest. For the harmonic oscillator,  and  enter symmetrically, so there it does not matter which description one uses. The same equation (modulo constants) results. From this, with a little bit of afterthought, it follows that solutions to the wave equation of the harmonic oscillator are eigenfunctions of the Fourier transform in .
+
+== Definitions (other cases) ==
+Following are the general forms of the wave function for systems in higher dimensions and more particles, as well as including other degrees of freedom than position coordinates or momentum components.
+
+=== Finite dimensional Hilbert space ===
+While Hilbert spaces originally refer to infinite dimensional complete inner product spaces they, by definition, include finite dimensional complete inner product spaces as well.
+In physics, they are often referred to as ''finite dimensional Hilbert spaces''. For every finite dimensional Hilbert space there exist orthonormal basis kets that span the entire Hilbert space.
+
+If the -dimensional set \{ |\phi_i\rangle \} is orthonormal, then the projection operator for the space spanned by these states is given by:
+
+P = \sum_i |\phi_i\rangle\langle \phi_i | = I where the projection is equivalent to identity operator since \{ |\phi_i\rangle \} spans the entire Hilbert space, thus leaving any vector from Hilbert space unchanged. This is also known as completeness relation of finite dimensional Hilbert space.
+
+The wavefunction is instead given by:
+
+|\psi\rangle = I|\psi\rangle = \sum_i |\phi_i\rangle\langle \phi_i |\psi\rangle  where \{ \langle \phi_i |\psi\rangle \} , is a set of complex numbers which can be used to construct a wavefunction using the above formula.
+
+==== Probability interpretation of inner product ====
+If the set \{ |\phi_i\rangle \} are eigenkets of a non-degenerate observable with eigenvalues \lambda_i, by the postulates of quantum mechanics, the probability of measuring the observable to be \lambda_i is given according to Born rule as:
+
+P_\psi(\lambda_i) = |\langle \phi_i|\psi \rangle|^2    
+
+For non-degenerate \{ |\phi_i\rangle \} of some observable, if eigenvalues \lambda have subset of eigenvectors labelled as \{ |\lambda^{(j)}\rangle \}, by the postulates of quantum mechanics, the probability of measuring the observable to be \lambda is given by:
+
+P_\psi(\lambda) =\sum_j |\langle \lambda^{(j)}|\psi \rangle|^2 = |\widehat P_\lambda |\psi \rangle |^2          where \widehat P_\lambda =\sum_j|\lambda^{(j)}\rangle\langle\lambda^{(j)}|          is a projection operator of states to subspace spanned by \{ |\lambda^{(j)}\rangle \}. The equality follows due to orthogonal nature of \{ |\phi_i\rangle \}.
+
+Hence, \{ \langle \phi_i |\psi\rangle \}  which specify state of the quantum mechanical system, have magnitudes whose square gives the probability of measuring the respective |\phi_i\rangle    state.
+
+==== Physical significance of relative phase ====
+While the relative phase has observable effects in experiments, the global phase of the system is experimentally indistinguishable. For example in a particle in superposition of two states, the global phase of the particle cannot be distinguished by finding expectation value of observable or probabilities of observing different states but relative phases can affect the expectation values of observables.
+
+While the overall phase of the system is considered to be arbitrary, the relative phase for each state |\phi_i\rangle    of a prepared state in superposition can be determined based on physical meaning of the prepared state and its symmetry. For example, the construction of spin states along x direction as a superposition of spin states along z direction, can done by applying appropriate rotation transformation on the spin along z states which provides appropriate phase of the states relative to each other.
+
+==== Application to include spin ====
+An example of finite dimensional Hilbert space can be constructed using spin eigenkets of s-spin particles which forms a 2s+1 dimensional Hilbert space. However, the general wavefunction of a particle that fully describes its state, is always from an infinite dimensional Hilbert space since it involves a tensor product with Hilbert space relating to the position or momentum of the particle. Nonetheless, the techniques developed for finite dimensional Hilbert space are useful since they can either be treated independently or treated in consideration of linearity of tensor product.
+
+Since the spin operator for a given s-spin particles can be represented as a finite (2s+1)^2     matrix which acts on 2s+1 independent spin vector components, it is usually preferable to denote spin components using matrix/column/row notation as applicable.
+
+For example, each {{math|}} is usually identified as a column vector:|s\rangle \leftrightarrow \begin{bmatrix} 1 \\ 0 \\ \vdots \\ 0 \\ 0 \\ \end{bmatrix} \,, \quad |s-1\rangle \leftrightarrow \begin{bmatrix} 0 \\ 1 \\ \vdots \\ 0 \\ 0 \\ \end{bmatrix} \,, \ldots \,, \quad |-(s-1)\rangle \leftrightarrow \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 1 \\ 0 \\ \end{bmatrix} \,,\quad |-s\rangle \leftrightarrow  \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \\ 1 \\ \end{bmatrix}
+
+but it is a common abuse of notation, because the kets {{math|}} are not synonymous or equal to the column vectors. Column vectors simply provide a convenient way to express the spin components.
+
+Corresponding to the notation, the z-component spin operator can be written as:\frac{1}{\hbar}\hat{S}_z = \begin{bmatrix} s & 0 & \cdots & 0 & 0 \\ 0 & s-1 & \cdots & 0 & 0 \\ \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & \cdots & -(s-1) & 0 \\ 0 & 0 & \cdots & 0 & -s \end{bmatrix} 
+
+since the eigenvectors of z-component spin operator are the above column vectors, with eigenvalues being the corresponding spin quantum numbers.
+
+Corresponding to the notation, a vector from such a finite dimensional Hilbert space is hence represented as:
+
+|\phi\rangle  =  \begin{bmatrix} \langle s| \phi\rangle \\ \langle s-1| \phi\rangle \\ \vdots \\ \langle -(s-1)| \phi\rangle \\ \langle -s| \phi\rangle \\ \end{bmatrix} =\begin{bmatrix} \varepsilon_s \\  \varepsilon_{s-1}\\ \vdots \\ \varepsilon_{-s+1} \\ \varepsilon_{-s} \\ \end{bmatrix} where  \{ \varepsilon_i \}        are corresponding complex numbers.
+
+In the following discussion involving spin, the complete wavefunction is considered as tensor product of spin states from finite dimensional Hilbert spaces and the wavefunction which was previously developed. The basis for this Hilbert space are hence considered:   |\mathbf{r}, s_z\rangle   = |\mathbf{r}\rangle |s_z\rangle   .
+
+=== One-particle states in 3d position space ===
+
+The position-space wave function of a single particle without spin in three spatial dimensions is similar to the case of one spatial dimension above: \Psi(\mathbf{r},t) where  is the position vector in three-dimensional space, and  is time. As always  is a complex-valued function of real variables. As a single vector in Dirac notation
+|\Psi(t)\rangle = \int d^3\! \mathbf{r}\, \Psi(\mathbf{r},t) \,|\mathbf{r}\rangle 
+
+All the previous remarks on inner products, momentum space wave functions, Fourier transforms, and so on extend to higher dimensions.
+
+For a particle with spin, ignoring the position degrees of freedom, the wave function is a function of spin only (time is a parameter);
+\xi(s_z,t)
+where  is the spin projection quantum number along the  axis. (The  axis is an arbitrary choice; other axes can be used instead if the wave function is transformed appropriately, see below.) The  parameter, unlike  and , is a discrete variable. For example, for a spin-1/2 particle,  can only be  or , and not any other value. (In general, for spin ,  can be ). Inserting each quantum number gives a complex valued function of space and time, there are  of them. These can be arranged into a column vector
+
+\xi = \begin{bmatrix} \xi(s,t) \\ \xi(s-1,t) \\ \vdots \\ \xi(-(s-1),t) \\ \xi(-s,t) \\ \end{bmatrix} = \xi(s,t) \begin{bmatrix} 1 \\ 0 \\ \vdots \\ 0 \\ 0 \\ \end{bmatrix} + \xi(s-1,t)\begin{bmatrix} 0 \\ 1 \\ \vdots \\ 0 \\ 0 \\ \end{bmatrix} + \cdots + \xi(-(s-1),t) \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 1 \\ 0 \\ \end{bmatrix} + \xi(-s,t) \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \\ 1 \\ \end{bmatrix} 
+
+In bra–ket notation, these easily arrange into the components of a vector:
+|\xi (t)\rangle = \sum_{s_z=-s}^s \xi(s_z,t) \,| s_z \rangle 
+
+The entire vector  is a solution of the Schrödinger equation (with a suitable Hamiltonian), which unfolds to a coupled system of  ordinary differential equations with solutions . The term "spin function" instead of "wave function" is used by some authors. This contrasts the solutions to position space wave functions, the position coordinates being continuous degrees of freedom, because then the Schrödinger equation does take the form of a wave equation.
+
+More generally, for a particle in 3d with any spin, the wave function can be written in "position–spin space" as:
+\Psi(\mathbf{r},s_z,t)
+and these can also be arranged into a column vector
+\Psi(\mathbf{r},t) = \begin{bmatrix} \Psi(\mathbf{r},s,t) \\ \Psi(\mathbf{r},s-1,t) \\ \vdots \\ \Psi(\mathbf{r},-(s-1),t) \\ \Psi(\mathbf{r},-s,t) \\ \end{bmatrix}
+in which the spin dependence is placed in indexing the entries, and the wave function is a complex vector-valued function of space and time only.
+
+All values of the wave function, not only for discrete but continuous variables also, collect into a single vector
+|\Psi(t)\rangle =
+\sum_{s_z}\int d^3\!\mathbf{r} \,\Psi(\mathbf{r},s_z,t)\, |\mathbf{r}, s_z\rangle 
+
+For a single particle, the tensor product  of its position state vector {{math|}} and spin state vector {{math|}} gives the composite position-spin state vector
+|\psi(t)\rangle\! \otimes\! |\xi(t)\rangle =
+\sum_{s_z}\int d^3\! \mathbf{r}\, \psi(\mathbf{r},t)\,\xi(s_z,t) \,|\mathbf{r}\rangle \!\otimes\! |s_z\rangle 
+with the identifications
+|\Psi (t)\rangle = |\psi(t)\rangle
+\!\otimes\!
+ |\xi(t)\rangle 
+\Psi(\mathbf{r},s_z,t) = \psi(\mathbf{r},t)\,\xi(s_z,t) 
+|\mathbf{r},s_z \rangle= |\mathbf{r}\rangle \!\otimes\! |s_z\rangle 
+
+The tensor product factorization of energy eigenstates is always possible if the orbital and spin angular momenta of the particle are separable in the Hamiltonian operator underlying the system's dynamics (in other words, the Hamiltonian can be split into the sum of orbital and spin terms). The time dependence can be placed in either factor, and time evolution of each can be studied separately. Under such Hamiltonians, any tensor product state evolves into another tensor product state, which essentially means any unentangled state remains unentangled under time evolution. This is said to happen when there is no physical interaction between the states of the tensor products. In the case of non separable Hamiltonians, energy eigenstates are said to be some linear combination of such states, which need not be factorizable; examples include a particle in a magnetic field, and spin–orbit coupling.
+
+The preceding discussion is not limited to spin as a discrete variable, the total angular momentum ''J'' may also be used. Other discrete degrees of freedom, like isospin, can expressed similarly to the case of spin above.
+
+===Many-particle states in 3d position space===
+
+If there are many particles, in general there is only one wave function, not a separate wave function for each particle. The fact that ''one'' wave function describes ''many'' particles is what makes quantum entanglement and the EPR paradox possible. The position-space wave function for  particles is written:
+\Psi(\mathbf{r}_1,\mathbf{r}_2 \cdots \mathbf{r}_N,t)
+where  is the position of the -th particle in three-dimensional space, and  is time. Altogether, this is a complex-valued function of  real variables.
+
+In quantum mechanics there is a fundamental distinction between ''identical particles'' and ''distinguishable'' particles. For example, any two electrons are identical and fundamentally indistinguishable from each other; the laws of physics make it impossible to "stamp an identification number" on a certain electron to keep track of it. This translates to a requirement on the wave function for a system of identical particles:
+\Psi \left ( \ldots \mathbf{r}_a, \ldots , \mathbf{r}_b, \ldots \right ) = \pm \Psi \left ( \ldots \mathbf{r}_b, \ldots , \mathbf{r}_a, \ldots \right )
+where the  sign occurs if the particles are ''all bosons'' and  sign if they are ''all fermions''. In other words, the wave function is either totally symmetric in the positions of bosons, or totally antisymmetric in the positions of fermions. The physical interchange of particles corresponds to mathematically switching arguments in the wave function. The antisymmetry feature of fermionic wave functions leads to the Pauli principle. Generally, bosonic and fermionic symmetry requirements are the manifestation of particle statistics and are present in other quantum state formalisms.
+
+For  ''distinguishable'' particles (no two being identical, i.e. no two having the same set of quantum numbers), there is no requirement for the wave function to be either symmetric or antisymmetric.
+
+For a collection of particles, some identical with coordinates  and others distinguishable  (not identical with each other, and not identical to the aforementioned identical particles), the wave function is symmetric or antisymmetric in the identical particle coordinates  only:
+\Psi \left ( \ldots \mathbf{r}_a, \ldots , \mathbf{r}_b, \ldots , \mathbf{x}_1, \mathbf{x}_2, \ldots \right ) = \pm \Psi \left ( \ldots \mathbf{r}_b, \ldots , \mathbf{r}_a, \ldots , \mathbf{x}_1, \mathbf{x}_2, \ldots \right )
+
+Again, there is no symmetry requirement for the distinguishable particle coordinates .
+
+The wave function for ''N'' particles each with spin is the complex-valued function
+\Psi(\mathbf{r}_1, \mathbf{r}_2 \cdots \mathbf{r}_N, s_{z\,1}, s_{z\,2} \cdots s_{z\,N}, t)
+
+Accumulating all these components into a single vector,
+
+| \Psi \rangle = \overbrace{\sum_{s_{z\,1},\ldots,s_{z\,N}}}^{\text{discrete labels}} \overbrace{\int_{R_N} d^3\mathbf{r}_N \cdots \int_{R_1} d^3\mathbf{r}_1}^{\text{continuous labels}} \; \underbrace{{\Psi}( \mathbf{r}_1, \ldots, \mathbf{r}_N , s_{z\,1} , \ldots , s_{z\,N} )}_{\begin{array}{c}\text{wave function (component of } \\ \text{ state vector along basis state)}\end{array}} \; \underbrace{| \mathbf{r}_1, \ldots, \mathbf{r}_N , s_{z\,1} , \ldots , s_{z\,N} \rangle }_{\text{basis state (basis ket)}}\,.
+
+For identical particles, symmetry requirements apply to both position and spin arguments of the wave function so it has the overall correct symmetry.
+
+The formulae for the inner products are integrals over all coordinates or momenta and sums over all spin quantum numbers. For the general case of  particles with spin in 3-d,
+ ( \Psi_1 , \Psi_2 ) = \sum_{s_{z\,N}} \cdots \sum_{s_{z\,2}} \sum_{s_{z\,1}} \int\limits_{\mathrm{ all \, space}} d ^3\mathbf{r}_1 \int\limits_{\mathrm{ all \, space}} d ^3\mathbf{r}_2\cdots \int\limits_{\mathrm{ all \, space}} d ^3 \mathbf{r}_N \Psi^{*}_1 \left(\mathbf{r}_1 \cdots \mathbf{r}_N,s_{z\,1}\cdots s_{z\,N},t \right )\Psi_2 \left(\mathbf{r}_1 \cdots \mathbf{r}_N,s_{z\,1}\cdots s_{z\,N},t \right ) 
+this is altogether  three-dimensional volume integrals and  sums over the spins. The differential volume elements  are also written "" or "".
+
+The multidimensional Fourier transforms of the position or position–spin space wave functions yields momentum or momentum–spin space wave functions.
+
+====Probability interpretation====
+For the general case of  particles with spin in 3d, if  is interpreted as a probability amplitude, the probability density is
+\rho\left(\mathbf{r}_1 \cdots \mathbf{r}_N,s_{z\,1}\cdots s_{z\,N},t \right ) =  \left | \Psi\left (\mathbf{r}_1 \cdots \mathbf{r}_N,s_{z\,1}\cdots s_{z\,N},t \right ) \right |^2
+
+and the probability that particle 1 is in region  with spin  ''and'' particle 2 is in region  with spin  etc. at time  is the integral of the probability density over these regions and evaluated at these spin numbers:
+
+:P_{\mathbf{r}_1\in R_1,s_{z\,1} = m_1, \ldots, \mathbf{r}_N\in R_N,s_{z\,N} = m_N} (t) = \int_{R_1} d ^3\mathbf{r}_1 \int_{R_2} d ^3\mathbf{r}_2\cdots \int_{R_N} d ^3\mathbf{r}_N \left | \Psi\left (\mathbf{r}_1 \cdots \mathbf{r}_N,m_1\cdots m_N,t \right ) \right |^2
+
+==== Physical significance of phase ====
+In non-relativistic quantum mechanics, it can be shown using Schrodinger's time dependent wave equation that the equation:
+
+\frac{\partial \rho}{\partial t} + \nabla\cdot\mathbf J = 0  is satisfied, where \rho(\mathbf x,t) = | \psi(\mathbf x,t)|^2    is the probability density and \mathbf J(\mathbf x,t) = \frac{\hbar}{2im}(\psi^* \nabla\psi-\psi\nabla\psi^*) = \frac{\hbar}{m} \text{Im}(\psi^* \nabla\psi)  , is known as the probability flux in accordance with the continuity equation form of the above equation.
+
+Using the following expression for wavefunction:\psi(\mathbf x,t)= \sqrt{\rho(\mathbf x,t)}\exp{\frac{iS(\mathbf x,t )}{\hbar}} where \rho(\mathbf x,t) = | \psi(\mathbf x,t)|^2    is the probability density and S(\mathbf x,t)  is the phase of the wavefunction, it can be shown that:
+
+\mathbf J(\mathbf x,t) = \frac{\rho \nabla S}{m} 
+
+Hence the spacial variation of phase characterizes the probability flux.
+
+In classical analogy, for \mathbf J = \rho \mathbf v , the quantity  \frac{\nabla S}{m}  is analogous with velocity. Note that this does not imply a literal interpretation of  \frac{\nabla S}{m}  as velocity since velocity and position cannot be simultaneously determined as per the uncertainty principle. Substituting the form of wavefunction in Schrodinger's time dependent wave equation, and taking the classical limit,  \hbar |\nabla^2 S| \ll |\nabla S|^2 :
+
+\frac{1}{2m} |\nabla S(\mathbf x, t)|^2 + V(\mathbf x) + \frac{\partial S}{\partial t} = 0 
+
+Which is analogous to Hamilton-Jacobi equation from classical mechanics. This interpretation fits with Hamilton–Jacobi theory, in which  \mathbf{P}_{\text{class.}} = \nabla S , where '''' is Hamilton's principal function.
+
+== Time dependence ==
+
+For systems in time-independent potentials, the wave function can always be written as a function of the degrees of freedom multiplied by a time-dependent phase factor, the form of which is given by the Schrödinger equation. For  particles, considering their positions only and suppressing other degrees of freedom,
+\Psi(\mathbf{r}_1,\mathbf{r}_2,\ldots,\mathbf{r}_N,t) = e^{-i Et/\hbar} \,\psi(\mathbf{r}_1,\mathbf{r}_2,\ldots,\mathbf{r}_N)\,,
+where  is the energy eigenvalue of the system corresponding to the eigenstate . Wave functions of this form are called stationary states.
+
+The time dependence of the quantum state and the operators can be placed according to unitary transformations on the operators and states. For any quantum state {{math|}} and operator , in the Schrödinger picture {{math|}} changes with time according to the Schrödinger equation while  is constant. In the Heisenberg picture it is the other way round, {{math|}} is constant while  evolves with time according to the Heisenberg equation of motion. The Dirac (or interaction) picture is intermediate, time dependence is places in both operators and states which evolve according to equations of motion. It is useful primarily in computing S-matrix elements.
+
+==Non-relativistic examples==
+The following are solutions to the Schrödinger equation for one non-relativistic spinless particle.
+
+===Finite potential barrier===
+
+One of the most prominent features of wave mechanics is the possibility for a particle to reach a location with a prohibitive (in classical mechanics) force potential. A common model is the "potential barrier", the one-dimensional case has the potential
+V(x)=\begin{cases}V_0 & |x|
+and the steady-state solutions to the wave equation have the form (for some constants )
+\Psi (x) = \begin{cases}
+A_{\mathrm{r}}e^{ikx}+A_{\mathrm{l}}e^{-ikx} & x<-a, \\
+B_{\mathrm{r}}e^{\kappa x}+B_{\mathrm{l}}e^{-\kappa x} & |x|\le a, \\
+C_{\mathrm{r}}e^{ikx}+C_{\mathrm{l}}e^{-ikx} & x>a.
+\end{cases}
+
+Note that these wave functions are not normalized; see scattering theory for discussion.
+
+The standard interpretation of this is as a stream of particles being fired at the step from the left (the direction of negative ): setting  corresponds to firing particles singly; the terms containing  and  signify motion to the right, while  and  – to the left. Under this beam interpretation, put  since no particles are coming from the right. By applying the continuity of wave functions and their derivatives at the boundaries, it is hence possible to determine the constants above.
+
+In a semiconductor crystallite whose radius is smaller than the size of its exciton Bohr radius, the excitons are squeezed, leading to quantum confinement. The energy levels can then be modeled using the particle in a box model in which the energy of different states is dependent on the length of the box.
+
+===Quantum harmonic oscillator===
+The wave functions for the quantum harmonic oscillator can be expressed in terms of Hermite polynomials , they are
+  \Psi_n(x) = \sqrt{\frac{1}{2^n\,n!}} \cdot \left(\frac{m\omega}{\pi \hbar}\right)^{1/4} \cdot e^{
+- \frac{m\omega x^2}{2 \hbar}} \cdot H_n{\left(\sqrt{\frac{m\omega}{\hbar}} x \right)} 
+where .
+
+ electron orbitals shown as cross-sections. These orbitals form an orthonormal basis for the wave function of the electron. Different orbitals are depicted with different scale.]]
+
+===Hydrogen atom===
+The wave functions of an electron in a Hydrogen atom are expressed in terms of spherical harmonics and generalized Laguerre polynomials (these are defined differently by different authors—see main article on them and the hydrogen atom).
+
+It is convenient to use spherical coordinates, and the wave function can be separated into functions of each coordinate,
+ \Psi_{n\ell m}(r,\theta,\phi) = R(r)\,\,Y_\ell^m\!(\theta, \phi)
+where  are radial functions and {{math|''Y''(''θ'', ''φ'')}} are spherical harmonics of degree  and order . This is the only atom for which the Schrödinger equation has been solved exactly. Multi-electron atoms require approximative methods. The family of solutions is:
+ \Psi_{n\ell m}(r,\theta,\phi) = \sqrt {{\left (  \frac{2}{n a_0} \right )}^3\frac{(n-\ell-1)!}{2n[(n+\ell)!]} } e^{- r/na_0} \left(\frac{2r}{na_0}\right)^{\ell} L_{n-\ell-1}^{2\ell+1}\left(\frac{2r}{na_0}\right) \cdot Y_{\ell}^{m}(\theta, \phi ) 
+where  is the Bohr radius,
+{{math|''L''}} are the generalized Laguerre polynomials of degree ,  is the principal quantum number,  the azimuthal quantum number,  the magnetic quantum number. Hydrogen-like atoms have very similar solutions.
+
+This solution does not take into account the spin of the electron.
+
+In the figure of the hydrogen orbitals, the 19 sub-images are images of wave functions in position space (their norm squared). The wave functions represent the abstract state characterized by the triple of quantum numbers , in the lower right of each image. These are the principal quantum number, the orbital angular momentum quantum number, and the magnetic quantum number. Together with one spin-projection quantum number of the electron, this is a complete set of observables.
+
+The figure can serve to illustrate some further properties of the function spaces of wave functions.
+* In this case, the wave functions are square integrable. One can initially take the function space as the space of square integrable functions, usually denoted .
+* The displayed functions are solutions to the Schrödinger equation. Obviously, not every function in  satisfies the Schrödinger equation for the hydrogen atom. The function space is thus a subspace of .
+* The displayed functions form part of a basis for the function space. To each triple , there corresponds a basis wave function. If spin is taken into account, there are two basis functions for each triple. The function space thus has a countable basis.
+* The basis functions are mutually orthonormal.
+
+==Wave functions and function spaces==
+The concept of function spaces enters naturally in the discussion about wave functions. A function space is a set of functions, usually with some defining requirements on the functions (in the present case that they are square integrable), sometimes with an algebraic structure on the set (in the present case a vector space structure with an inner product), together with a topology on the set. The latter will sparsely be used here, it is only needed to obtain a precise definition of what it means for a subset of a function space to be closed. It will be concluded below that the function space of wave functions is a Hilbert space. This observation is the foundation of the predominant mathematical formulation of quantum mechanics.
+
+=== Vector space structure ===
+A wave function is an element of a function space partly characterized by the following concrete and abstract descriptions.
+* The Schrödinger equation is linear. This means that the solutions to it, wave functions, can be added and multiplied by scalars to form a new solution. The set of solutions to the Schrödinger equation is a vector space.
+* The superposition principle of quantum mechanics. If  and  are two states in the abstract space of '''states''' of a quantum mechanical system, and  and  are any two complex numbers, then  is a valid state as well. (Whether the null vector counts as a valid state ("no system present") is a matter of definition. The null vector does ''not'' at any rate describe the vacuum state in quantum field theory.) The set of allowable states is a vector space.
+
+This similarity is of course not accidental. There are also a distinctions between the spaces to keep in mind.
+
+=== Representations ===
+Basic states are characterized by a set of quantum numbers. This is a set of eigenvalues of a '''maximal set''' of commuting observables. Physical observables are represented by linear operators, also called observables, on the vectors space. Maximality means that there can be added to the set no further algebraically independent observables that commute with the ones already present. A choice of such a set may be called a choice of '''representation'''.
+
+* It is a postulate of quantum mechanics that a physically observable quantity of a system, such as position, momentum, or spin, is represented by a linear Hermitian operator on the state space. The possible outcomes of measurement of the quantity are the eigenvalues of the operator. At a deeper level, most observables, perhaps all, arise as generators of symmetries.
+* The physical interpretation is that such a set represents what can – in theory – simultaneously be measured with arbitrary precision. The Heisenberg uncertainty relation prohibits simultaneous exact measurements of two non-commuting observables.
+* The set is non-unique. It may for a one-particle system, for example, be position and spin -projection, , or it may be momentum and spin -projection, . In this case, the operator corresponding to position (a multiplication operator in the position representation) and the operator corresponding to momentum (a differential operator in the position representation) do not commute.
+* Once a representation is chosen, there is still arbitrariness. It remains to choose a coordinate system. This may, for example, correspond to a choice of - and -axis, or a choice of '''curvilinear coordinates''' as exemplified by the spherical coordinates used for the Hydrogen atomic wave functions. This final choice also fixes a basis in abstract Hilbert space. The basic states are labeled by the quantum numbers corresponding to the maximal set of commuting observables and an appropriate coordinate system.
+
+The abstract states are "abstract" only in that an arbitrary choice necessary for a particular ''explicit'' description of it is not given. This is the same as saying that no choice of maximal set of commuting observables has been given. This is analogous to a vector space without a specified basis. Wave functions corresponding to a state are accordingly not unique. This non-uniqueness reflects the non-uniqueness in the choice of a maximal set of commuting observables. For one spin particle in one dimension, to a particular state there corresponds two wave functions,  and , both describing the ''same'' state.
+* For each choice of maximal commuting sets of observables for the abstract state space, there is a corresponding representation that is associated to a function space of wave functions.
+* Between all these different function spaces and the abstract state space, there are one-to-one correspondences (here disregarding normalization and unobservable phase factors), the common denominator here being a particular abstract state. The relationship between the momentum and position space wave functions, for instance, describing the same state is the Fourier transform.
+
+Each choice of representation should be thought of as specifying a unique function space in which wave functions corresponding to that choice of representation lives. This distinction is best kept, even if one could argue that two such function spaces are mathematically equal, e.g. being the set of square integrable functions. One can then think of the function spaces as two distinct copies of that set.
+
+=== Inner product ===
+There is an additional algebraic structure on the vector spaces of wave functions and the abstract state space.
+* Physically, different wave functions are interpreted to overlap to some degree. A system in a state  that does ''not'' overlap with a state  cannot be found to be in the state  upon measurement. But if  overlap  to ''some'' degree, there is a chance that measurement of a system described by  will be found in states . Also selection rules are observed apply. These are usually formulated in the preservation of some quantum numbers. This means that certain processes allowable from some perspectives (e.g. energy and momentum conservation) do not occur because the initial and final ''total'' wave functions do not overlap.
+* Mathematically, it turns out that solutions to the Schrödinger equation for particular potentials are '''orthogonal''' in some manner, this is usually described by an integral \int\Psi_m^*\Psi_n w\, dV = \delta_{nm}, where  are (sets of) indices (quantum numbers) labeling different solutions, the strictly positive function  is called a weight function, and  is the Kronecker delta. The integration is taken over all of the relevant space.
+
+This motivates the introduction of an inner product on the vector space of abstract quantum states, compatible with the mathematical observations above when passing to a representation. It is denoted , or in the Bra–ket notation {{math|}}. It yields a complex number. With the inner product, the function space is an inner product space. The explicit appearance of the inner product (usually an integral or a sum of integrals) depends on the choice of representation, but the complex number  does not. Much of the physical interpretation of quantum mechanics stems from the Born rule. It states that the probability  of finding upon measurement the state  given the system is in the state  is
+p = |(\Phi, \Psi)|^2,
+where  and  are assumed normalized. Consider a scattering experiment. In quantum field theory, if  describes a state in the "distant future" (an "out state") after interactions between scattering particles have ceased, and  an "in state" in the "distant past", then the quantities , with  and  varying over a complete set of in states and out states respectively, is called the S-matrix or '''scattering matrix'''. Knowledge of it is, effectively, having ''solved'' the theory at hand, at least as far as predictions go. Measurable quantities such as decay rates and scattering cross sections are calculable from the S-matrix.
+
+=== Hilbert space ===
+The above observations encapsulate the essence of the function spaces of which wave functions are elements. However, the description is not yet complete. There is a further technical requirement on the function space, that of completeness, that allows one to take limits of sequences in the function space, and be ensured that, if the limit exists, it is an element of the function space. A complete inner product space is called a Hilbert space. The property of completeness is crucial in advanced treatments and applications of quantum mechanics. For instance, the existence of projection operators or '''orthogonal projections''' relies on the completeness of the space. These projection operators, in turn, are essential for the statement and proof of many useful theorems, e.g. the spectral theorem. It is not very important in introductory quantum mechanics, and technical details and links may be found in footnotes like the one that follows.
+The space  is a Hilbert space, with inner product presented later. The function space of the example of the figure is a subspace of . A subspace of a Hilbert space is a Hilbert space if it is closed.
+
+In summary, the set of all possible normalizable wave functions for a system with a particular choice of basis, together with the null vector, constitute a Hilbert space.
+
+Not all functions of interest are elements of some Hilbert space, say . The most glaring example is the set of functions {{math|''e''}}. These are plane wave solutions of the Schrödinger equation for a free particle that are not normalizable, hence not in . But they are nonetheless fundamental for the description. One can, using them, express functions that ''are'' normalizable using wave packets. They are, in a sense, a basis (but not a Hilbert space basis, nor a Hamel basis) in which wave functions of interest can be expressed. There is also the artifact "normalization to a delta function" that is frequently employed for notational convenience, see further down. The delta functions themselves are not square integrable either.
+
+The above description of the function space containing the wave functions is mostly mathematically motivated. The function spaces are, due to completeness, very ''large'' in a certain sense. Not all functions are realistic descriptions of any physical system. For instance, in the function space  one can find the function that takes on the value  for all rational numbers and  for the irrationals in the interval . This ''is'' square integrable,
+but can hardly represent a physical state.
+
+=== Common Hilbert spaces ===
+While the space of solutions as a whole is a Hilbert space there are many other Hilbert spaces that commonly occur as ingredients.
+* Square integrable complex valued functions on the interval . The set {{math|{''e''''int''/2''π'', ''n'' ∈ '''Z'''} }} is a Hilbert space basis, i.e. a maximal orthonormal set.
+* The Fourier transform takes functions in the above space to elements of , the space of ''square summable'' functions . The latter space is a Hilbert space and the Fourier transform is an isomorphism of Hilbert spaces. Its basis is {{math|{''e''''i'', ''i'' ∈ '''Z'''}}} with .
+* The most basic example of spanning polynomials is in the space of square integrable functions on the interval  for which the Legendre polynomials is a Hilbert space basis (complete orthonormal set).
+* The square integrable functions on the unit sphere  is a Hilbert space. The basis functions in this case are the spherical harmonics. The Legendre polynomials are ingredients in the spherical harmonics. Most problems with rotational symmetry will have "the same" (known) solution with respect to that symmetry, so the original problem is reduced to a problem of lower dimensionality.
+* The associated Laguerre polynomials appear in the hydrogenic wave function problem after factoring out the spherical harmonics. These span the Hilbert space of square integrable functions on the semi-infinite interval .
+
+More generally, one may consider a unified treatment of all second order polynomial solutions to the Sturm–Liouville equations in the setting of Hilbert space. These include the Legendre and Laguerre polynomials as well as Chebyshev polynomials, Jacobi polynomials and Hermite polynomials. All of these actually appear in physical problems, the latter ones in the harmonic oscillator, and what is otherwise a bewildering maze of properties of special functions becomes an organized body of facts. For this, see .
+
+There occurs also finite-dimensional Hilbert spaces. The space  is a Hilbert space of dimension . The inner product is the standard inner product on these spaces. In it, the "spin part" of a single particle wave function resides.
+* In the non-relativistic description of an electron one has  and the total wave function is a solution of the Pauli equation.
+* In the corresponding relativistic treatment,  and the wave function solves the Dirac equation.
+
+With more particles, the situations is more complicated. One has to employ tensor products and use representation theory of the symmetry groups involved (the rotation group and the Lorentz group respectively) to extract from the tensor product the spaces in which the (total) spin wave functions reside. (Further problems arise in the relativistic case unless the particles are free. See the Bethe–Salpeter equation.) Corresponding remarks apply to the concept of isospin, for which the symmetry group is SU(2). The models of the nuclear forces of the sixties (still useful today, see nuclear force) used the symmetry group SU(3). In this case, as well, the part of the wave functions corresponding to the inner symmetries reside in some  or subspaces of tensor products of such spaces.
+
+* In quantum field theory the underlying Hilbert space is Fock space. It is built from free single-particle states, i.e. wave functions when a representation is chosen, and can accommodate any finite, not necessarily constant in time, number of particles. The interesting (or rather the ''tractable'') dynamics lies not in the wave functions but in the field operators that are operators acting on Fock space. Thus the Heisenberg picture is the most common choice (constant states, time varying operators).
+
+Due to the infinite-dimensional nature of the system, the appropriate mathematical tools are objects of study in functional analysis.
+
+=== Simplified description ===
+
+Not all introductory textbooks take the long route and introduce the full Hilbert space machinery, but the focus is on the non-relativistic Schrödinger equation in position representation for certain standard potentials. The following constraints on the wave function are sometimes explicitly formulated for the calculations and physical interpretation to make sense:
+
+* The wave function must be square integrable. This is motivated by the Copenhagen interpretation of the wave function as a probability amplitude.
+* It must be everywhere continuous and everywhere continuously differentiable. This is motivated by the appearance of the Schrödinger equation for most physically reasonable potentials.
+
+It is possible to relax these conditions somewhat for special purposes.
+If these requirements are not met, it is not possible to interpret the wave function as a probability amplitude. Note that exceptions can arise to the continuity of derivatives rule at points of infinite discontinuity of potential field. For example, in particle in a box where the derivative of wavefunction can be discontinuous at the boundary of the box where the potential is known to have infinite discontinuity.
+
+This does not alter the structure of the Hilbert space that these particular wave functions inhabit, but the subspace of the square-integrable functions , which is a Hilbert space, satisfying the second requirement ''is not closed'' in , hence not a Hilbert space in itself.
+The functions that does not meet the requirements are still needed for both technical and practical reasons.
+
+== More on wave functions and abstract state space ==
+
+As has been demonstrated, the set of all possible wave functions in some representation for a system constitute an in general infinite-dimensional Hilbert space. Due to the multiple possible choices of representation basis, these Hilbert spaces are not unique. One therefore talks about an abstract Hilbert space, '''state space''', where the choice of representation and basis is left undetermined. Specifically, each state is represented as an abstract vector in state space. A quantum state {{math|}} in any representation is generally expressed as a vector
+|\Psi\rangle =
+\sum_{\boldsymbol{\alpha}}\int d^m\!\boldsymbol{\omega}\,\,
+\Psi_t(\boldsymbol\alpha,\boldsymbol\omega)\,
+|\boldsymbol\alpha,\boldsymbol\omega\rangle
+where
+* {{math|}} the basis vectors of the chosen representation
+*  a differential volume element in the continuous degrees of freedom
+* \boldsymbol{\Psi}_t(\boldsymbol\alpha, \boldsymbol\omega) a component of the vector |\Psi\rangle, called the '''wave function''' of the system
+*  dimensionless discrete quantum numbers
+*  continuous variables (not necessarily dimensionless)
+
+These quantum numbers index the components of the state vector. More, all  are in an -dimensional set  where each  is the set of allowed values for ; all  are in an -dimensional "volume"  where  and each  is the set of allowed values for , a subset of the real numbers . For generality  and  are not necessarily equal.
+
+'''Example:'''
+{{ ordered list | list-style-type = lower-alpha
+| 1 = For a single particle in 3d with spin ''s'', neglecting other degrees of freedom, using Cartesian coordinates, we could take  for the spin quantum number of the particle along the z direction, and  for the particle's position coordinates. Here {{math|1=''A'' = {−''s'', −''s'' + 1, ..., ''s'' − 1, ''s''} }} is the set of allowed spin quantum numbers and  is the set of all possible particle positions throughout 3d position space.
+| 2 = An alternative choice is  for the spin quantum number along the y direction and  for the particle's momentum components. In this case  and  are the same as before.}}
+
+The probability density of finding the system at time t at state {{math|}} is
+\rho_{\alpha, \omega} (t)= |\Psi(\boldsymbol{\alpha},\boldsymbol{\omega},t)|^2
+
+The probability of finding system with  in some or all possible discrete-variable configurations, , and  in some or all possible continuous-variable configurations, , is the sum and integral over the density,
+P(t)=\sum_{\boldsymbol{\alpha}\in D}\int_C d^m\!\boldsymbol{\omega}\,\,\rho_{\alpha, \omega}(t)
+
+Since the sum of all probabilities must be 1, the normalization condition
+1=\sum_{\boldsymbol{\alpha}\in A}\int_{\Omega}d^m\!\boldsymbol{\omega}\,\,\rho_{\alpha, \omega} (t)
+must hold at all times during the evolution of the system.
+
+The normalization condition requires  to be dimensionless, by dimensional analysis  must have the same units as .
+
+== Ontology ==
+
+Whether the wave function exists in reality, and what it represents, are major questions in the interpretation of quantum mechanics. Many famous physicists of a previous generation puzzled over this problem, such as Erwin Schrödinger, Albert Einstein and Niels Bohr. Some advocate formulations or variants of the Copenhagen interpretation (e.g. Bohr, Eugene Wigner and John von Neumann) while others, such as John Archibald Wheeler or Edwin Thompson Jaynes, take the more classical approach and regard the wave function as representing information in the mind of the observer, i.e. a measure of our knowledge of reality.  Some, including Schrödinger, David Bohm and Hugh Everett III and others, argued that the wave function must have an objective, physical existence. Einstein thought that a complete description of physical reality should refer directly to physical space and time, as distinct from the wave function, which refers to an abstract mathematical space.
+
+== See also ==
+
+* Boson
+* De Broglie–Bohm theory
+* Double-slit experiment
+* Faraday wave
+* Fermion
+* Phase-space formulation
+* Schrödinger equation
+* Universal wavefunction
+* Wave function collapse
+* Wave packet
+
+==Notes==
+===Remarks===
+
+===Citations===
+
+== References==
+
+* {{cite web | title=Applications of Quantum Mechanics |publisher = Department of Quantum Nanoscience studies at TU Delft|website = Lecture notes for the course AP3303 | url=https://appquantmech.quantumtinkerer.tudelft.nl/ch21/ | ref= | date=2022}}
+*
+*
+*
+*
+*
+*
+*
+* Online copy (French) Online copy (English)
+*
+*
+*
+* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+* Online copy
+* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+* 
+*
+*
+*
+*
+*
+*
+
+== Further reading ==
+
+*
+*
+
+==External links==
+* Quantum Mechanics for Engineers
+* Spin wave functions NYU
+* Identical Particles Revisited, Michael Fowler
+* The Nature of Many-Electron Wavefunctions
+* Quantum Mechanics and Quantum Computation at BerkeleyX 
+* Einstein, ''The quantum theory of radiation''
+
+Category:Quantum states
+Category:Waves

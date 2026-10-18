@@ -1,0 +1,631 @@
+, 1927. ''pq'' − ''qp'' = ''h''/(2''πi''). Uncertainty principle of Heisenberg, 1927.]]
+ (1901–1976), who introduced Uncertainty Principle in 1927]]
+The '''uncertainty principle''', also known as '''Heisenberg's indeterminacy principle''', is a fundamental concept in quantum mechanics. It states that there is a limit to the precision with which certain pairs of physical properties, such as position and momentum, can be simultaneously known. In other words, the more accurately one property is measured, the less accurately the other property can be known.
+
+More formally, the uncertainty principle is any of a variety of mathematical inequalities asserting a fundamental limit to the product of the accuracy of certain related pairs of measurements on a quantum system, such as position, ''x'', and momentum, ''p''. Such paired-variables are known as complementary variables or canonically conjugate variables.
+
+First introduced in 1927 by German physicist Werner Heisenberg, the formal inequality relating the standard deviation of position ''σx'' and the standard deviation of momentum ''σp'' was derived by Earle Hesse Kennard later that year and by Hermann Weyl in 1928:
+{{Equation box 1
+|indent =:
+|equation =  \sigma_{x}\sigma_{p} \geq \frac{\hbar}{2}
+|cellpadding= 6
+|border
+|border colour = #0073CF
+|background colour=#F5FFFA}}
+where \hbar = \frac{h}{2\pi} is the reduced Planck constant.
+
+The quintessentially quantum mechanical uncertainty principle comes in many forms other than position–momentum. The energy–time relationship is widely used to relate quantum state lifetime to measured energy widths but its formal derivation is fraught with confusing issues about the nature of time. The basic principle has been extended in numerous directions; it must be considered in many kinds of fundamental physical measurements.
+
+==Position–momentum==
+
+ for illustrative purposes only; in quantum mechanics the wave function is generally complex.]]
+
+It is vital to illustrate how the principle applies to relatively intelligible physical situations since it is indiscernible on the macroscopic scales that humans experience. Two alternative frameworks for quantum physics offer different explanations for the uncertainty principle. The wave mechanics picture of the uncertainty principle is more visually intuitive, but the more abstract matrix mechanics picture formulates it in a way that generalizes more easily. The effect of Heisenberg uncertainty principle is significant only for motion of microscopic objects and is negligible for that of macroscopic objects. 
+
+Mathematically, in wave mechanics, the uncertainty relation between position and momentum arises because the expressions of the wavefunction in the two corresponding orthonormal bases in Hilbert space are Fourier transforms of one another (i.e., position and momentum are conjugate variables). A nonzero function and its Fourier transform cannot both be sharply localized at the same time. A similar tradeoff between the variances of Fourier conjugates arises in all systems underlain by Fourier analysis, for example in sound waves: A pure tone is a sharp spike at a single frequency, while its Fourier transform gives the shape of the sound wave in the time domain, which is a completely delocalized sine wave. In quantum mechanics, the two key points are that the position of the particle takes the form of a matter wave, and momentum is its Fourier conjugate, assured by the de Broglie relation {{math|''p''  ''ħk''}}, where  is the wavenumber.
+
+In matrix mechanics, the mathematical formulation of quantum mechanics, any pair of non-commuting self-adjoint operators representing observables are subject to similar uncertainty limits. An eigenstate of an observable represents the state of the wavefunction for a certain measurement value (the eigenvalue). For example, if a measurement of an observable  is performed, then the system is in a particular eigenstate  of that observable. However, the particular eigenstate of the observable  need not be an eigenstate of another observable : If so, then it does not have a unique associated measurement for it, as the system is not in an eigenstate of that observable.
+
+===Visualization===
+The uncertainty principle can be visualized using the position- and momentum-space wavefunctions for one spinless particle with mass in one dimension.
+
+The more localized the position-space wavefunction, the more likely the particle is to be found with the position coordinates in that region, and correspondingly the momentum-space wavefunction is less localized so the possible momentum components the particle could have are more widespread. Conversely, the more localized the momentum-space wavefunction, the more likely the particle is to be found with those values of momentum components in that region, and correspondingly the less localized the position-space wavefunction, so the position coordinates the particle could occupy are more widespread. These wavefunctions are Fourier transforms of each other: mathematically, the uncertainty principle expresses the relationship between conjugate variables in the transform.
+
+ of finding the particle with position ''x'' or momentum component ''p''.
+
+'''Top:''' If wavelength ''λ'' is unknown, so are momentum ''p'', wave-vector ''k'' and energy ''E'' (de Broglie relations). As the particle is more localized in position space, Δ''x'' is smaller than for Δ''px''.
+
+'''Bottom:''' If ''λ'' is known, so are ''p'', ''k'', and ''E''. As the particle is more localized in momentum space, Δ''p'' is smaller than for Δ''x''.]]
+
+===Wave mechanics interpretation===
+
+{{multiple image
+| align = right
+| direction = vertical
+| footer = Propagation of de Broglie waves in 1d—real part of the complex amplitude is blue, imaginary part is green. The probability (shown as the colour opacity) of finding the particle at a given point  is spread out like a waveform, there is no definite position of the particle. As the amplitude increases above zero the curvature reverses sign, so the amplitude begins to decrease again, and vice versa—the result is an alternating amplitude: a wave.
+| image1 = Propagation of a de broglie plane wave.svg
+| caption1 = Plane wave
+| width1 = 250
+| image2 = Propagation of a de broglie wavepacket.svg
+| caption2 = Wave packet
+| width2 = 250
+}}
+According to the de Broglie hypothesis, every object in the universe is associated with a wave. Thus every object, from an elementary particle to atoms, molecules and on up to planets and beyond are subject to the uncertainty principle.
+
+The time-independent wave function of a single-moded plane wave of wavenumber  or momentum  is
+
+One way to quantify the precision of the position and momentum is the standard deviation&nbsp;. Since |\psi(x)|^2 is a probability density function for position, we calculate its standard deviation.
+
+The precision of the position is improved, i.e. reduced , by using many plane waves, thereby weakening the precision of the momentum, i.e. increased . Another way of stating this is that  and  have an inverse relationship or are at least bounded from below. This is the uncertainty principle, the exact limit of which is the Kennard bound.
+
+===Proof of the Kennard inequality using wave mechanics===
+
+We are interested in the variances of position and momentum, defined as
+\sigma_x^2 = \int_{-\infty}^\infty x^2 \cdot |\psi(x)|^2 \, dx - \left( \int_{-\infty}^\infty x \cdot |\psi(x)|^2 \, dx \right)^2
+\sigma_p^2 = \int_{-\infty}^\infty p^2 \cdot |\varphi(p)|^2 \, dp - \left( \int_{-\infty}^\infty p \cdot |\varphi(p)|^2 \, dp \right)^2~.
+
+Without loss of generality, we will assume that the means vanish, which just amounts to a shift of the origin of our coordinates. (A more general proof that does not make this assumption is given below.) This gives us the simpler form
+\sigma_x^2 = \int_{-\infty}^\infty x^2 \cdot |\psi(x)|^2 \, dx
+\sigma_p^2 = \int_{-\infty}^\infty p^2 \cdot |\varphi(p)|^2 \, dp~.
+
+The function f(x) = x \cdot \psi(x) can be interpreted as a vector in a function space. We can define an inner product for a pair of functions ''u''(''x'') and ''v''(''x'') in this vector space:
+\langle u \mid v \rangle = \int_{-\infty}^\infty u^*(x) \cdot v(x) \, dx,
+where the asterisk denotes the complex conjugate.
+
+With this inner product defined, we note that the variance for position can be written as
+\sigma_x^2 = \int_{-\infty}^\infty |f(x)|^2 \, dx = \langle f \mid f \rangle ~.
+
+We can repeat this for momentum by interpreting the function \tilde{g}(p)=p \cdot \varphi(p) as a vector, but we can also take advantage of the fact that \psi(x) and \varphi(p) are Fourier transforms of each other. We evaluate the inverse Fourier transform through integration by parts:
+\begin{align}
+g(x) &= \frac{1}{\sqrt{2 \pi \hbar}} \cdot \int_{-\infty}^\infty \tilde{g}(p) \cdot e^{ipx/\hbar} \, dp \\
+&= \frac{1}{\sqrt{2 \pi \hbar}} \int_{-\infty}^\infty p \cdot \varphi(p) \cdot e^{ipx/\hbar} \, dp \\
+&= \frac{1}{2 \pi \hbar} \int_{-\infty}^\infty \left[ p \cdot \int_{-\infty}^\infty \psi(\chi) e^{-ip\chi/\hbar} \, d\chi \right] \cdot e^{ipx/\hbar} \, dp \\
+&= \frac{i}{2 \pi} \int_{-\infty}^\infty \left[ \cancel{ \left. \psi(\chi) e^{-ip\chi/\hbar} \right|_{-\infty}^\infty } - \int_{-\infty}^\infty \frac{d\psi(\chi)}{d\chi} e^{-ip\chi/\hbar} \, d\chi \right] \cdot e^{ipx/\hbar} \, dp \\
+&= -i \int_{-\infty}^\infty \frac{d\psi(\chi)}{d\chi} \left[ \frac{1}{2 \pi}\int_{-\infty}^\infty \, e^{ip(x - \chi)/\hbar} \, dp \right]\, d\chi\\
+&= -i \int_{-\infty}^\infty \frac{d\psi(\chi)}{d\chi} \left[ \delta\left(\frac{x - \chi }{\hbar}\right) \right]\, d\chi\\
+&= -i \hbar \int_{-\infty}^\infty \frac{d\psi(\chi)}{d\chi} \left[ \delta\left(x - \chi \right) \right]\, d\chi\\
+&= -i \hbar \frac{d\psi(x)}{dx} \\
+&= \left( -i \hbar \frac{d}{dx} \right) \cdot \psi(x) ,
+\end{align}
+where v=\frac{\hbar}{-ip}e^{-ip\chi/\hbar} in the integration by parts, the cancelled term vanishes because the wave function vanishes at both infinities and |e^{-ip\chi/\hbar}|=1, and then use the Dirac delta function which is valid because \dfrac{d\psi(\chi)}{d\chi} does not depend on ''p'' .
+
+The term -i \hbar \frac{d}{dx} is called the momentum operator in position space. Applying Plancherel's theorem, we see that the variance for momentum can be written as
+\sigma_p^2 = \int_{-\infty}^\infty |\tilde{g}(p)|^2 \, dp = \int_{-\infty}^\infty |g(x)|^2 \, dx = \langle g \mid g \rangle.
+
+The Cauchy–Schwarz inequality asserts that
+\sigma_x^2 \sigma_p^2 = \langle f \mid f \rangle \cdot \langle g \mid g \rangle \ge |\langle f \mid g \rangle|^2 ~.
+
+The modulus squared of any complex number ''z'' can be expressed as
+|z|^{2} = \Big(\text{Re}(z)\Big)^{2}+\Big(\text{Im}(z)\Big)^{2} \geq \Big(\text{Im}(z)\Big)^{2} = \left(\frac{z-z^{\ast}}{2i}\right)^{2}. 
+we let z=\langle f|g\rangle and z^{*}=\langle g\mid f\rangle and substitute these into the equation above to get
+|\langle f\mid g\rangle|^2 \geq \left(\frac{\langle f\mid g\rangle-\langle g \mid f \rangle}{2i}\right)^2 ~.
+
+All that remains is to evaluate these inner products.
+
+\begin{align}
+\langle f\mid g\rangle-\langle g\mid f\rangle  &= \int_{-\infty}^\infty \psi^*(x) \, x \cdot \left(-i \hbar \frac{d}{dx}\right) \, \psi(x) \, dx - \int_{-\infty}^\infty \psi^*(x) \, \left(-i \hbar \frac{d}{dx}\right) \cdot x \, \psi(x) \, dx \\
+&= i \hbar \cdot \int_{-\infty}^\infty \psi^*(x) \left[ \left(-x \cdot \frac{d\psi(x)}{dx}\right) + \frac{d(x \psi(x))}{dx} \right] \, dx \\
+&= i \hbar \cdot \int_{-\infty}^\infty \psi^*(x) \left[ \left(-x \cdot \frac{d\psi(x)}{dx}\right) + \psi(x) + \left(x \cdot \frac{d\psi(x)}{dx}\right)\right] \, dx \\
+&= i \hbar \cdot \int_{-\infty}^\infty \psi^*(x) \psi(x) \, dx \\
+&= i \hbar \cdot \int_{-\infty}^\infty |\psi(x)|^2 \, dx \\
+&= i \hbar
+\end{align}
+
+Plugging this into the above inequalities, we get
+\sigma_x^2 \sigma_p^2 \ge |\langle f \mid g \rangle|^2 \ge \left(\frac{\langle f\mid g\rangle-\langle g\mid f\rangle}{2i}\right)^2 = \left(\frac{i \hbar}{2 i}\right)^2 = \frac{\hbar^2}{4}
+and taking the square root
+\sigma_x \sigma_p \ge \frac{\hbar}{2}~.
+
+with equality if and only if ''p'' and ''x'' are linearly dependent. Note that the only ''physics'' involved in this proof was that \psi(x) and \varphi(p) are wave functions for position and momentum, which are Fourier transforms of each other. A similar result would hold for ''any'' pair of conjugate variables.
+
+===Matrix mechanics interpretation===
+
+In matrix mechanics, observables such as position and momentum are represented by self-adjoint operators. showed how to allow for correlation between the operators, giving a stronger inequality, known as the '''Robertson–Schrödinger uncertainty relation''', For any Hermitian operator \hat{A}, based upon the definition of variance, we have
+ \sigma_A^2 = \langle(\hat{A}-\langle \hat{A} \rangle)\Psi|(\hat{A}-\langle \hat{A} \rangle)\Psi\rangle. 
+we let |f\rangle=|(\hat{A}-\langle \hat{A} \rangle)\Psi\rangle  and thus
+ \sigma_A^2 = \langle f\mid f\rangle\, .
+
+Similarly, for any other Hermitian operator  \hat{B}  in the same state
+ \sigma_B^2 = \langle(\hat{B}-\langle \hat{B} \rangle)\Psi|(\hat{B}-\langle \hat{B} \rangle)\Psi\rangle = \langle g\mid g\rangle 
+for  |g\rangle=|(\hat{B}-\langle \hat{B} \rangle)\Psi \rangle.
+
+The product of the two deviations can thus be expressed as
+
+{{NumBlk|:| \sigma_A^2\sigma_B^2 = \langle f\mid f\rangle\langle g\mid g\rangle. |}}
+
+In order to relate the two vectors |f\rangle and |g\rangle, we use the Cauchy–Schwarz inequality which is defined as
+\langle f\mid f\rangle\langle g\mid g\rangle \geq |\langle f\mid g\rangle|^2, 
+and thus Equation () can be written as
+
+{{NumBlk|:|\sigma_A^2\sigma_B^2 \geq |\langle f\mid g\rangle|^2.|}}
+
+Since  \langle f\mid g\rangle is in general a complex number, we use the fact that the modulus squared of any complex number z is defined as |z|^2=zz^{*}, where z^{*} is the complex conjugate of z. The modulus squared can also be expressed as
+
+{{NumBlk|:| |z|^2 = \Big(\operatorname{Re}(z)\Big)^2+\Big(\operatorname{Im}(z)\Big)^2 = \Big(\frac{z+z^\ast}{2}\Big)^2 +\Big(\frac{z-z^\ast}{2i}\Big)^2. |}}
+
+we let z=\langle f\mid g\rangle and z^{*}=\langle g \mid f \rangle  and substitute these into the equation above to get
+
+{{NumBlk|:||\langle f\mid g\rangle|^2 = \bigg(\frac{\langle f\mid g\rangle+\langle g\mid f\rangle}{2}\bigg)^2 + \bigg(\frac{\langle f\mid g\rangle-\langle g\mid f\rangle}{2i}\bigg)^2 |}}
+
+The inner product \langle f\mid g\rangle  is written out explicitly as
+\langle f\mid g\rangle = \langle(\hat{A}-\langle \hat{A} \rangle)\Psi|(\hat{B}-\langle \hat{B} \rangle)\Psi\rangle,
+and using the fact that \hat{A} and \hat{B} are Hermitian operators, we find
+
+\begin{align}
+\langle f\mid g\rangle & = \langle\Psi|(\hat{A}-\langle \hat{A}\rangle)(\hat{B}-\langle \hat{B}\rangle)\Psi\rangle \\[4pt]
+& = \langle\Psi\mid(\hat{A}\hat{B}-\hat{A}\langle \hat{B}\rangle - \hat{B}\langle \hat{A}\rangle + \langle \hat{A}\rangle\langle \hat{B}\rangle)\Psi\rangle \\[4pt]
+& = \langle\Psi\mid\hat{A}\hat{B}\Psi\rangle-\langle\Psi\mid\hat{A}\langle \hat{B}\rangle\Psi\rangle
+-\langle\Psi\mid\hat{B}\langle \hat{A}\rangle\Psi\rangle+\langle\Psi\mid\langle \hat{A}\rangle\langle \hat{B}\rangle\Psi\rangle \\[4pt]
+& =\langle \hat{A}\hat{B}\rangle-\langle \hat{A}\rangle\langle \hat{B}\rangle-\langle \hat{A}\rangle\langle \hat{B}\rangle+\langle \hat{A}\rangle\langle \hat{B}\rangle \\[4pt]
+& =\langle \hat{A}\hat{B}\rangle-\langle \hat{A}\rangle\langle \hat{B}\rangle.
+\end{align}
+
+Similarly it can be shown that \langle g\mid f\rangle = \langle \hat{B}\hat{A}\rangle-\langle \hat{A}\rangle\langle \hat{B}\rangle.
+
+Thus, we have
+
+\langle f\mid g\rangle-\langle g\mid f\rangle = \langle \hat{A}\hat{B}\rangle-\langle \hat{A}\rangle\langle \hat{B}\rangle-\langle \hat{B}\hat{A}\rangle+\langle \hat{A}\rangle\langle \hat{B}\rangle = \langle [\hat{A},\hat{B}]\rangle
+
+and
+\langle f\mid g\rangle+\langle g\mid f\rangle = \langle \hat{A}\hat{B}\rangle-\langle \hat{A}\rangle\langle \hat{B}\rangle+\langle \hat{B}\hat{A}\rangle-\langle \hat{A}\rangle\langle \hat{B}\rangle = \langle \{\hat{A},\hat{B}\}\rangle -2\langle \hat{A}\rangle\langle \hat{B}\rangle. 
+
+We now substitute the above two equations above back into Eq. () and get
+|\langle f\mid g\rangle|^2=\Big(\frac{1}{2}\langle\{\hat{A},\hat{B}\}\rangle - \langle \hat{A} \rangle\langle \hat{B}\rangle\Big)^2 + \Big(\frac{1}{2i} \langle[\hat{A},\hat{B}]\rangle\Big)^{2}\, .
+
+Substituting the above into Equation () we get the Schrödinger uncertainty relation
+\sigma_A\sigma_B \geq \sqrt{\Big(\frac{1}{2}\langle\{\hat{A},\hat{B}\}\rangle - \langle \hat{A} \rangle\langle \hat{B}\rangle\Big)^2 + \Big(\frac{1}{2i} \langle[\hat{A},\hat{B}]\rangle\Big)^2}.
+
+This proof has an issue related to the domains of the operators involved. For the proof to make sense, the vector  \hat{B} |\Psi \rangle has to be in the domain of the unbounded operator  \hat{A}, which is not always the case. In fact, the Robertson uncertainty relation is false if \hat{A} is an angle variable and \hat{B} is the derivative with respect to this variable. In this example, the commutator is a nonzero constant—just as in the Heisenberg uncertainty relation—and yet there are states where the product of the uncertainties is zero. or by working with an exponentiated version of the canonical commutation relations.
+\langle f^* \star f \rangle =\int (f^* \star f) \, W(x,p) \, dx \, dp \ge 0 ~.
+
+Choosing f = a + bx + cp, we arrive at
+\langle f^* \star f \rangle =\begin{bmatrix}a^* & b^* & c^* \end{bmatrix}\begin{bmatrix}1 & \langle x \rangle & \langle p \rangle \\ \langle x \rangle & \langle x \star x \rangle & \langle x \star p \rangle \\ \langle p \rangle & \langle p \star x \rangle & \langle p \star p \rangle \end{bmatrix}\begin{bmatrix}a \\ b \\ c\end{bmatrix} \ge 0 ~.
+
+Since this positivity condition is true for ''all'' ''a'', ''b'', and ''c'', it follows that all the eigenvalues of the matrix are non-negative.
+
+The non-negative eigenvalues then imply a corresponding non-negativity condition on the determinant,
+\det\begin{bmatrix}1 & \langle x \rangle & \langle p \rangle \\ \langle x \rangle & \langle x \star x \rangle & \langle x \star p \rangle \\ \langle p \rangle & \langle p \star x \rangle & \langle p \star p \rangle \end{bmatrix}
+= \det\begin{bmatrix}1 & \langle x \rangle & \langle p \rangle \\ \langle x \rangle & \langle x^2 \rangle & \left\langle xp + \frac{i\hbar}{2} \right\rangle \\ \langle p \rangle & \left\langle xp - \frac{i\hbar}{2} \right\rangle & \langle p^2 \rangle \end{bmatrix}
+\ge 0~,
+or, explicitly, after algebraic manipulation,
+\sigma_x^2 \sigma_p^2 = \left( \langle x^2 \rangle - \langle x \rangle^2 \right)\left( \langle p^2 \rangle - \langle p \rangle^2 \right)\ge \left( \langle xp \rangle - \langle x \rangle \langle p \rangle \right)^2 + \frac{\hbar^2}{4} ~.
+
+===Examples===
+
+Since the Robertson and Schrödinger relations are for general operators, the relations can be applied to any two observables to obtain specific uncertainty relations. A few of the most common relations found in the literature are given below.
+* '''Position–linear momentum uncertainty relation''': for the position and linear momentum operators, the canonical commutation relation [\hat{x}, \hat{p}] = i\hbar implies the Kennard inequality from above: \sigma_x \sigma_p \geq \frac{\hbar}{2}.
+* '''Angular momentum uncertainty relation''': For two orthogonal components of the total angular momentum operator of an object: \sigma_{J_i} \sigma_{J_j} \geq \frac{\hbar}{2} \big|\langle J_k\rangle\big|, where ''i'', ''j'', ''k'' are distinct, and ''J''''i'' denotes angular momentum along the ''x''''i'' axis. This relation implies that unless all three components vanish together, only a single component of a system's angular momentum can be defined with arbitrary precision, normally the component parallel to an external (magnetic or electric) field. Moreover, for [J_x, J_y] = i \hbar \varepsilon_{xyz} J_z, a choice \hat{A} = J_x, \hat{B} = J_y, in angular momentum multiplets, ''ψ'' = |''j'', ''m''⟩, bounds the Casimir invariant (angular momentum squared, \langle J_x^2+ J_y^2 + J_z^2 \rangle) from below and thus yields useful constraints such as , and hence ''j'' ≥ ''m'', among others.
+
+* For the number of electrons in a superconductor and the phase of its Ginzburg–Landau order parameter  \Delta N \, \Delta \varphi \geq 1. 
+
+===Limitations===
+The derivation of the Robertson inequality for operators \hat{A} and \hat{B} requires \hat{A}\hat{B}\psi and \hat{B}\hat{A}\psi to be defined. There are quantum systems where these conditions are not valid.
+One example is a quantum particle on a ring, where the wave function depends on an angular variable \theta in the interval [0,2\pi]. Define "position" and "momentum" operators \hat{A} and \hat{B} by
+\hat{A}\psi(\theta)=\theta\psi(\theta),\quad \theta\in [0,2\pi],
+and
+\hat{B}\psi=-i\hbar\frac{d\psi}{d\theta},
+with periodic boundary conditions on \hat{B}. The definition of \hat{A} depends the \theta range from 0 to 2\pi. These operators satisfy the usual commutation relations for position and momentum operators, [\hat{A},\hat{B}]=i\hbar. More precisely, \hat{A}\hat{B}\psi-\hat{B}\hat{A}\psi=i\hbar\psi whenever both \hat{A}\hat{B}\psi and \hat{B}\hat{A}\psi are defined, and the space of such \psi is a dense subspace of the quantum Hilbert space.
+
+For the usual position and momentum operators \hat{X} and \hat{P} on the real line, no such counterexamples can occur. As long as \sigma_x and \sigma_p are defined in the state \psi, the Heisenberg uncertainty principle holds, even if \psi fails to be in the domain of \hat{X}\hat{P} or of \hat{P}\hat{X}.
+
+\sigma_A^2 \sigma_B^2 \geq \left[\sum_k p_k L(\varrho_k)\right]^2,
+
+where the function in the bound is defined
+
+L(\varrho) = \sqrt{\left | \frac{1}{2}\operatorname{tr}(\rho\{A,B\}) - \operatorname{tr}(\rho A)\operatorname{tr}(\rho B)\right |^2 +\left | \frac{1}{2i} \operatorname{tr}(\rho[A,B])\right | ^2}.
+
+The above relation very often has a bound larger than that of the original Robertson–Schrödinger uncertainty relation. Thus, we need to calculate the bound of the Robertson–Schrödinger uncertainty for the mixed components of the quantum state rather than for the quantum state, and compute an average of their square roots. The following expression is stronger than the Robertson–Schrödinger uncertainty relation
+
+\sigma_A^2 \sigma_B^2 \geq \left[\max_{p_k,\varrho_k} \sum_k p_k L(\varrho_k)\right]^2,
+
+where on the right-hand side there is a concave roof over the decompositions of the density matrix.
+The improved relation above is saturated by all single-qubit quantum states.
+
+A simpler inequality follows without a convex roof
+
+\sigma_A^2 F_Q[\varrho,B] \geq \vert \langle i[A,B]\rangle\vert^2,
+
+which is stronger than the Heisenberg uncertainty relation, since for the quantum Fisher information we have
+
+F_Q[\varrho,B]\le 4 \sigma_B,
+
+while for pure states the equality holds.
+
+===The Maccone–Pati uncertainty relations===
+The Robertson–Schrödinger uncertainty relation can be trivial if the state of the system is chosen to be eigenstate of one of the observable. The stronger uncertainty relations proved by Lorenzo Maccone and Arun K. Pati give non-trivial bounds on the sum of the variances for two incompatible observables. (Earlier works on uncertainty relations formulated as the sum of variances include, e.g., Ref. due to Yichen Huang.) For two non-commuting observables A and B the first stronger uncertainty relation is given by
+ \sigma_{A}^2 + \sigma_{ B}^2 \ge \pm i \langle \Psi\mid [A, B]|\Psi \rangle + \mid \langle \Psi\mid(A \pm i B)\mid{\bar \Psi} \rangle|^2, 
+where  \sigma_{A}^2 = \langle \Psi |A^2 |\Psi \rangle - \langle \Psi \mid A \mid \Psi \rangle^2 ,  \sigma_{B}^2 = \langle \Psi |B^2 |\Psi \rangle - \langle \Psi \mid B \mid\Psi \rangle^2 , |{\bar \Psi} \rangle  is a normalized vector that is orthogonal to the state of the system |\Psi \rangle  and one should choose the sign of \pm i \langle \Psi\mid[A, B]\mid\Psi \rangle  to make this real quantity a positive number.
+
+The second stronger uncertainty relation is given by
+ \sigma_A^2 + \sigma_B^2 \ge \frac{1}{2}| \langle {\bar \Psi}_{A+B} \mid(A + B)\mid \Psi \rangle|^2 
+where | {\bar \Psi}_{A+B} \rangle  is a state orthogonal to  |\Psi \rangle .
+The form of | {\bar \Psi}_{A+B} \rangle  implies that the right-hand side of the new uncertainty relation is nonzero unless | \Psi\rangle  is an eigenstate of (A + B). One may note that |\Psi \rangle  can be an eigenstate of ( A+ B) without being an eigenstate of either  A or  B . However, when  |\Psi \rangle  is an eigenstate of one of the two observables the Heisenberg–Schrödinger uncertainty relation becomes trivial. But the lower bound in the new relation is nonzero unless  |\Psi \rangle  is an eigenstate of both.
+
+== Energy–time ==
+
+An energy–time uncertainty relation like
+ \Delta E \Delta t \gtrsim \hbar/2, has a long, controversial history; the meaning of \Delta t and \Delta E varies and different formulations have different arenas of validity. However, one well-known application is both well established the connection between the life-time of a resonance state, \tau_{\sqrt{1/2}} and its energy width \Delta E:
+\tau_{\sqrt{1/2}} \Delta E = \pi\hbar/4.
+In particle-physics, widths from experimental fits to the Breit–Wigner energy distribution are used to characterize the lifetime of quasi-stable or decaying states.
+
+An informal, heuristic meaning of the principle is the following: A state that only exists for a short time cannot have a definite energy. To have a definite energy, the frequency of the state must be defined accurately, and this requires the state to hang around for many cycles, the reciprocal of the required accuracy. For example, in spectroscopy, excited states have a finite lifetime. By the time–energy uncertainty principle, they do not have a definite energy, and, each time they decay, the energy they release is slightly different. The average energy of the outgoing photon has a peak at the theoretical energy of the state, but the distribution has a finite width called the ''natural linewidth''. Fast-decaying states have a broad linewidth, while slow-decaying states have a narrow linewidth. The same linewidth effect also makes it difficult to specify the rest mass of unstable, fast-decaying particles in particle physics. The faster the particle decays (the shorter its lifetime), the less certain is its mass (the larger the particle's width).
+
+===Time in quantum mechanics===
+The concept of "time" in quantum mechanics offers many challenges. These factors combine to make energy–time uncertainty principles controversial.
+
+Three notions of "time" can be distinguished: However, Yakir Aharonov and David Bohm
+
+Observable time, measuring time between two events, remains a challenge for quantum theories; some progress has been made using  positive operator-valued measure concepts.
+Examples:
+* The time a free quantum particle passes a point in space is more uncertain as the energy of the state is more precisely controlled: \Delta T = \hbar/2\Delta E. Since the time spread is related to the particle position spread and the energy spread is related to the momentum spread, this relation is directly related to position–momentum uncertainty.
+H_x+H_\xi \ge \log(e/2)
+
+===Signal processing ===
+In the context of time–frequency analysis uncertainty principles are referred to as the '''Gabor limit''', after Dennis Gabor, or sometimes the ''Heisenberg–Gabor limit''. The basic result, which follows from "Benedicks's theorem", below, is that a function cannot be both time limited and band limited (a function and its Fourier transform cannot both have bounded domain)—see bandlimited versus timelimited. More accurately, the ''time-bandwidth'' or ''duration-bandwidth'' product satisfies
+\sigma_{t} \sigma_{f} \ge \frac{1}{4\pi} \approx 0.08 \text{ cycles},
+where \sigma_{t} and \sigma_{f} are the standard deviations of the time and frequency energy concentrations respectively. The minimum is attained for a Gaussian-shaped pulse (Gabor wavelet) [For the un-squared Gaussian (i.e. signal amplitude) and its un-squared Fourier transform magnitude \sigma_t\sigma_f=1/2\pi; squaring reduces each \sigma by a factor \sqrt 2.] Another common measure is the product of the time and frequency full width at half maximum (of the power/energy), which for the Gaussian equals 2 \ln 2 / \pi \approx 0.44 (see bandwidth-limited pulse).
+
+Stated differently, one cannot simultaneously sharply localize a signal  in both the time domain and frequency domain.
+
+When applied to filters, the result implies that one cannot simultaneously achieve a high temporal resolution and high frequency resolution at the same time; a concrete example are the resolution issues of the short-time Fourier transform—if one uses a wide window, one achieves good frequency resolution at the cost of temporal resolution, while a narrow window has the opposite trade-off.
+
+Alternate theorems give more precise quantitative results, and, in time–frequency analysis, rather than interpreting the (1-dimensional) time and frequency domains separately, one instead interprets the limit as a lower limit on the support of a function in the (2-dimensional) time–frequency plane. In practice, the Gabor limit limits the ''simultaneous'' time–frequency resolution one can achieve without interference; it is possible to achieve higher resolution, but at the cost of different components of the signal interfering with each other.
+
+As a result, in order to analyze signals where the transients are important, the wavelet transform is often used instead of the Fourier.
+
+===Discrete Fourier transform===
+Let \left \{ \mathbf{ x_n } \right \} := x_0, x_1, \ldots, x_{N-1} be a sequence of ''N'' complex numbers and \left \{ \mathbf{X_k} \right \} := X_0, X_1, \ldots, X_{N-1}, be its  discrete Fourier transform.
+
+Denote by \|x\|_0 the number of non-zero elements in the time sequence x_0,x_1,\ldots,x_{N-1} and by \|X\|_0 the number of non-zero elements in the frequency sequence X_0,X_1,\ldots,X_{N-1}. Then,
+\|x\|_0 \cdot \|X\|_0 \ge N.
+
+This inequality is sharp, with equality achieved when ''x'' or ''X'' is a Dirac mass, or more generally when ''x'' is a nonzero multiple of a Dirac comb supported on a subgroup of the integers modulo ''N'' (in which case ''X'' is also a Dirac comb supported on a complementary subgroup, and vice versa).
+
+More generally, if ''T'' and ''W'' are subsets of the integers modulo ''N'', let L_T,R_W : \ell^2(\mathbb Z/N\mathbb Z)\to\ell^2(\mathbb Z/N\mathbb Z) denote the time-limiting operator and band-limiting operators, respectively. Then
+\|L_TR_W\|^2 \le \frac{|T||W|}{|G|} 
+where the norm is the operator norm of operators on the Hilbert space \ell^2(\mathbb Z/N\mathbb Z) of functions on the integers modulo ''N''. This inequality has implications for signal reconstruction.
+
+When ''N'' is a prime number, a stronger inequality holds:
+\|x\|_0 + \|X\|_0 \ge N + 1.
+Discovered by Terence Tao, this inequality is also sharp.
+
+=== Benedicks's theorem ===
+Amrein–Berthier and Benedicks's theorem intuitively says that the set of points where  is non-zero and the set of points where  is non-zero cannot both be small.
+
+Specifically, it is impossible for a function  in  and its Fourier transform  to both be supported on sets of finite Lebesgue measure. A more quantitative version is
+\|f\|_{L^2(\mathbf{R}^d)}\leq Ce^{C|S||\Sigma|} \bigl(\|f\|_{L^2(S^c)} + \| \hat{f} \|_{L^2(\Sigma^c)} \bigr) ~.
+
+One expects that the factor {{math|''Ce''''C''}} may be replaced by {{math|''Ce''''C''()1/''d''}}, which is only known if either  or  is convex.
+
+=== Hardy's uncertainty principle ===
+The mathematician G. H. Hardy formulated the following uncertainty principle: it is not possible for  and  to both be "very rapidly decreasing". Specifically, if  in L^2(\mathbb{R}) is such that
+|f(x)|\leq C(1+|x|)^Ne^{-a\pi x^2}
+and
+|\hat{f}(\xi)|\leq C(1+|\xi|)^Ne^{-b\pi \xi^2} (C>0,N an integer),
+then, if , while if , then there is a polynomial  of degree  such that
+f(x)=P(x)e^{-a\pi x^2}. 
+
+This was later improved as follows: if f \in L^2(\mathbb{R}^d) is such that
+\int_{\mathbb{R}^d}\int_{\mathbb{R}^d}|f(x)||\hat{f}(\xi)|\frac{e^{\pi|\langle x,\xi\rangle|}}{(1+|x|+|\xi|)^N} \, dx \, d\xi < +\infty ~,
+then
+f(x)=P(x)e^{-\pi\langle Ax,x\rangle} ~,
+where  is a polynomial of degree  and  is a real  positive definite matrix.
+
+This result was stated in Beurling's complete works without proof and proved in Hörmander (the case d=1,N=0) and Bonami, Demange, and Jaming for the general case. Note that Hörmander–Beurling's version implies the case  in Hardy's Theorem while the version by Bonami–Demange–Jaming covers the full strength of Hardy's Theorem. A different proof of Beurling's theorem based on Liouville's theorem appeared in ref.
+
+A full description of the case  as well as the following extension to Schwartz class distributions appears in ref.
+
+{{math theorem| If a tempered distribution f\in\mathcal{S}'(\R^d) is such that
+e^{\pi|x|^2}f\in\mathcal{S} '(\R^d)
+and
+e^{\pi|\xi|^2}\hat f\in\mathcal{S}'(\R^d) ~,
+then
+f(x)=P(x)e^{-\pi\langle Ax,x\rangle} ~,
+for some convenient polynomial  and real positive definite matrix  of type .}}
+
+==Additional uncertainty relations==
+
+===Heisenberg limit===
+In quantum metrology, and especially interferometry, the '''Heisenberg limit''' is the optimal rate at which the accuracy of a measurement can scale with the energy used in the measurement. Typically, this is the measurement of a phase (applied to one arm of a beam-splitter) and the energy is given by the number of photons used in an interferometer. Although some claim to have broken the Heisenberg limit, this reflects disagreement on the definition of the scaling resource. Suitably defined, the Heisenberg limit is a consequence of the basic principles of quantum mechanics and cannot be beaten, although the weak Heisenberg limit can be beaten.
+
+===Systematic and statistical errors===
+
+The inequalities above focus on the ''statistical imprecision'' of observables as quantified by the standard deviation \sigma. Heisenberg's original version, however, was dealing with the ''systematic error'', a disturbance of the quantum system produced by the measuring apparatus, i.e., an observer effect.
+
+If we let \varepsilon_A represent the error (i.e., inaccuracy) of a measurement of an observable ''A'' and \eta_B the disturbance produced on a subsequent measurement of the conjugate variable ''B'' by the former measurement of ''A'', then the inequality proposed by Masanao Ozawa − encompassing both systematic and statistical errors - holds:
+Also, it must be stressed that the Heisenberg formulation is not taking into account the intrinsic statistical errors \sigma_A and \sigma_B. There is increasing experimental evidence that the total quantum uncertainty cannot be described by the Heisenberg term alone, but requires the presence of all the three terms of the Ozawa inequality.
+
+Using the same formalism, ''unsharp'' or ''weak''.
+
+It is also possible to derive an uncertainty relation that, as the Ozawa's one, combines both the statistical and systematic error components, but keeps a form very close to the Heisenberg original inequality. By adding Robertson established an uncertainty relation similar to the Heisenberg original one, but valid both for ''systematic and statistical errors'':
+{{Equation box 1
+|indent =:
+|equation =  \bar \varepsilon_A \, \bar \eta_B \, \ge \, \left| \Bigl\langle \bigl[\hat{A},\hat{B}\bigr] \Bigr\rangle \right|
+|cellpadding= 6
+|border
+|border colour = #0073CF
+|background colour=#F5FFFA}}
+
+===Quantum entropic uncertainty principle===
+For many distributions, the standard deviation is not a particularly natural way of quantifying the structure. For example, uncertainty relations in which one of the observables is an angle has little physical meaning for fluctuations larger than one period. Other examples include highly bimodal distributions, or unimodal distributions with divergent variance.
+
+A solution that overcomes these issues is an uncertainty based on entropic uncertainty instead of the product of variances. While formulating the many-worlds interpretation of quantum mechanics in 1957, Hugh Everett III conjectured a stronger extension of the uncertainty principle based on entropic certainty. This conjecture, also studied by I. I. Hirschman and proven in 1975 by W. Beckner and by Iwo Bialynicki-Birula and Jerzy Mycielski is that, for two normalized, dimensionless Fourier transform pairs  and  where
+:f(a) = \int_{-\infty}^\infty g(b)\ e^{2\pi i a b}\,db and   \,\,\,g(b) = \int_{-\infty}^\infty f(a)\ e^{- 2\pi i a b}\,da
+the Shannon information entropies
+H_a = -\int_{-\infty}^\infty |f(a)|^2 \log |f(a)|^2\,da,
+and
+H_b = -\int_{-\infty}^\infty |g(b)|^2 \log |g(b)|^2\,db
+are subject to the following constraint,
+
+where the logarithms may be in any base.
+
+The probability distribution functions associated with the position wave function  and the momentum wave function  have dimensions of inverse length and momentum respectively, but the entropies may be rendered dimensionless by
+H_x = - \int |\psi(x)|^2 \ln \left(x_0 \, |\psi(x)|^2 \right) dx =-\left\langle \ln \left(x_0 \, \left|\psi(x)\right|^2 \right) \right\rangle
+H_p = - \int |\varphi(p)|^2 \ln (p_0\,|\varphi(p)|^2) \,dp =-\left\langle \ln (p_0\left|\varphi(p)\right|^2 ) \right\rangle
+where  and  are some arbitrarily chosen length and momentum respectively, which render the arguments of the logarithms dimensionless. Note that the entropies will be functions of these chosen parameters. Due to the Fourier transform relation between the position wave function  and the momentum wavefunction , the above constraint can be written for the corresponding entropies as
+{{Equation box 1
+|indent =:
+|equation = H_x + H_p \ge \log \left(\frac{e\,h}{2\,x_0\,p_0}\right)
+|cellpadding= 6
+|border
+|border colour = #0073CF
+|background colour=#F5FFFA}}
+where  is the Planck constant.
+
+Depending on one's choice of the  product, the expression may be written in many ways. If  is chosen to be , then
+H_x + H_p \ge \log \left(\frac{e}{2}\right)
+
+If, instead,  is chosen to be \hbar, then
+H_x + H_p \ge \log (e\,\pi)
+
+If  and  are chosen to be unity in whatever system of units are being used, then
+H_x + H_p \ge \log \left(\frac{e\,h }{2}\right)
+where  is interpreted as a dimensionless number equal to the value of the Planck constant in the chosen system of units. Note that these inequalities can be extended to multimode quantum states, or wavefunctions in more than one spatial dimension.
+
+The quantum entropic uncertainty principle is more restrictive than the Heisenberg uncertainty principle. From the inverse logarithmic Sobolev inequalities
+H_x \le \frac{1}{2} \log ( 2e\pi \sigma_x^2 / x_0^2 )~,
+H_p \le \frac{1}{2} \log ( 2e\pi \sigma_p^2 /p_0^2 )~,
+(equivalently, from the fact that normal distributions maximize the entropy of all such with a given variance), it readily follows that this entropic uncertainty principle is ''stronger than the one based on standard deviations'', because
+\sigma_x \sigma_p \ge \frac{\hbar}{2} \exp\left(H_x + H_p - \log \left(\frac{e\,h}{2\,x_0\,p_0}\right)\right) \ge \frac{\hbar}{2}~.
+
+In other words, the Heisenberg uncertainty principle, is a consequence of the quantum entropic uncertainty principle, but not vice versa. A few remarks on these inequalities. First, the choice of base e is a matter of popular convention in physics. The logarithm can alternatively be in any base, provided that it be consistent on both sides of the inequality. Second, recall the Shannon entropy has been used, ''not'' the quantum von Neumann entropy. Finally, the normal distribution saturates the inequality, and it is the only distribution with this property, because it is the maximum entropy probability distribution among those with fixed variance (cf. here for proof).
+
+{| class="toccolours collapsible collapsed" width="70%" style="text-align:left"
+!Entropic uncertainty of the normal distribution
+|-
+|We demonstrate this method on the ground state of the QHO, which as discussed above saturates the usual uncertainty based on standard deviations. The length scale can be set to whatever is convenient, so we assign
+x_0 = \sqrt{\frac{\hbar}{2m\omega}}
+\begin{align}
+\psi(x) &= \left(\frac{m \omega}{\pi \hbar}\right)^{1/4} \exp{\left( -\frac{m \omega x^2}{2\hbar}\right)} \\
+&= \left(\frac{1}{2\pi x_0^2}\right)^{1/4} \exp{\left( -\frac{x^2}{4x_0^2}\right)}
+\end{align}
+
+The probability distribution is the normal distribution
+|\psi(x)|^2 = \frac{1}{x_0 \sqrt{2\pi}} \exp{\left( -\frac{x^2}{2x_0^2}\right)}
+with Shannon entropy
+\begin{align}
+H_x &= - \int |\psi(x)|^2 \ln (|\psi(x)|^2 \cdot x_0 ) \,dx \\
+&= -\frac{1}{x_0 \sqrt{2\pi}} \int_{-\infty}^\infty \exp{\left( -\frac{x^2}{2x_0^2}\right)} \ln \left[\frac{1}{\sqrt{2\pi}} \exp{\left( -\frac{x^2}{2x_0^2}\right)}\right] \, dx \\
+&= \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty \exp{\left( -\frac{u^2}{2}\right)} \left[\ln(\sqrt{2\pi}) + \frac{u^2}{2}\right] \, du\\
+&= \ln(\sqrt{2\pi}) + \frac{1}{2}.
+\end{align}
+
+A completely analogous calculation proceeds for the momentum distribution. Choosing a standard momentum of p_0=\hbar/x_0:
+\varphi(p) = \left(\frac{2 x_0^2}{\pi \hbar^2}\right)^{1/4} \exp{\left( -\frac{x_0^2 p^2}{\hbar^2}\right)}
+|\varphi(p)|^2 = \sqrt{\frac{2 x_0^2}{\pi \hbar^2}} \exp{\left( -\frac{2x_0^2 p^2}{\hbar^2}\right)}
+\begin{align}
+H_p &= - \int |\varphi(p)|^2 \ln (|\varphi(p)|^2 \cdot \hbar / x_0 ) \,dp \\
+&= -\sqrt{\frac{2 x_0^2}{\pi \hbar^2}} \int_{-\infty}^\infty \exp{\left( -\frac{2x_0^2 p^2}{\hbar^2}\right)} \ln \left[\sqrt{\frac{2}{\pi}} \exp{\left( -\frac{2x_0^2 p^2}{\hbar^2}\right)}\right] \, dp \\
+&= \sqrt{\frac{2}{\pi}} \int_{-\infty}^\infty \exp{\left( -2v^2\right)} \left[\ln\left(\sqrt{\frac{\pi}{2}}\right) + 2v^2 \right] \, dv \\
+&= \ln\left(\sqrt{\frac{\pi}{2}}\right) + \frac{1}{2}.
+\end{align}
+
+The entropic uncertainty is therefore the limiting value
+\begin{align}
+H_x+H_p &= \ln(\sqrt{2\pi}) + \frac{1}{2} + \ln\left(\sqrt{\frac{\pi}{2}}\right) + \frac{1}{2}\\
+&= 1 + \ln \pi = \ln(e\pi).
+\end{align}
+|}
+
+A measurement apparatus will have a finite resolution set by the discretization of its possible outputs into bins, with the probability of lying within one of the bins given by the Born rule. We will consider the most common experimental situation, in which the bins are of uniform size. Let ''δx'' be a measure of the spatial resolution. We take the zeroth bin to be centered near the origin, with possibly some small constant offset ''c''. The probability of lying within the jth interval of width ''δx'' is
+\operatorname P[x_j]= \int_{(j-1/2)\delta x-c}^{(j+1/2)\delta x-c}| \psi(x)|^2 \, dx
+
+To account for this discretization, we can define the Shannon entropy of the wave function for a given measurement apparatus as
+H_x=-\sum_{j=-\infty}^\infty \operatorname P[x_j] \ln \operatorname P[x_j].
+
+Under the above definition, the entropic uncertainty relation is
+H_x + H_p > \ln\left(\frac{e}{2}\right)-\ln\left(\frac{\delta x \delta p}{h} \right).
+
+Here we note that  is a typical infinitesimal phase space volume used in the calculation of a partition function. The inequality is also strict and not saturated. Efforts to improve this bound are an active area of research.
+
+{| class="toccolours collapsible collapsed" width="70%" style="text-align:left"
+!Normal distribution example
+|-
+|We demonstrate this method first on the ground state of the QHO, which as discussed above saturates the usual uncertainty based on standard deviations.
+
+\psi(x)=\left(\frac{m \omega}{\pi \hbar}\right)^{1/4} \exp{\left( -\frac{m \omega x^2}{2\hbar}\right)}
+
+The probability of lying within one of these bins can be expressed in terms of the error function.
+
+\begin{align}
+\operatorname P[x_j] &= \sqrt{\frac{m \omega}{\pi \hbar}} \int_{(j-1/2)\delta x}^{(j+1/2)\delta x} \exp\left( -\frac{m \omega x^2}{\hbar}\right) \, dx \\
+&= \sqrt{\frac{1}{\pi}} \int_{(j-1/2)\delta x\sqrt{m \omega / \hbar}}^{(j+1/2)\delta x\sqrt{m \omega / \hbar}} e^{u^2} \, du \\
+&= \frac{1}{2} \left[ \operatorname{erf} \left( \left(j+\frac{1}{2}\right)\delta x \cdot \sqrt{\frac{m \omega}{\hbar}}\right)- \operatorname {erf} \left( \left(j-\frac{1}{2}\right)\delta x \cdot \sqrt{\frac{m \omega}{\hbar}}\right) \right]
+\end{align}
+
+The momentum probabilities are completely analogous.
+
+\operatorname P[p_j] = \frac{1}{2} \left[ \operatorname{erf} \left( \left(j+\frac{1}{2}\right)\delta p \cdot \frac{1}{\sqrt{\hbar m \omega}}\right)- \operatorname{erf} \left( \left(j-\frac{1}{2}\right)\delta x \cdot \frac{1}{\sqrt{\hbar m \omega}}\right) \right]
+
+For simplicity, we will set the resolutions to
+\delta x = \sqrt{\frac{h}{m \omega}}
+\delta p = \sqrt{h m \omega}
+so that the probabilities reduce to
+\operatorname P[x_j] = \operatorname P[p_j] = \frac{1}{2} \left[ \operatorname {erf} \left( \left(j+\frac{1}{2}\right) \sqrt{2\pi} \right)- \operatorname {erf} \left( \left(j-\frac{1}{2}\right) \sqrt{2\pi} \right) \right]
+
+The Shannon entropy can be evaluated numerically.
+\begin{align}
+H_x = H_p &= -\sum_{j=-\infty}^\infty \operatorname P[x_j] \ln \operatorname P[x_j] \\
+&= -\sum_{j=-\infty}^\infty \frac{1}{2} \left[ \operatorname {erf} \left( \left(j+\frac{1}{2}\right) \sqrt{2\pi} \right)- \operatorname {erf} \left( \left(j-\frac{1}{2}\right) \sqrt{2\pi} \right) \right] \ln \frac{1}{2} \left[ \operatorname {erf} \left( \left(j+\frac{1}{2}\right) \sqrt{2\pi} \right)- \operatorname {erf} \left( \left(j-\frac{1}{2}\right) \sqrt{2\pi} \right) \right] \\
+&\approx 0.3226
+\end{align}
+
+The entropic uncertainty is indeed larger than the limiting value.
+H_x + H_p \approx 0.3226 + 0.3226 = 0.6452 >\ln\left(\frac{e}{2}\right)-\ln 1 \approx 0.3069
+
+Note that despite being in the optimal case, the inequality is not saturated.
+|}
+
+{| class="toccolours collapsible collapsed" width="70%" style="text-align:left"
+!Sinc function example
+|-
+|An example of a unimodal distribution with infinite variance is the sinc function. If the wave function is the correctly normalized uniform distribution,
+\psi(x) = \begin{cases}
+{1}/{\sqrt{2a}} & \text{for } |x| \le a, \\[8pt]
+0 & \text{for } |x|>a
+\end{cases}
+then its Fourier transform is the sinc function,
+\varphi(p)=\sqrt{\frac{a}{\pi \hbar}} \cdot \operatorname{sinc}\left(\frac{a p}{\hbar}\right)
+which yields infinite momentum variance despite having a centralized shape. The entropic uncertainty, on the other hand, is finite. Suppose for simplicity that the spatial resolution is just a two-bin measurement, ''δx''&nbsp;=&nbsp;''a'', and that the momentum resolution is ''δp''&nbsp;=&nbsp;''h''/''a''.
+
+Partitioning the uniform spatial distribution into two equal bins is straightforward. We set the offset ''c''&nbsp;=&nbsp;1/2 so that the two bins span the distribution.
+\operatorname P[x_0] = \int_{-a}^0 \frac{1}{2a} \, dx = \frac{1}{2}
+\operatorname P[x_1] = \int_0^a \frac{1}{2a} \, dx = \frac{1}{2}
+H_x = -\sum_{j=0}^{1} \operatorname P[x_j] \ln \operatorname P[x_j] = -\frac{1}{2} \ln \frac{1}{2} - \frac{1}{2} \ln \frac{1}{2} = \ln 2
+
+The bins for momentum must cover the entire real line. As done with the spatial distribution, we could apply an offset. It turns out, however, that the Shannon entropy is minimized when the zeroth bin for momentum is centered at the origin. (The reader is encouraged to try adding an offset.) The probability of lying within an arbitrary momentum bin can be expressed in terms of the sine integral.
+
+\begin{align}
+\operatorname P[p_j] &= \frac{a}{\pi \hbar} \int_{(j-1/2)\delta p}^{(j+1/2)\delta p} \operatorname{sinc}^2\left(\frac{a p}{\hbar}\right) \, dp \\
+&= \frac{1}{\pi} \int_{2\pi (j-1/2)}^{2\pi (j+1/2)} \operatorname{sinc}^2(u) \, du \\
+&= \frac{1}{\pi} \left[ \operatorname {Si} ((4j+2)\pi)- \operatorname {Si} ((4j-2)\pi) \right]
+\end{align}
+
+The Shannon entropy can be evaluated numerically.
+H_p = -\sum_{j=-\infty}^\infty \operatorname P[p_j] \ln \operatorname P[p_j] = -\operatorname P[p_0] \ln \operatorname P[p_0]-2 \cdot \sum_{j=1}^{\infty} \operatorname P[p_j] \ln \operatorname P[p_j] \approx 0.53
+
+The entropic uncertainty is indeed larger than the limiting value.
+H_x+H_p \approx 0.69 + 0.53 = 1.22 >\ln\left(\frac{e}{2}\right)-\ln 1 \approx 0.31
+|}
+
+===Uncertainty relation with three angular momentum components===
+
+For a particle of total angular momentum j the following uncertainty relation holds
+
+\sigma_{J_x}^2+\sigma_{J_y}^2+\sigma_{J_z}^2\ge j,
+
+where J_l are angular momentum components. The relation can be derived from
+
+\langle J_x^2+J_y^2+J_z^2\rangle = j(j+1),
+
+and
+
+\langle J_x\rangle^2+\langle J_y\rangle^2+\langle J_z\rangle^2\le j.
+
+The relation can be strengthened as
+
+\sigma_{J_x}^2+\sigma_{J_y}^2+F_Q[\varrho,J_z]/4\ge j,
+
+where F_Q[\varrho,J_z] is the quantum Fisher information.
+
+== History ==
+
+In 1925 Heisenberg published the ''Umdeutung'' (reinterpretation) paper where he showed that central aspect of quantum theory was the non-commutativity: the theory implied that the relative order of position and momentum measurement was significant. Working with Max Born and Pascual Jordan, he continued to develop matrix mechanics, that would become the first modern quantum mechanics formulation. 
+
+In March 1926, working in Bohr's institute, Heisenberg realized that the non-commutativity implies the uncertainty principle. Writing to Wolfgang Pauli in February 1927, he worked out the basic concepts.
+
+In his celebrated 1927 paper "" ("On the Perceptual Content of Quantum Theoretical Kinematics and Mechanics"), Heisenberg established this expression as the minimum amount of unavoidable momentum disturbance caused by any position measurement, he refined his principle:
+{{NumBlk|:|\Delta x \, \Delta p\gtrsim h|}}
+
+Later work broadened the concept. Any two variables that do not commute cannot be measured simultaneously—the more precisely one is known, the less precisely the other can be known. Heisenberg wrote:It can be expressed in its simplest form as follows: One can never know with perfect accuracy both of those two important factors which determine the movement of one of the smallest particles—its position and its velocity. It is impossible to determine accurately ''both'' the position and the direction and speed of a particle ''at the same instant''.
+
+Kennard
+
+=== Heisenberg's microscope ===
+ shows that the electron position can be resolved only up to an uncertainty Δ''x'' that depends on ''θ'' and the wavelength ''λ'' of the incoming light.]]
+
+The principle is quite counter-intuitive, so the early students of quantum theory had to be reassured that naive measurements to violate it were bound always to be unworkable. One way in which Heisenberg originally illustrated the intrinsic impossibility of violating the uncertainty principle is by using the observer effect of an imaginary microscope as a measuring device.
+* Problem 1 – If the photon has a short wavelength, and therefore, a large momentum, the position can be measured accurately. But the photon scatters in a random direction, transferring a large and uncertain amount of momentum to the electron. If the photon has a long wavelength and low momentum, the collision does not disturb the electron's momentum very much, but the scattering will reveal its position only vaguely.
+* Problem 2 – If a large aperture is used for the microscope, the electron's location can be well resolved (see Rayleigh criterion); but by the principle of conservation of momentum, the transverse momentum of the incoming photon affects the electron's beamline momentum and hence, the new momentum of the electron resolves poorly. If a small aperture is used, the accuracy of both resolutions is the other way around.
+
+The combination of these trade-offs implies that no matter what photon wavelength and aperture size are used, the product of the uncertainty in measured position and measured momentum is greater than or equal to a lower limit, which is (up to a small numerical factor) equal to the Planck constant. Heisenberg did not care to formulate the uncertainty principle as an exact limit, and preferred to use it instead, as a heuristic quantitative statement, correct up to small numerical factors, which makes the radically new noncommutativity of quantum mechanics inevitable.
+
+===Intrinsic quantum uncertainty===
+
+Historically, the uncertainty principle has been confused with a related effect in physics, called the observer effect, which notes that measurements of certain systems cannot be made without affecting the system, that is, without changing something in a system. Heisenberg used such an observer effect at the quantum level (see below) as a physical "explanation" of quantum uncertainty. It has since become clearer, however, that the uncertainty principle is inherent in the properties of all wave-like systems, and that it arises in quantum mechanics simply due to the matter wave nature of all quantum objects. Thus, the uncertainty principle actually states a fundamental property of quantum systems and is not a statement about the observational success of current technology.
+
+== Critical reactions ==
+
+The Copenhagen interpretation of quantum mechanics and Heisenberg's uncertainty principle were, in fact, initially seen as twin targets by detractors. According to the Copenhagen interpretation of quantum mechanics, there is no fundamental reality that the quantum state describes, just a prescription for calculating experimental results. There is no way to say what the state of a system fundamentally is, only what the result of observations might be.
+
+Albert Einstein believed that randomness is a reflection of our ignorance of some fundamental property of reality, while Niels Bohr believed that the probability distributions are fundamental and irreducible, and depend on which measurements we choose to perform. Einstein and Bohr debated the uncertainty principle for many years.
+
+=== Ideal detached observer ===
+Wolfgang Pauli called Einstein's fundamental objection to the uncertainty principle "the ideal of the detached observer" (phrase translated from the German):
+
+=== Einstein's slit ===
+The first of Einstein's thought experiments challenging the uncertainty principle went as follows:
+
+{{quote|Consider a particle passing through a slit of width . The slit introduces an uncertainty in momentum of approximately {{mvar|}} because the particle passes through the wall. But let us determine the momentum of the particle by measuring the recoil of the wall. In doing so, we find the momentum of the particle to arbitrary accuracy by conservation of momentum.}}
+
+Bohr's response was that the wall is quantum mechanical as well, and that to measure the recoil to accuracy , the momentum of the wall must be known to this accuracy before the particle passes through. This introduces an uncertainty in the position of the wall and therefore the position of the slit equal to {{math|}}, and if the wall's momentum is known precisely enough to measure the recoil, the slit's position is uncertain enough to disallow a position measurement.
+
+A similar analysis with particles diffracting through multiple slits is given by Richard Feynman.
+
+=== Einstein's box ===
+Bohr was present when Einstein proposed the thought experiment which has become known as Einstein's box. Einstein argued that "Heisenberg's uncertainty equation implied that the uncertainty in time was related to the uncertainty in energy, the product of the two being related to the Planck constant." Consider, he said, an ideal box, lined with mirrors so that it can contain light indefinitely. The box could be weighed before a clockwork mechanism opened an ideal shutter at a chosen instant to allow one single photon to escape. "We now know, explained Einstein, precisely the time at which the photon left the box." "Now, weigh the box again. The change of mass tells the energy of the emitted light. In this manner, said Einstein, one could measure the energy emitted and the time it was released with any desired precision, in contradiction to the uncertainty principle." because of Einstein's own theory of gravity's effect on time. "Through this chain of uncertainties, Bohr showed that Einstein's light box experiment could not simultaneously measure exactly both the energy of the photon and the time of its escape."
+
+=== EPR paradox for entangled particles ===
+
+In 1935, Einstein, Boris Podolsky and Nathan Rosen published an analysis of spatially separated entangled particles (EPR paradox). According to EPR, one could measure the position of one of the entangled particles and the momentum of the second particle, and from those measurements deduce the position and momentum of both particles to any precision, violating the uncertainty principle. In order to avoid such possibility, the measurement of one particle must modify the probability distribution of the other particle instantaneously, possibly violating the principle of locality.
+
+In 1964, John Stewart Bell showed that this assumption can be falsified, since it would imply a certain inequality between the probabilities of different experiments. Experimental results confirm the predictions of quantum mechanics, ruling out EPR's basic assumption of local hidden variables.
+
+=== Popper's criticism ===
+
+Science philosopher Karl Popper approached the problem of indeterminacy as a logician and metaphysical realist. He disagreed with the application of the uncertainty relations to individual particles rather than to ensembles of identically prepared particles, referring to them as "statistical scatter relations". In this statistical interpretation, a ''particular'' measurement may be made to arbitrary precision without invalidating the quantum theory.
+
+In 1934, Popper published  ("Critique of the Uncertainty Relations") in , and in the same year  (translated and updated by the author as ''The Logic of Scientific Discovery'' in 1959}}
+
+Popper proposed an experiment to falsify the uncertainty relations, although he later withdrew his initial version after discussions with Carl Friedrich von Weizsäcker, Heisenberg, and Einstein; Popper sent his paper to Einstein and  it may have influenced the formulation of the EPR paradox.
+
+=== Free will ===
+Some scientists, including Arthur Compton and Martin Heisenberg, have suggested that the uncertainty principle, or at least the general probabilistic nature of quantum mechanics, could be evidence for the two-stage model of free will. One critique, however, is that apart from the basic role of quantum mechanics as a foundation for chemistry, nontrivial biological mechanisms requiring quantum mechanics are unlikely, due to the rapid decoherence time of quantum systems at room temperature. Proponents of this theory commonly say that this decoherence is overcome by both screening and decoherence-free subspaces found in biological cells. See Gibbs paradox.
+
+=== Rejection of the principle ===
+Uncertainty principles relate quantum particles – electrons for example – to classical concepts – position and momentum. This presumes quantum particles have position and momentum. Edwin C. Kemble pointed out in 1937 that such properties cannot be experimentally verified and assuming they exist gives rise to many contradictions; similarly Rudolf Haag notes that position in quantum mechanics is an attribute of an interaction, say between an electron and a detector, not an intrinsic property. From this point of view the uncertainty principle is not a fundamental quantum property but a concept "carried over from the language of our ancestors", as Kemble says.
+
+==Applications==
+Since the uncertainty principle is such a basic result in quantum mechanics, typical experiments in quantum mechanics routinely observe aspects of it. All forms of spectroscopy, including particle physics use the relationship to relate measured energy line-width to the lifetime of quantum states. Certain experiments, however, may deliberately test a particular form of the uncertainty principle as part of their main research program. These include, for example, tests of number–phase uncertainty relations in superconducting or quantum optics systems. 
+
+Applications dependent on the uncertainty principle for their operation include extremely low-noise technology such as that required in gravitational wave interferometers. Such an interferometer measures distances between mirrors detect gravitational waves. For a mirror of mass m observed for \tau seconds will be limited by quantum uncertainty in an amount 
+\Delta z_\textrm{QL} = \sqrt{2\hbar\tau/m}.
+For a mirror of mass  measured over  will be limited in accuracy to .
+
+== See also ==
+
+* 
+* —when an attempt is made to use a statistical measure for purposes of control (directing), its statistical validity breaks down
+* 
+* 
+* 
+*  
+* 
+* '''' (Heisenberg's recollections)
+* 
+
+== References ==
+
+== External links ==
+
+* 
+* Stanford Encyclopedia of Philosophy entry
+
+Category:Quantum mechanics
+Category:Principles
+Category:Mathematical physics
+Category:Inequalities (mathematics)
+Category:Werner Heisenberg
+Category:Scientific laws
+Category:1927 in science
+Category:1927 in Germany
