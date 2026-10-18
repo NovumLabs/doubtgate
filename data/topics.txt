@@ -1,0 +1,10 @@
+﻿Wave function
+Schrödinger equation
+Uncertainty principle
+Quantum tunnelling
+Pauli exclusion principle
+Particle in a box
+Quantum harmonic oscillator
+Hydrogen atom
+Spin (physics)
+Angular momentum operator
