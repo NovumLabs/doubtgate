@@ -1,0 +1,238 @@
+{{Short description|Mathematical model in quantum mechanics}}
+{{Use American English|date=January 2019}}
+[[File:InfiniteSquareWellAnimation.gif|thumb|200px|right|Some trajectories of a particle in a box according to [[Newton's laws]] of [[classical mechanics]] (A), and according to the [[Schrödinger equation]] of [[quantum mechanics]] (B–F). In (B–F), the horizontal axis is position, and the vertical axis is the real part (blue) and imaginary part (red) of the [[wave function]]. The states (B,C,D) are [[energy eigenstate]]s, but (E,F) are not.]]
+
+In [[quantum mechanics]], the '''particle in a box''' model (also known as the '''infinite potential well''' or the '''infinite square well''') describes the movement of a free particle in a small space surrounded by impenetrable barriers.  The model is mainly used as a hypothetical example to illustrate the differences between [[classical physics|classical]] and quantum systems.  In classical systems, for example, a particle trapped inside a large box can move at any speed within the box and it is no more likely to be found at one position than another. However, when the well becomes very narrow (on the scale of a few nanometers), quantum effects become important. The particle may only occupy certain positive [[energy level]]s.  Likewise, it can never have zero energy, meaning that the particle can never "sit still".  Additionally, it is more likely to be found at certain positions than at others, depending on its energy level.  The particle may never be detected at certain positions, known as spatial nodes.
+
+The particle in a box model is one of the very few problems in quantum mechanics that can be solved analytically, without approximations. Due to its simplicity, the model allows insight into quantum effects without the need for complicated mathematics.  It serves as a simple illustration of how energy [[Quantization (physics)|quantizations]] (energy levels), which are found in more complicated quantum systems such as atoms and molecules, come about.  It is one of the first quantum mechanics problems taught in undergraduate physics courses, and it is commonly used as an approximation for more complicated quantum systems.
+
+== One-dimensional solution ==
+[[File:Infinite potential well-en.svg|thumb|right|The barriers outside a one-dimensional box have infinitely large potential, while the interior of the box has a constant, zero potential. Shown is the shifted well, with <math  display="inline">x_c = L/2</math>]]
+
+The simplest form of the particle in a box model considers a one-dimensional system.  Here, the particle may only move backwards and forwards along a straight line with impenetrable barriers at either end.<ref name="Davies4">Davies, p.4</ref>
+The walls of a one-dimensional box may be seen as regions of space with an infinitely large [[potential energy]].  Conversely, the interior of the box has a constant, zero potential energy.<ref>Actually, any constant, finite potential <math>V_0</math> can be specified within the box.  This merely shifts the energies of the states by <math>V_0</math>.</ref>  This means that no forces act upon the particle inside the box and it can move freely in that region.  However, infinitely large [[force]]s repel the particle if it touches the walls of the box, preventing it from escaping.  The potential energy in this model is given as
+<math display="block">V(x) = \begin{cases}
+0, & x_c-\tfrac{L}{2} < x <x_c+\tfrac{L}{2},\\
+\infty, & \text{otherwise,}
+\end{cases},</math>
+where ''L'' is the length of the box, ''x<sub>c</sub>'' is the location of the center of the box and ''x'' is the position of the particle within the box. Simple cases include the centered box (''x<sub>c</sub>'' = 0) and the shifted box (''x<sub>c</sub>'' = ''L''/2) (pictured).
+
+=== Position wave function ===
+
+In quantum mechanics, the [[wave function]] gives the most fundamental description of the behavior of a particle; the measurable properties of the particle (such as its position, momentum and energy) may all be derived from the wave function.<ref name="Davies1">Davies, p. 1</ref>
+The wave function <math>\psi(x,t)</math> can be found by solving the [[Schrödinger equation]] for the system
+<math display="block">i\hbar\frac{\partial}{\partial t}\psi(x,t) = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\psi(x,t) +V(x)\psi(x,t),</math>
+where <math>\hbar</math> is the [[reduced Planck constant]], <math>m</math> is the [[mass]] of the particle, <math>i</math> is the [[imaginary unit]] and <math>t</math> is time.
+
+Inside the box, no forces act upon the particle, which means that the potential <math>V(x)</math> vanishes and the part of the wave function inside the box oscillates through space and time with the same form as a [[free particle]]:<ref name="Davies4" /><ref name = "Bransden157">Bransden and Joachain, p. 157</ref>
+{{NumBlk2||<math display="block"> \psi(x,t) = \left[A \sin(kx) + B \cos(kx)\right]e^{-i\omega t},</math>|1}} where <math>A</math> and <math>B</math> are arbitrary [[complex number]]s.  The frequency of the oscillations through space and time is given by the [[wavenumber|wave number]] <math>k</math> and the [[angular frequency]] <math>\omega</math> respectively.  These are both related to the total energy of the particle by the expression
+<math display="block">E = \hbar\omega = \frac{\hbar^2 k^2}{2m},</math>
+which is known as the [[dispersion relation]] for a free particle.<ref name = "Davies4" /> However, since the particle is not entirely free but under the influence of a potential, the energy of the particle is 
+<math display="block"> E = T + V,</math> 
+where ''T'' is the kinetic and ''V'' the potential energy. Therefore, the energy of the particle given above is ''not'' the same thing as <math> E =p^2 / 2m </math> (i.e. the momentum of the particle is not given by <math> p = \hbar k </math>). Thus the wave number ''k'' above actually describes the energy states of the particle and is not related to momentum like the "wave number" usually is. The rationale for calling ''k'' the wave number is that it enumerates the number of crests that the wave function has inside the box, and in this sense it is a wave number. This discrepancy can be seen more clearly below, when we find out that the energy spectrum of the particle is discrete (only discrete values of energy are allowed) but the momentum spectrum is continuous (momentum can vary continuously), i.e., <math>E \neq p^2 / 2m </math>. 
+
+[[File:particle in a box wavefunctions 2.svg|thumb|right|upright|Initial wavefunctions for the first four states in a one-dimensional particle in a box]]
+The [[amplitude]] of the wave function at a given position is related to the probability of finding a particle there by <math>P(x,t) = |\psi(x,t)|^2</math>.  The wave function must therefore vanish everywhere beyond the edges of the box.<ref name="Davies4" /><ref name="Bransden157" />  Also, the amplitude of the wave function may not "jump" abruptly from one point to the next.<ref name="Davies4" />  These two conditions are only satisfied by wave functions with the form{{sfn|Cohen-Tannoudji|Diu|Laloë|2019|p=271}}
+<math display="block">\psi_n(x,t) =
+\begin{cases}
+A \sin\left(k_n \left(x-x_c+\tfrac{L}{2}\right)\right) e^{-i\omega_n t}\quad & x_c-\tfrac{L}{2} < x < x_c+\tfrac{L}{2}\\
+0 & \text{otherwise}
+\end{cases},</math>
+where
+<math display="block">k_n=\frac{n \pi}{ L},</math>
+and
+<math display="block">E_n=\hbar \omega_n=\frac{k_{n}^{2} \hbar^2}{2 m}=\frac{n^2 \pi^2 \hbar^2}{2 m L^2},</math>
+for positive [[integer]]s <math>n \in \mathbb{Z}_{>0}</math>. The simplest solutions, <math>k_n = 0</math> or <math>A = 0</math> both yield the trivial wave function <math>\psi(x) = 0</math>, which describes a particle that does not exist anywhere in the system.<ref name="Bransden158">Bransden and Joachain, p.158</ref>   Here one sees that only a discrete set of energy values and wave numbers ''k'' are allowed for the particle. Usually in quantum mechanics it is also demanded that the derivative of the wave function in addition to the wave function itself be continuous; here this demand would lead to the only solution being the constant zero function, which is not what we desire, so we give up this demand (as this system with infinite potential can be regarded as a nonphysical abstract limiting case, we can treat it as such and "bend the rules"). Note that giving up this demand means that the wave function is not a differentiable function at the boundary of the box, and thus it can be said that the wave function does not solve the Schrödinger equation at the boundary points <math> x = 0 </math> and <math> x = L </math> (but does solve it everywhere else).
+
+Finally, the unknown constant <math>A</math> may be found by [[Wavefunction#Normalization condition|normalizing the wave function]]. That is, it follows from
+<math display="block">\int_0^L \left\vert \psi(x) \right\vert^2 dx = 1,</math>
+that any complex number <math>A</math> whose [[absolute value]] is
+<math display="block">\left| A \right| = \sqrt{\frac{2 }{L}},</math>
+yields the same normalized state.
+
+It is expected that the ''eigenvalues'', i.e., the energy <math>E_n</math> of the box should be the same regardless of its position in space, but <math>\psi_n(x,t)</math> changes. Notice that <math>x_c - \tfrac{L}{2}</math> represents a phase shift in the wave function. This phase shift has no effect when solving the Schrödinger equation, and therefore does not affect the ''eigenvalue''.
+
+If we set the origin of coordinates to the center of the box, we can rewrite the spatial part of the wave function succinctly as:
+<math display="block">\psi_n (x) = \begin{cases}
+\sqrt{\frac{2}{L}} \sin(k_nx) \quad{} \text{for } n \text{ even} \\
+\sqrt{\frac{2}{L}} \cos(k_nx) \quad{} \text{for } n \text{ odd}.
+\end{cases}</math>
+
+=== Momentum wave function ===
+
+The normalized momentum wave functions, <math>\phi_n(p,t)
+</math>, are the [[Fourier transform]] of the normalized position wave functions, <math>\psi_n(x,t)
+</math>. With <math>p\in\R</math>, as the Fourier conjugate variable to the space variable, <math>x\in\R</math>, the momentum wave function is given by
+<math display="block">\begin{align}
+\phi_n(p,t) = \widehat{\psi}_n(p,t)
+&= \frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^\infty \psi_n(x,t)e^{-ipx/\hbar}\,dx, \\[1ex]
+&= \sqrt{\frac{L}{\pi \hbar}} \left(\frac{\hbar n\pi}{\hbar n\pi + p L}\right)\,\operatorname{sinc}\left(\frac{p L}{2\hbar} - \frac{n\pi}{2} \right)e^{-i p x_c/\hbar}e^{i (n-1) \tfrac{\pi}{2}}e^{-i\omega_n t} , \\
+&= i^{(n-1)}\sqrt{\frac{L}{\pi \hbar}} \left(\frac{\hbar n\pi}{\hbar n\pi + p L}\right)\,\frac{\sin\left(\frac{p L}{2\hbar} - \frac{n\pi}{2} \right)}{\left(\frac{p L}{2\hbar} - \frac{n\pi}{2}\right)} e^{-i p x_c/\hbar} e^{-i\omega_n t} ,
+\end{align}
+</math>
+where the [[sinc function]], <math>{\rm sinc}(x) = \sin(x)/x
+</math>. Note that the variable, <math>k = p/\hbar \in\R</math>, that is often used to describe momentum wave functions, as a function of the wave vector, <math>k
+</math>, is not the special {{math|''k<sub>n</sub>''}} from the boundary conditions, which is linked to the energy eigenvalues. For the centered box, {{math|1=''x<sub>c</sub>'' = 0}}, at time, <math>t=0
+</math>, the solution is the product of a strictly real-valued function, and a unit modulus complex phase, <math>i^{n-1}
+</math>. The function, <math>{\rm sinc}(p) = \sin(p)/p
+</math> , is an [[Even and odd functions|even function]] of {{mvar|p}}.
+
+It can be seen that the allowed values of the momentum in this [[wave packet]] is continuous, and one may conclude that for the energy state described by the wave number {{math|''k<sub>n</sub>''}}, the momentum can, when measured, attain ''other values'' beyond, <math>p = \pm \hbar k_n</math>.
+
+Hence, it also appears that, since the energy is <math display="inline"> E_n = \frac{\hbar^2 k_n^2}{2m} </math> for the ''n''th eigenstate, the relation <math display="inline"> E = \frac{p^2}{2m} </math> does not strictly hold for the measured momentum {{mvar|p}}; the energy eigenstate <math> \psi_n </math> is not a momentum eigenstate, and, in fact, not even a superposition of two momentum eigenstates, as one might be tempted to imagine from equation ({{EquationNote|1}}) above: peculiarly, it has no well-defined momentum before measurement!
+
+=== Position and momentum probability distributions ===
+{{More citations needed section|date=November 2024|talk=Talk:Particle_in_a_box#Essential_Self_Adjointness_and_Boundary_Conditions}}
+In classic physics, the particle can be detected anywhere in the box with equal probability.  In quantum mechanics, however, the probability density for finding a particle at a given position is derived from the wave function as <math>P(x) = |\psi(x)|^2.</math>  For the particle in a box, the probability density for finding the particle at a given position depends upon its state, and is given by
+<math display="block">P_n(x,t) = \begin{cases}
+\frac{2}{L} \sin^2\left(k_n \left(x-x_c+\tfrac{L}{2}\right)\right), & x_c-\frac{L}{2} < x < x_c+\frac{L}{2},\\
+0, & \text{otherwise,}
+\end{cases}</math>Thus, for any value of ''n'' greater than one, there are points, <math> x_j </math>, within the box for which <math>P(x_j)=0</math>, indicating that ''spatial nodes'' exist at which the particle's [[probability amplitude]] is also zero, i.e. <math>\psi(x_j) = 0.</math>. If [[relativistic wave equations]] are considered, however, the probability density does not go to zero at the nodes (apart from the trivial case <math>n=0</math>).<ref>{{cite journal|doi=10.1088/0143-0807/17/1/004 |title=Relativistic particle in a box |year=1996 |last1=Alberto |first1=P | last2=Fiolhais |first2=C |last3=Gil |first3=V M S |url=https://estudogeral.sib.uc.pt/bitstream/10316/12349/1/Relativistic%20particle%20in%20a%20box.pdf |journal=European Journal of Physics |volume=17 |issue=1 |pages=19–24 | bibcode=1996EJPh...17...19A | hdl=10316/12349 |s2cid=250895519 | hdl-access=free }}</ref>
+
+In quantum mechanics, the average, or [[expectation value]] of the position of a particle is given by
+<math display="block">\langle x \rangle = \int_{-\infty}^{\infty} x P_n(x)\,\mathrm{d}x.</math>For the steady state particle in a box, it can be shown that the average position is always, <math>\langle x \rangle =x_c</math>, regardless of the state of the particle.  For a superposition of states, the expectation value of the position will change based on the cross term, which is proportional to <math>\cos(\omega t)</math>.
+
+The variance in the position is a measure of the uncertainty in position of the particle:
+<math display="block">\mathrm{Var}(x) = \int_{-\infty}^\infty (x-\langle x\rangle)^2 P_n(x)\,dx = \int_{x_c - \frac{L}{2}}^{x_c + \frac{L}{2}} (x - x_c)^2 P_n(x)\,dx = \frac{L^2}{12}\left(1-\frac{6}{n^2\pi^2}\right).</math>The probability density for finding a particle with a given momentum is derived from the wave function as <math>P(p) = |\phi(p)|^2</math>. As with position, the probability density for finding the particle at a given momentum depends upon its state, and is given by
+<math display="block">P_n(p)=\frac{L}{\pi \hbar} \left(\frac{\hbar n\pi}{\hbar n\pi + p L}\right)^2\,\textrm{sinc}^2\left(\frac{pL}{2\hbar} - \frac{n\pi}{2}\right),</math>for <math> p\in\R </math>, and <math> n\in\N </math>. The expectation value for the momentum is then calculated to always be zero, because the integration is over the entire real line, and the momentum probability density is an even function of the momentum, <math> p </math>, while the momentum variable itself is odd (<math> p = p^1 </math>, has power 1). The variance in the momentum is calculated to be:
+<math display="block">\mathrm{Var}(p)=\left(\frac{\hbar n\pi}{L}\right)^2</math>The uncertainties in position and momentum (<math>\Delta x</math> and <math>\Delta p</math>) are defined as the square root of their respective variances, also known as their respective [[Standard deviation|Standard deviations]], so that:
+<math display="block">\Delta x \Delta p = \frac{\hbar}{2} \sqrt{\frac{n^2\pi^2}{3}-2}</math>This product increases with increasing ''n'', having a minimum for ''n'' = 1. The value of this product for ''n'' = 1 is about equal to 0.568 <math>\hbar</math>, which obeys the [[Heisenberg uncertainty principle]], which states that the product will be greater than or equal to <math>\hbar/2</math>.
+
+Another measure of uncertainty in position is the [[Entropy (information)|information entropy]] of the probability distribution ''H''<sub>x</sub>:<ref name="Majernik1997">{{cite journal |last1=Majernik |first1=Vladimir |last2=Richterek |first2=Lukas | date=1997-12-01 |title=Entropic uncertainty relations for the infinite well |url=https://www.researchgate.net/publication/231121036 |journal=J. Phys. A |volume=30 |issue=4 |pages= L49|doi=10.1088/0305-4470/30/4/002 |access-date=11 February 2016| bibcode = 1997JPhA...30L..49M }}</ref>
+<math display="block">H_x=\int_{-\infty}^\infty P_n(x) \log(P_n(x) x_0)\,dx =\log\left(\frac{2 L}{e \,x_0}\right)</math>
+where ''x''<sub>0</sub> is an arbitrary reference length.
+
+Another measure of uncertainty in momentum is the [[Entropy (information)|information entropy]] of the probability distribution ''H<sub>p</sub>'':
+<math display="block">H_p(n)=\int_{-\infty}^\infty P_n(p) \log(P_n(p) p_0)\,dp</math>
+<math display="block">\lim_{n\to\infty} H_p(n) = \log\left(\frac{4 \pi \hbar\, e^{2(1-\gamma)}}{ L\, p_0}\right)</math>
+where ''γ'' is [[Euler-Mascheroni constant|Euler's constant]]. The quantum mechanical [[Uncertainty principle#Quantum entropic uncertainty principle|entropic uncertainty principle]] states that for <math>x_0\,p_0 = \hbar</math>
+<math display="block">H_x+H_p(n) \ge \log(e\,\pi) \approx 2.14473...</math> ([[nat (unit)|nats]])
+
+For <math>x_0\,p_0=\hbar</math>, the sum of the position and momentum entropies yields:
+<math display="block">H_x+H_p(\infty) = \log\left(8\pi\, e^{1-2\gamma}\right) \approx 3.06974...</math>
+where the unit is [[nat (unit)|nat]], and which satisfies the quantum entropic uncertainty principle.
+
+=== Energy levels ===
+[[File:Confined particle dispersion - positive.svg|thumb|upright|The energy of a particle in a box (black circles) and a free particle (grey line) both depend upon wavenumber in the same way. However, the particle in a box may only have certain, discrete energy levels.]]
+The energies that correspond with each of the permitted wave numbers may be written as{{sfn|Hall|2013|p=81}}
+<math display="block">E_n = \frac{n^2\hbar^2 \pi ^2}{2mL^2} = \frac{n^2 h^2}{8mL^2}.</math>
+The energy levels increase with <math>n^2</math>, meaning that high energy levels are separated from each other by a greater amount than low energy levels are.  The lowest possible energy for the particle (its ''[[zero-point energy]]'') is found in state 1, which is given by<ref name="Bransden159">Bransden and Joachain, p. 159</ref>
+<math display="block">E_1 = \frac{\hbar^2\pi^2}{2mL^2} = \frac{h^2}{8mL^2}.</math>
+The particle, therefore, always has a positive energy.  This contrasts with classical systems, where the particle can have zero energy by resting motionlessly.  This can be explained in terms of the [[uncertainty principle]], which states that the product of the uncertainties in the position and momentum of a particle is limited by
+<math display="block">\Delta x\Delta p \geq \frac{\hbar}{2}</math>
+It can be shown that the uncertainty in the position of the particle is proportional to the width of the box.<ref name="Davies15">Davies, p. 15</ref>  Thus, the uncertainty in momentum is roughly inversely proportional to the width of the box.<ref name="Bransden159" />  The [[kinetic energy]] of a particle is given by <math>E = p^2/(2m)</math>, and hence the minimum kinetic energy of the particle in a box is inversely proportional to the mass and the square of the well width, in qualitative agreement with the calculation above.<ref name="Bransden159" />
+
+== Higher-dimensional boxes ==
+
+=== (Hyper-)rectangular walls ===
+
+[[Image:Particle2D.svg|thumb|320px|right|The wavefunction of a 2D well with n<sub>x</sub>=4 and n<sub>y</sub>=4]]
+
+If a particle is trapped in a two-dimensional box, it may freely move in the <math>x</math> and <math>y</math>-directions, between barriers separated by lengths <math>L_x</math> and <math>L_y</math> respectively.  For a centered box, the position wave function may be written including the length of the box as <math>\psi_n(x,t,L)</math>. Using a similar approach to that of the one-dimensional box, it can be shown that the wave functions and energies for a centered box are given respectively by
+<math display="block">\psi_{n_x,n_y} = \psi_{n_x}(x,t,L_x)\psi_{n_y}(y,t,L_y),</math>
+<math display="block">E_{n_x,n_y} = \frac{\hbar^2 k_{n_x,n_y}^2}{2m},</math>
+where the two-dimensional [[wavevector]] is given by
+<math display="block">\mathbf{k}_{n_x,n_y} = k_{n_x}\mathbf{\hat{x}} + k_{n_y}\mathbf{\hat{y}} = \frac{n_x \pi }{L_x} \mathbf{\hat{x}} + \frac{n_y \pi }{L_y} \mathbf{\hat{y}}.</math>
+
+For a three dimensional box, the solutions are
+<math display="block">\psi_{n_x,n_y,n_z} = \psi_{n_x}(x,t,L_x)\psi_{n_y}(y,t,L_y) \psi_{n_z}(z,t,L_z),</math>
+<math display="block">E_{n_x,n_y,n_z} = \frac{\hbar^2 k_{n_x,n_y,n_z}^2}{2m}, </math>
+where the three-dimensional wavevector is given by:
+<math display="block">\begin{align}
+\mathbf{k}_{n_x,n_y,n_z} &= k_{n_x}\mathbf{\hat{x}} + k_{n_y}\mathbf{\hat{y}} + k_{n_z}\mathbf{\hat{z}} \\[1ex]
+&= \frac{n_x \pi }{L_x} \mathbf{\hat{x}} + \frac{n_y \pi }{L_y} \mathbf{\hat{y}} + \frac{n_z \pi }{L_z} \mathbf{\hat{z}} .
+\end{align}</math>
+
+In general for an ''n''-dimensional box, the solutions are
+<math display="block"> \psi =\prod_{i} \psi_{n_i}(x_i,t,L_i)</math>
+
+The ''n''-dimensional momentum wave functions may likewise be represented by <math>\phi_n(x, t, L_x)</math> and the momentum wave function for an ''n''-dimensional centered box is then:
+<math display="block"> \phi = \prod_{i} \phi_{n_i}(k_i,t,L_i)</math>
+
+An interesting feature of the above solutions is that when two or more of the lengths are the same (e.g. <math>L_x = L_y</math>), there are multiple wave functions corresponding to the same total energy. For example, the wave function with <math>n_x = 2, n_y = 1</math> has the same energy as the wave function with <math>n_x = 1, n_y = 2</math>.  This situation is called ''[[Degenerate energy level|degeneracy]]'' and for the case where exactly two degenerate wave functions have the same energy that energy level is said to be ''doubly degenerate''.  Degeneracy results from symmetry in the system.  For the above case two of the lengths are equal so the system is symmetric with respect to a 90° rotation.
+
+=== More complicated wall shapes ===
+
+The wave function for a quantum-mechanical particle in a box whose walls have arbitrary shape is given by the [[Helmholtz equation]] subject to the boundary condition that the wave function vanishes at the walls. These systems are studied in the field of [[quantum chaos]] for wall shapes whose corresponding [[dynamical billiards|dynamical billiard tables]] are non-integrable.
+
+== Applications ==
+Because of its mathematical simplicity, the particle in a box model is used to find approximate solutions for more complex physical systems in which a particle is trapped in a narrow region of low [[electric potential]] between two high potential barriers.  These [[quantum well]] systems are particularly important in [[optoelectronics]], and are used in devices such as the [[quantum well laser]], the [[quantum well infrared photodetector]] and the [[quantum-confined Stark effect]] modulator. It is also used to model a lattice in the [[Kronig–Penney model]] and for a finite metal with the free electron approximation.
+
+=== Conjugated polyenes ===
+
+[[File:Beta-Carotin.svg|thumb|right|β-carotene is a conjugated polyene]]
+
+Conjugated polyene systems can be modeled using particle in a box.<ref>{{Cite journal |last=Autschbach |first=Jochen |date=November 2007 |title=Why the Particle-in-a-Box Model Works Well for Cyanine Dyes but Not for Conjugated Polyenes |url=https://pubs.acs.org/doi/abs/10.1021/ed084p1840 |journal=Journal of Chemical Education |language=en |volume=84 |issue=11 |pages=1840 |doi=10.1021/ed084p1840 |issn=0021-9584|url-access=subscription }}</ref> The conjugated system of electrons can be modeled as a one dimensional box with length equal to the total bond distance from one terminus of the polyene to the other. In this case each pair of electrons in each π bond corresponds to their energy level. The energy difference between two energy levels, ''n''<sub>f</sub> and ''n''<sub>i</sub> is:
+<math display="block">\Delta E =  \frac{\left(n_\text{f}^2 - n_\text{i}^2\right) h^2}{8mL^2}</math>
+
+The difference between the ground state energy, ''n'', and the first [[excited state]], ''n''+1, corresponds to the energy required to excite the system. This energy has a specific wavelength, and therefore color of light, related by:
+<math display="block">\lambda = \frac{hc}{\Delta E}</math>
+
+A common example of this phenomenon is in [[β-carotene]].{{citation needed|date=October 2019}} β-carotene (C<sub>40</sub>H<sub>56</sub>)<ref name=":0">{{Cite web|url=https://pubchem.ncbi.nlm.nih.gov/compound/beta-carotene|title=beta-carotene {{!}} C40H56 – PubChem|last=Pubchem|website=pubchem.ncbi.nlm.nih.gov|access-date=2016-11-10}}</ref> is a conjugated polyene with an orange color and a molecular length of approximately 3.8&nbsp;nm (though its chain length is only approximately 2.4&nbsp;nm).<ref name=":1">{{Cite journal|last1=Sathish|first1=R. K.|last2=Sidharthan|first2=P. V.|last3=Udayanandan|first3=K. M.|title=Particle in a Box- A Treasure Island for Undergraduates}}</ref> Due to β-carotene's high level of [[Conjugated system|conjugation]], electrons are dispersed throughout the length of the molecule, allowing one to model it as a one-dimensional particle in a box. β-carotene has 11 [[carbon]]-carbon [[double bond]]s in conjugation;<ref name=":0" /> each of those double bonds contains two π-electrons, therefore β-carotene has 22 π-electrons. With two electrons per energy level, β-carotene can be treated as a particle in a box at energy level ''n''=11.<ref name=":1" /> Therefore, the minimum energy needed to excite an [[electron]] to the next energy level can be calculated, ''n''=12, as follows<ref name=":1" /> (recalling that the mass of an electron is 9.109 × 10<sup>−31</sup> kg<ref>P.J. Mohr, B.N. Taylor, and D.B. Newell, "The 2014 CODATA Recommended Values of the Fundamental Physical Constants". This database was developed by J. Baker, M. Douma, and [[Svetlana Kotochigova|S. Kotochigova]]. Available: [http://physics.nist.gov/constants]. National Institute of Standards and Technology, Gaithersburg, MD 20899.</ref>):
+<math display="block">\Delta E = \frac{\left(n_\text{f}^2 - n_\text{i}^2\right) h^2}{8 m L^2}= \frac{\left(12^2 - 11^2\right) h^2}{8 m L^2}= 2.3658\times10^{-19} \text{ J}</math>
+
+Using the previous relation of wavelength to energy, recalling both the [[Planck constant]] ''h'' and the [[speed of light]] ''c'':
+<math display="block">\lambda = \frac{ hc }{ \Delta E }= {0.000\,000\,84} \text{ m} = 840 \text{ nm}</math>
+
+This indicates that β-carotene primarily absorbs light in the infrared spectrum, therefore it would appear white to a human eye. However the observed wavelength is 450&nbsp;nm,<ref>β-Carotene http://www.sigmaaldrich.com/catalog/product/aldrich/855553?lang=en®ion=us (accessed Nov 8, 2016).</ref> indicating that the particle in a box is not a perfect model for this system.
+
+=== Quantum well laser ===
+The particle in a box model can be applied to [[quantum well laser]]s, which are laser diodes consisting of one semiconductor “well” material sandwiched between two other semiconductor layers of different material . Because the layers of this sandwich are very thin (the middle layer is typically about 100&nbsp;Å thick), [[quantum confinement]] effects can be observed.<ref>{{Cite book|title=Quantum Well Lasers|last=Zory|first=Peter|publisher=Academic Press Unlimited|year=1993|location=San Diego}}</ref> The idea that quantum effects could be harnessed to create better laser diodes originated in the 1970s. The quantum well laser was patented in 1976 by R. Dingle and C. H. Henry.<ref>U.S. Patent #3,982,207, issued September 21, 1976, Inventors R. Dingle and C. H. Henry, "Quantum Effects in Heterostructure Lasers", filed March 7, 1975.</ref>
+
+Specifically, the quantum wells behavior can be represented by the particle in a finite well model. Two boundary conditions must be selected. The first is that the wave function must be continuous. Often, the second boundary condition is chosen to be the derivative of the wave function must be continuous across the boundary, but in the case of the quantum well the masses are different on either side of the boundary. Instead, the second boundary condition is chosen to conserve particle flux as <math>(1/m) d\phi/dz</math>, which is consistent with experiment. The solution to the finite well particle in a box must be solved numerically, resulting in wave functions that are sine functions inside the quantum well and exponentially decaying functions in the barriers.<ref>{{Cite book|title=Confined Electrons and Photons: New Physics and Applications|last=Miller|first=David|publisher=Plenum Press|year=1995|editor-last=Burstein|editor-first=Elias|location=New York|pages=675–702|editor-last2=Weisbuch|editor-first2=Claude}}</ref> This quantization of the energy levels of the electrons allows a quantum well laser to emit light more efficiently than conventional semiconductor lasers.
+
+Due to their small size, quantum dots do not showcase the bulk properties of the specified semi-conductor but rather show quantised energy states.<ref name="Inorganic chemistry">{{cite book|last1=Miessler|first1=G. L.|title=Inorganic chemistry|date=2013|publisher=Pearson|location=Boston|isbn=978-0321811059|pages=235–236|edition=5}}</ref> This effect is known as the quantum confinement and has led to numerous applications of quantum dots such as the quantum well laser.<ref name="Inorganic chemistry"/>
+
+Researchers at Princeton University have recently built a quantum well laser that is no bigger than a grain of rice.<ref name="Princeton University">{{cite web|last1=Zandonella|first1=Catherine|title=Rice-sized laser, powered one electron at a time, bodes well for quantum computing|url=https://www.princeton.edu/main/news/archive/S42/13/37M75/index.xml?section=topstories|website=Princeton University|access-date=8 November 2016}}</ref> The laser is powered by a single electron that passes through two quantum dots; a double quantum dot. The electron moves from a state of higher energy, to a state of lower energy whilst emitting photons in the microwave region. These photons bounce off mirrors to create a beam of light; the laser.<ref name="Princeton University"/>
+
+The quantum well laser is heavily based on the interaction between light and electrons. This relationship is a key component in quantum mechanical theories that include the [[Matter wave|De Broglie Wavelength]] and Particle in a box. The double quantum dot allows scientists to gain full control over the movement of an electron, which consequently results in the production of a laser beam.<ref name="Princeton University"/>
+
+==== Quantum dots ====
+[[Quantum dot]]s are extremely small [[semiconductors]] (on the scale of nanometers).<ref name="chemed">{{cite journal|last2=Griffin|first2=G.A.|date=2008|title=Simple Syntheses of CdSe Quantum Dots|url=http://pubs.acs.org/doi/abs/10.1021/ed300568e|journal=Journal of Chemical Education|volume=85|issue=6|page=842|last1=Rice|first1=C.V.|access-date=5 November 2016|bibcode=2008JChEd..85..842R|doi=10.1021/ed085p842|url-access=subscription}}</ref> They display [[quantum confinement]] in that the electrons cannot escape the “dot”, thus allowing particle-in-a-box approximations to be used.<ref name="openlab">{{cite web|url=http://physicsopenlab.org/2015/11/20/quantum-dots-a-true-particle-in-a-box-system/|title=Quantum Dots : a True "Particle in a Box" System|date=20 November 2015|website=PhysicsOpenLab|access-date=5 November 2016}}</ref> Their behavior can be described by three-dimensional particle-in-a-box energy quantization equations.<ref name="openlab" />
+
+The [[Band gap|energy gap]] of a quantum dot is the energy gap between its [[valence and conduction bands]]. This energy gap <math>\Delta E(r)</math> is equal to the  gap of the bulk material <math>E_{\text{gap}}</math> plus the energy equation derived particle-in-a-box, which gives the energy for electrons and [[Electron hole|holes]].<ref name="openlab" /> This can be seen in the following equation, where <math>m^*_e</math> and <math>m^*_h</math> are the effective masses of the electron and hole, <math>r</math> is radius of the dot, and <math>h</math> is the Planck constant:<ref name="openlab" />
+<math display="block">\Delta E(r) = E_{\text{gap}} + \frac{h^2}{8r^2} \left( \frac{1}{m^*_e}+\frac{1}{m^*_h} \right)</math>
+
+Hence, the energy gap of the quantum dot is inversely proportional to the square of the "length of the box", i.e. the radius of the quantum dot.<ref name="openlab" />
+
+Manipulation of the band gap allows for the absorption and emission of specific wavelengths of light, as energy is inversely proportional to wavelength.<ref name="chemed" /> The smaller the quantum dot, the larger the band gap and thus the shorter the wavelength absorbed.<ref name="chemed" /><ref name="washington">{{cite web|url=http://courses.washington.edu/overney/NME498_Material/NME498_Lectures/Lecture12_Reid_Quantum_Confinement.pdf|title=Quantum Confinement|publisher=University of Washington|last1=Overney|first1=René M.|access-date=5 November 2016|archive-date=2 December 2016|archive-url=https://web.archive.org/web/20161202034143/http://courses.washington.edu/overney/NME498_Material/NME498_Lectures/Lecture12_Reid_Quantum_Confinement.pdf|url-status=dead}}</ref>
+
+Different semiconducting materials are used to synthesize quantum dots of different sizes and therefore emit different wavelengths of light.<ref name="washington" /> Materials that normally emit light in the visible region are often used and their sizes are fine-tuned so that certain colors are emitted.<ref name="chemed" /> Typical substances used to synthesize quantum dots are cadmium (Cd) and selenium (Se).<ref name="chemed" /><ref name="washington" /> For example, when the electrons of two nanometer CdSe quantum dots [[Emission spectrum|relax after excitation]], blue light is emitted. Similarly, red light is emitted in four nanometer CdSe quantum dots.<ref name="Zahn">{{cite web|url=http://www.osiconference.org/osi2015/presentations/Tu2.3%20Zahn.pdf|title=Surface and Interface Properties of Semiconductor Quantum Dots by Raman Spectroscopy|publisher=Technische Universität Chemnitz|last1=Zahn|first1=Dietrich R.T.|access-date=5 November 2016|archive-date=1 December 2016|archive-url=https://web.archive.org/web/20161201211210/http://www.osiconference.org/osi2015/presentations/Tu2.3%20Zahn.pdf|url-status=dead}}</ref><ref name="chemed" />
+
+Quantum dots have a variety of functions including but not limited to fluorescent dyes, [[transistor]]s, [[LED]]s, [[solar cells]], and medical imaging via optical probes.<ref name="chemed" /><ref name="openlab" />
+
+One function of quantum dots is their use in lymph node mapping, which is feasible due to their unique ability to emit light in the near infrared (NIR) region. Lymph node mapping allows surgeons to track if and where cancerous cells exist.<ref name="Medicine">{{cite journal|last2=Ebenstein|first2=Yuval|date=2009|title=Quantum Dots for In Vivo Small-Animal Imaging|journal=Journal of Nuclear Medicine|volume=50|issue=4|pages=493–496|last1=Bentolila|first1=Laurent A.|doi=10.2967/jnumed.108.053561|pmid=19289434|pmc=3081879}}</ref>
+
+Quantum dots are useful for these functions due to their emission of brighter light, excitation by a wide variety of wavelengths, and higher resistance to light than other substances.<ref name="Medicine" /><ref name="chemed" />
+
+== See also ==
+* [[Bloch's theorem]]
+* [[Configuration integral]] (statistical mechanics)
+* [[Delta function potential]]
+* [[Finite potential well]]
+* [[Gas in a box]]
+* [[History of quantum mechanics|History of Quantum Mechanics]]
+* [[Particle in a ring]]
+* [[Particle in a spherically symmetric potential]]
+* [[Quantum harmonic oscillator]]
+* [[Rectangular potential barrier]]
+* [[Semicircle potential well]]
+
+== References ==
+{{reflist|30em}}
+
+== Bibliography ==
+* {{cite book | last1=Bransden | first1=B. H. | last2 = Joachain | first2 = C. J. | title = Quantum mechanics | edition = 2nd | publisher = Pearson Education | location=Essex| year = 2000 | isbn=978-0-582-35691-7}}
+* {{cite book | last=Cohen-Tannoudji | first=Claude | last2=Diu | first2=Bernard | last3=Laloë | first3=Franck | title=Quantum Mechanics, Volume 1 | publisher=John Wiley & Sons | publication-place=Weinheim | date=2019 | isbn=978-3-527-34553-3}}
+* {{cite book | last=Davies|first= John H.| title=The Physics of Low-Dimensional Semiconductors: An Introduction | publisher=Cambridge University Press | year=2006 | isbn=|edition=6th reprint}}
+* {{cite book | last=Hall | first=B. C. | title=Quantum Theory for Mathematicians | publisher=Springer |series=Graduate Texts in Mathematics | volume=267 | year=2013 | bibcode=2013qtm..book.....H | isbn=978-1461471158}}
+* {{cite book | last=Griffiths|first= David J.|title=Introduction to Quantum Mechanics |edition=2nd | publisher=Prentice Hall | year=2004 | isbn=978-0-13-111892-8}}
+
+== External links ==
+{{Commons category|1D infinite square wells}}
+* [http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29 Configuration integral (statistical mechanics)], 2008. this wiki site is down; see [https://web.archive.org/web/20120428193950/http://clesm.mae.ufl.edu/wiki.pub/index.php/Configuration_integral_%28statistical_mechanics%29 this article in the web archive on 2012 April 28].
+
+{{DEFAULTSORT:Particle In A Box}}
+[[Category:Quantum models]]
+[[Category:Quantum mechanical potentials]]
+[[Category:Exactly solvable models]]

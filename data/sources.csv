@@ -1,11 +1,11 @@
-id,title,url,revision,licence,licence_verified,public_ok,verifier,date
-src_001,﻿Wave function,https://en.wikipedia.org/wiki/﻿Wave_function,unknown,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_002,Schrödinger equation,https://en.wikipedia.org/wiki/Schrödinger_equation,1380076870,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_003,Uncertainty principle,https://en.wikipedia.org/wiki/Uncertainty_principle,1376381705,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_004,Quantum tunnelling,https://en.wikipedia.org/wiki/Quantum_tunnelling,1380327394,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_005,Pauli exclusion principle,https://en.wikipedia.org/wiki/Pauli_exclusion_principle,1369278638,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_006,Particle in a box,https://en.wikipedia.org/wiki/Particle_in_a_box,1375453918,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_007,Quantum harmonic oscillator,https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator,1380557618,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_008,Hydrogen atom,https://en.wikipedia.org/wiki/Hydrogen_atom,1371585341,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_009,Spin (physics),https://en.wikipedia.org/wiki/Spin_(physics),1372723320,CC BY-SA 4.0,true,true,automated,2026-10-18
-src_010,Angular momentum operator,https://en.wikipedia.org/wiki/Angular_momentum_operator,1326183432,CC BY-SA 4.0,true,true,automated,2026-10-18
+title,category,priority
+Wave function,Core Quantum Mechanics,High
+Schrödinger equation,Core Quantum Mechanics,High
+Uncertainty principle,Core Quantum Mechanics,High
+Quantum tunnelling,Core Quantum Mechanics,High
+Pauli exclusion principle,Core Quantum Mechanics,High
+Particle in a box,Core Quantum Mechanics,High
+Quantum harmonic oscillator,Core Quantum Mechanics,High
+Hydrogen atom,Core Quantum Mechanics,High
+Spin (physics),Core Quantum Mechanics,High
+Angular momentum operator,Core Quantum Mechanics,High

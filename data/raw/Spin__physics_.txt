@@ -1,0 +1,498 @@
+{{Short description|Intrinsic quantum property of particles}}
+{{about|the concept in quantum mechanics|the concept in classical mechanics|Spin (geometry)}}
+
+'''Spin''' is an [[Intrinsic and extrinsic properties|intrinsic]] form of [[angular momentum]] carried by [[elementary particle]]s, and thus by [[List of particles#Composite particles|composite particles]] such as [[hadron]]s, [[atomic nucleus|atomic nuclei]], and atoms.<ref name="merzbacher372">{{cite book |last=Merzbacher |first=Eugen |author-link=Eugen Merzbacher |title=Quantum Mechanics |url=https://archive.org/details/quantummechanics00merz_136 |url-access=limited |edition=3rd |year=1998 |pages=[https://archive.org/details/quantummechanics00merz_136/page/n385 372]–373 |publisher=John Wiley & Sons | isbn=978-0-471-88702-7 }}</ref><ref name="griffiths">{{cite book |last=Griffiths |first=David |author-link=David J. Griffiths |title=Introduction to Quantum Mechanics |url=https://archive.org/details/introductiontoqu00grif_190 |url-access=limited |edition=2nd |year=2005 }}</ref>{{rp|pp=[https://archive.org/details/introductiontoqu00grif_190/page/n194 183]–184}} Spin is [[Quantization (physics)|quantized]], and accurate models for the interaction with spin require [[relativistic quantum mechanics]] or [[quantum field theory]].
+
+The existence of [[electron]] [[spin angular momentum]] is [[inferred]] from experiments, such as the [[Stern–Gerlach experiment]], in which silver atoms were observed to possess two possible discrete angular momenta despite having no orbital angular momentum.<ref name="eisberg272">{{cite book |last1=Eisberg |first1=Robert |last2=Resnick |first2=Robert |author-link2=Robert Resnick |title=Quantum Physics of Atoms, Molecules, Solids, Nuclei, and Particles |url=https://archive.org/details/quantumphysicsat00eisb |url-access=limited |edition=2nd |year=1985 |pages=[https://archive.org/details/quantumphysicsat00eisb/page/n288 272]–273|publisher=Wiley |isbn=978-0-471-87373-0 }}</ref> The relativistic [[spin–statistics theorem]] connects electron spin quantization to the [[Pauli exclusion principle]]: observations of exclusion imply half-integer spin, and observations of half-integer spin imply exclusion.
+
+Spin is described mathematically as a vector for some particles such as photons, and as a [[spinor]] for other particles such as electrons. Spinors behave similarly to [[Euclidean vector|vectors]]: they have definite magnitudes and change under rotations; however, they use an unconventional "direction". All elementary particles of a given kind have the same magnitude of spin angular momentum, though its direction may change. These are indicated by assigning the particle a [[spin quantum number]].<ref name="griffiths" />{{rp|pp=[https://archive.org/details/introductiontoqu00grif_190/page/n194 183–184]}}
+
+The [[International System of Units|SI units]] of spin are the same as classical angular momentum (i.e., [[Newton (unit)|N]]·[[metre|m]]·[[second|s]], [[Joule|J]]·s, or [[Kilogram|kg]]·m<sup>2</sup>·s<sup>−1</sup>). In quantum mechanics, angular momentum and spin angular momentum take discrete values proportional to the [[Planck constant]]. In practice, spin is usually given as a [[dimensionless]] spin quantum number by dividing the spin angular momentum by the [[reduced Planck constant]] {{mvar|ħ}}. Often, the "spin quantum number" is simply called "spin".
+
+== Models ==
+=== Rotating charged mass ===
+The earliest models for electron spin imagined a rotating charged mass, but this model fails when examined in detail. The required space distribution does not match limits on the [[Electron#Fundamental properties|electron radius]], and the required rotation speed exceeds the speed of light.<ref name=Sebens_HowSpin/> In the [[Standard Model]], the fundamental particles are all considered "point-like", and they have their effects through the field that surrounds them.<ref>{{Cite web |first1=Don |last1=Lincoln |title=What's the point? |url=https://www.fnal.gov/pub/today/archive/archive_2013/today13-02-15_NutshellReadMore.html |access-date=2023-06-16 |website=Fermilab Today |archive-date=2023-06-01 |archive-url=https://web.archive.org/web/20230601185654/https://www.fnal.gov/pub/today/archive/archive_2013/today13-02-15_NutshellReadMore.html }}</ref> Any model for spin based on mass rotation would need to be consistent with that model.
+
+=== Pauli's "classically non-describable two-valuedness" ===
+[[Wolfgang Pauli]], a central figure in the history of quantum spin, initially rejected any idea that the "degree of freedom" he introduced to explain experimental observations was related to rotation. He called it "classically non-describable two-valuedness". Later, he allowed that it is related to angular momentum, but insisted on considering spin an abstract property.<ref name=Giulini/> This approach allowed Pauli to develop a proof of his fundamental [[Pauli exclusion principle]], a proof now called the [[spin-statistics theorem]].<ref name=Frohlich/> In retrospect, this insistence and the style of his proof initiated the modern particle-physics era, where abstract quantum properties derived from symmetry properties dominate. Concrete interpretation became secondary and optional.<ref name=Giulini/>
+
+=== Circulation of classical fields ===
+The first classical model for spin proposed a small rigid particle rotating about an axis, as ordinary use of the word may suggest. Angular momentum can be computed from a classical field as well.<ref>{{cite journal |last1=Leader |first1=Elliot |last2=Lorcé |first2=Cédric |title=The angular momentum controversy: What's it all about and does it matter? |journal=Physics Reports |date=August 2014 |volume=541 |issue=3 |pages=163–248 |doi=10.1016/j.physrep.2014.02.010 |arxiv=1309.4235 |bibcode=2014PhR...541..163L }}</ref><ref name=PeskinSchroeder/>{{rp|63}} By applying [[Frederik Belinfante]]'s approach to calculating the angular momentum of a field, Hans C. Ohanian showed that "spin is essentially a wave property ... generated by a circulating flow of charge in the wave field of the electron".<ref name=ohanian>{{Cite journal |last=Ohanian |first=Hans C. |date=1986-06-01 |title=What is spin? |url=https://physics.mcmaster.ca/phys3mm3/notes/whatisspin.pdf |journal=American Journal of Physics |language=en |volume=54 |issue=6 |pages=500–505 |doi=10.1119/1.14580 |bibcode=1986AmJPh..54..500O |archive-date=2024-09-07 |access-date=2023-06-15 |archive-url=https://web.archive.org/web/20240907055018/https://physics.mcmaster.ca/phys3mm3/notes/whatisspin.pdf |url-status=live }}</ref> This same concept of spin can be applied to gravity waves in water: "spin is generated by subwavelength circular motion of water particles".<ref>{{cite journal |last1=Bliokh |first1=Konstantin Y. |last2=Punzmann |first2=Horst |last3=Xia |first3=Hua |last4=Nori |first4=Franco |last5=Shats |first5=Michael |title=Field theory spin and momentum in water waves |journal=Science Advances |date=21 January 2022 |volume=8 |issue=3 |article-number=eabm1295 |doi=10.1126/sciadv.abm1295 |pmc=8782445 |pmid=35061526 |bibcode=2022SciA....8.1295B }}</ref>
+
+Unlike classical wavefield circulation, which allows continuous values of angular momentum, quantum wavefields allow only discrete values.<ref name=ohanian/> Consequently, energy transfer to or from spin states always occurs in fixed quantum steps. Only a few steps are allowed: for many qualitative purposes, the complexity of the spin quantum wavefields can be ignored and the system properties can be discussed in terms of "integer" or "half-integer" spin models as discussed in [[#Quantum numbers|quantum numbers]] below.
+
+=== In Bohmian mechanics ===
+Spin can be understood differently depending on the [[interpretations of quantum mechanics]]. In the [[De Broglie–Bohm theory|de Broglie–Bohm interpretation]], particles have definitive trajectories but their motion is driven by the wave function or pilot wave. In this interpretation, the spin is a property of the pilot wave and not of the particle itself.<ref>{{cite book |last1=Hardy |first1=Lucien |title=Bohmian Mechanics and Quantum Theory: An Appraisal |chapter=Contextuality in Bohmian Mechanics |series=Boston Studies in the Philosophy of Science |date=1996 |volume=184 |pages=67–76 |doi=10.1007/978-94-015-8715-0_4 |isbn=978-90-481-4698-7 }}</ref>
+
+=== Dirac's relativistic electron ===
+Relativistic calculations of spin properties for electrons requires the [[Dirac equation]].<ref name="Frohlich" />
+
+== Relation to orbital angular momentum ==
+As the name suggests, spin was originally conceived as the rotation of a particle around some axis. Historically [[Angular momentum operator#Orbital angular momentum|orbital angular momentum]] related to particle orbits.<ref name="Whittaker 1989 p.87">{{cite book | last=Whittaker | first=Edmund, Sir | year=1989 | title=A History of the Theories of Aether and Electricity | publisher=Courier Dover Publications | isbn=0-486-26126-3 | volume=2 |  pages=87, 131 }}</ref>{{rp|131}} While the names based on mechanical models have survived, the physical explanation has not. [[Angular momentum operator|Quantization]] fundamentally alters the character of both spin and orbital angular momentum.
+
+Since elementary particles are point-like, self-rotation is not well-defined for them. However, spin implies that the phase of the particle depends on the angle as <math>e^{i S \theta}\ ,</math> for rotation of angle {{mvar|θ}} around the axis parallel to the spin {{mvar|S}}. This is equivalent to the quantum-mechanical interpretation of [[momentum]] as phase dependence in the position, and of [[Angular momentum operator#Orbital angular momentum|orbital angular momentum]] as phase dependence in the angular position.
+
+For fermions, the picture is less clear: From the [[Ehrenfest theorem]], the [[angular velocity]] is equal to the derivative of the [[Hamiltonian (quantum mechanics)|Hamiltonian]] to its [[conjugate momentum]], which is the total [[angular momentum operator]] {{nobr|{{math|'''J''' {{=}} '''L''' + '''S'''}} .}} Therefore, if the Hamiltonian {{mvar|H}} has any dependence on the spin {{mvar|S}}, then {{math| {{big|{{sfrac| ∂ ''H'' | ∂ ''S'' }} }} }} must be non-zero; consequently, for [[classical mechanics]], the existence of spin in the Hamiltonian will produce an actual angular velocity, and hence an actual physical rotation – that is, a change in the phase-angle, {{mvar|θ}}, over time. However, whether this holds true for free electrons is ambiguous, since for an electron, {{mvar|{{!}} S {{!}}}}² is a constant {{nobr| {{math|{{small|{{sfrac| 1 | 2 }} }}[[Planck constant|ℏ]]}} ,}} and one might decide that since it cannot change, no [[partial derivative|partial]] ({{math|∂}}) can exist. Therefore it is a matter of interpretation whether the Hamiltonian must include such a term, and whether this aspect of [[classical mechanics]] extends into [[quantum mechanics]] (any particle's intrinsic spin angular momentum, {{mvar|'''S'''}}, is a [[quantum number]] arising from a "[[spinor]]" in the mathematical solution to the [[Dirac equation]], rather than being a more nearly physical quantity, like [[orbital angular momentum]] {{mvar|'''L'''}}). Nevertheless, spin appears in the [[Dirac equation]], and thus the relativistic Hamiltonian of the electron, treated as a [[Dirac field]], can be interpreted as including a dependence in the spin {{mvar|S}}.<ref name=PeskinSchroeder>{{cite book |author1-link=Michael Peskin |last1=Peskin |first1=M.E. |name-list-style=amp |last2=Schroeder |first2=D.V. |year=1995 |title=Quantum Field Theory |at=Ch.&nbsp;3 |series=The Advanced Book Program }}</ref>
+
+== Quantum number ==
+{{main|Spin quantum number}}
+Spin obeys the mathematical laws of [[angular momentum quantization]]. The specific properties of spin angular momenta include:
+* Spin quantum numbers may take either [[half-integer]] or integer values.
+* Although the direction of its spin can be changed, the magnitude of the spin of an elementary particle cannot be changed.
+* The spin of a charged particle is associated with a [[magnetic dipole moment]] with a [[g-factor (physics)|{{mvar|g}}-factor]] that differs from&nbsp;1. (In the classical context, this would imply the [[Gyromagnetic ratio#For a classical rotating body|internal charge and mass distributions differing]] for a rotating nonconductive object.<ref name=Sebens_HowSpin>{{cite journal |last1=Sebens |first1=Charles T. |title=How electrons spin |journal=Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics |date=November 2019 |volume=68 |pages=40–50 |doi=10.1016/j.shpsb.2019.04.007 |arxiv=1806.01121 |bibcode=2019SHPMP..68...40S }}</ref>)
+
+The conventional definition of the '''spin quantum number''' is {{math|1=''s'' = {{sfrac|''n''|2}}}}, where {{mvar|n}} can be any [[non-negative integer]]. Hence the allowed values of {{mvar|s}} are 0, [[Spin-1/2|{{sfrac|1|2}}]], 1, {{sfrac|3|2}}, 2, etc. The value of {{mvar|s}} for an [[elementary particle]] depends only on the type of particle and cannot be altered in any known way (in contrast to the ''spin direction'' described below). The spin angular momentum {{mvar|S}} of any physical system is [[angular momentum quantization|quantized]]. The allowed values of {{mvar|S}} are
+<math display="block">S = \hbar \, \sqrt{s(s + 1)} = \frac{h}{2\pi} \, \sqrt{\frac{n}{2}\frac{(n + 2)}{2}} = \frac{h}{4\pi} \, \sqrt{n(n + 2)},</math>
+where {{mvar|h}} is the [[Planck constant]], and <math display="inline">\hbar = \frac{h}{2\pi}</math> is the reduced Planck constant. In contrast, [[angular momentum operator|orbital angular momentum]] can only take on integer values of {{mvar|s}}; i.e., even-numbered values of {{mvar|n}}.
+
+=== Fermions and bosons ===
+Those particles with half-integer spins, such as {{sfrac|1|2}}, {{sfrac|3|2}}, {{sfrac|5|2}}, are known as [[fermion]]s, while those particles with integer spins, such as 0, 1, 2, are known as [[bosons]]. The two families of particles obey different rules and ''broadly'' have different roles in the world around us. A key distinction between the two families is that fermions obey the [[Pauli exclusion principle]]: that is, there cannot be two identical fermions simultaneously having the same quantum numbers (meaning, roughly, having the same position, velocity and spin direction). Fermions obey the rules of [[Fermi–Dirac statistics]]. In contrast, bosons obey the rules of [[Bose–Einstein statistics]] and have no such restriction, so they may "bunch together" in identical states. Also, composite particles can have spins different from their component particles. For example, a [[helium-4]] atom in the ground state has spin&nbsp;0 and behaves like a boson, even though the [[quarks]] and electrons which make it up are all fermions.
+
+This has some profound consequences:
+* [[Quarks]] and [[leptons]] (including [[electrons]] and [[neutrinos]]), which make up what is classically known as [[matter]], are all fermions with [[spin-1/2|spin&nbsp;{{sfrac|1|2}}]]. The common idea that "matter takes up space" actually comes from the [[Pauli exclusion principle]] acting on these particles to prevent the fermions from being in the same quantum state. Further compaction would require electrons to occupy the same energy states, and therefore a kind of [[pressure]] (sometimes known as [[degenerate matter|degeneracy pressure of electrons]]) acts to resist the fermions being overly close.{{pb}} Elementary fermions with other spins ({{sfrac|3|2}}, {{sfrac|5|2}}, etc.) are not known to exist.
+* Elementary particles which are thought of as [[force carrier|carrying forces]] are all bosons with spin&nbsp;1. They include the [[photon]], which carries the [[electromagnetic force]], the [[gluon]] ([[strong force]]), and the [[W and Z bosons]] ([[weak force]]). The ability of bosons to occupy the same quantum state is used in the [[laser]], which aligns many photons having the same quantum number (the same direction and frequency), [[superfluid]] [[liquid helium]] resulting from helium-4 atoms being bosons, and [[superconductivity]], where [[Cooper pair|pairs of electrons]] (which individually are fermions) act as single composite bosons.{{pb}} Elementary bosons with other spins (0, 2, 3, etc.) were not historically known to exist, although they have received considerable theoretical treatment and are well established within their respective mainstream theories. In particular, theoreticians have proposed the [[graviton]] (predicted to exist by some [[quantum gravity]] theories) with spin&nbsp;2, and the [[Higgs boson]] (explaining [[electroweak symmetry breaking]]) with spin&nbsp;0. Since 2013, the Higgs boson with spin&nbsp;0 has been considered proven to exist.<ref>[http://home.cern/topics/higgs-boson Information about Higgs Boson] in [[CERN]]'s official website.</ref> It is the first [[scalar boson|scalar elementary particle]] (spin&nbsp;0) known to exist in nature.
+* Atomic nuclei have [[Spin quantum number#Nuclear spin|nuclear spin]] which may be either half-integer or integer, so that the nuclei may be either fermions or bosons.
+
+=== Spin–statistics theorem ===
+{{main|spin–statistics theorem}}
+The [[spin–statistics theorem]] splits particles into two groups: [[bosons]] and [[fermions]], where bosons obey [[Bose–Einstein statistics]], and fermions obey [[Fermi–Dirac statistics]] (and therefore the [[Pauli exclusion principle]]). Specifically, the theorem requires that particles with half-integer spins obey the [[Pauli exclusion principle]] while particles with integer spin do not. As an example, [[electron]]s have half-integer spin and are fermions that obey the Pauli exclusion principle, while photons have integer spin and do not. The theorem was derived by [[Wolfgang Pauli]] in 1940; it relies on both quantum mechanics and the theory of [[special relativity]]. Pauli described this connection between spin and statistics as "one of the most important applications of the special relativity theory".<ref>{{cite journal | last1 = Pauli | first1 = Wolfgang | author-link = Wolfgang Pauli | year = 1940 | title = The Connection Between Spin and Statistics | url = http://hermes.ffn.ub.es/luisnavarro/nuevo_maletin/Pauli_spin_statistics_1940.pdf | journal = Phys. Rev. | volume = 58 | issue = 8 | pages = 716–722 | doi = 10.1103/PhysRev.58.716 | bibcode = 1940PhRv...58..716P | archive-date = 2024-01-28 | access-date = 2024-01-28 | archive-url = https://web.archive.org/web/20240128194736/http://hermes.ffn.ub.es/luisnavarro/nuevo_maletin/Pauli_spin_statistics_1940.pdf | url-status = live }}</ref>
+
+== Magnetic moments ==
+{{anchor|Spin magnetic moment}}<!-- redirects here -->
+[[File:Neutron spin dipole field.svg|thumbnail|right|Schematic diagram depicting the spin of the neutron as the black arrow and magnetic field lines associated with the [[neutron magnetic moment]]. The neutron has a negative magnetic moment. While the spin of the neutron is upward in this diagram, the magnetic field lines at the center of the dipole are downward.]]
+Particles with spin can possess a [[magnetic dipole moment]], just like a rotating [[electric charge|electrically charged]] body in [[classical electrodynamics]]. These magnetic moments can be experimentally observed in several ways, e.g. by the deflection of particles by inhomogeneous [[magnetic field]]s in a [[Stern–Gerlach experiment]], or by measuring the magnetic fields generated by the particles themselves.
+
+The intrinsic magnetic moment {{math|'''''μ'''''}} of a [[spin-1/2|spin-{{sfrac|1|2}}]] particle with charge {{mvar|q}}, mass {{mvar|m}}, and spin angular momentum {{math|'''S'''}} is<ref>Physics of Atoms and Molecules, B.&nbsp;H. Bransden, C.&nbsp;J. Joachain, Longman, 1983, {{ISBN|0-582-44401-2}}.</ref>
+: <math>\boldsymbol{\mu} = \frac{g_\text{s} q}{2m} \mathbf{S},</math>
+where the [[dimensionless quantity]] {{math|''g''<sub>s</sub>}} is called the spin [[g-factor (physics)#Electron spin g-factor|{{mvar|g}}-factor]]. For exclusively orbital rotations, it would be 1 (assuming that the mass and the charge occupy spheres of equal radius).
+
+The electron, being a charged elementary particle, possesses a [[Electron magnetic moment|nonzero magnetic moment]]. One of the triumphs of the theory of [[quantum electrodynamics]] is its accurate prediction of the electron [[Landé g-factor|{{mvar|g}}-factor]], which has been experimentally determined to have the value {{physconst|ge|ref=no}}, with the digits in parentheses denoting [[measurement uncertainty]] in the last two digits at one [[standard deviation]].{{physconst|ge|ref=only}} The value of 2 arises from the [[Dirac equation]], a fundamental equation connecting the electron's spin with its electromagnetic properties; and the [[Anomalous magnetic dipole moment|deviation]] from {{val|2}} arises from the electron's interaction with the surrounding quantum fields, including its own electromagnetic field and [[virtual particles]].<ref>{{cite book |author-link=Richard Feynman |author=Feynman, R. P. |title=QED: The Strange Theory of Light and Matter |chapter=Electrons and their interactions |page=115 |publisher=[[Princeton University Press]] |location=[[Princeton, New Jersey]] |year=1985 |isbn=978-0-691-08388-9 |quote=After some years, it was discovered that this value [{{math|−{{sfrac|1|2}} ''g''}}] was not exactly 1, but slightly more – something like 1.00116. This correction was worked out for the first time in 1948 by Schwinger as {{math|''j'' × ''j''}} divided by {{math|2''π''}} {{sic}} [where {{mvar|j}} is the square root of the [[fine-structure constant]]], and was due to an alternative way the electron can go from place to place: Instead of going directly from one point to another, the electron goes along for a while and suddenly emits a photon; then (horrors!) it absorbs its own photon. |title-link=QED: The Strange Theory of Light and Matter }}</ref>
+
+Composite particles also possess magnetic moments associated with their spin. In particular, the [[neutron]] possesses a non-zero magnetic moment despite being electrically neutral. This fact was an early indication that the neutron is not an elementary particle. In fact, it is made up of [[quarks]], which are electrically charged particles. The [[neutron magnetic moment|magnetic moment of the neutron]] comes from the spins of the individual quarks and their orbital motions.
+
+[[Neutrino]]s are both elementary and electrically neutral. The minimally extended [[Standard Model]] that takes into account non-zero neutrino masses predicts neutrino magnetic moments of:<ref>{{cite journal |author1=Marciano, W. J. |author-link=William Marciano |author2=Sanda, A. I. |author-link2=Anthony Ichiro Sanda |title=Exotic decays of the muon and heavy leptons in gauge theories |journal=[[Physics Letters]] |volume=B67 |issue=3 |pages=303–305 |year=1977 |doi=10.1016/0370-2693(77)90377-X |bibcode=1977PhLB...67..303M}}</ref><ref>{{cite journal |last1=Lee |first1=Benjamin W. |last2=Shrock |first2=Robert E. |title=Natural suppression of symmetry violation in gauge theories: Muon- and electron-lepton-number nonconservation |journal=Physical Review D |date=September 1977 |volume=16 |issue=5 |pages=1444–1473 |doi=10.1103/PhysRevD.16.1444 |bibcode=1977PhRvD..16.1444L }}</ref><ref>{{cite journal |author=K. Fujikawa |author2=R. E. Shrock |title=Magnetic Moment of a Massive Neutrino and Neutrino-Spin Rotation |journal=[[Physical Review Letters]] |volume=45 |issue=12 |pages=963–966 |year=1980 |doi=10.1103/PhysRevLett.45.963 |bibcode=1980PhRvL..45..963F}}</ref>
+: <math>\mu_\nu \approx 3 \times 10^{-19} \mu_\text{B} \frac{m_\nu c^2}{\text{eV}},</math>
+where the {{math|''μ''<sub>ν</sub>}} are the neutrino magnetic moments, {{math|''m''<sub>ν</sub>}} are the neutrino masses, and {{math|''μ''<sub>B</sub>}} is the [[Bohr magneton]]. New physics above the [[electroweak scale]] could, however, lead to significantly higher neutrino magnetic moments. It can be shown in a model-independent way that neutrino magnetic moments larger than about 10<sup>−14</sup>&nbsp;{{math|''μ''<sub>B</sub>}} are "unnatural" because they would also lead to large radiative contributions to the neutrino mass. Since the neutrino masses are known to be at most about {{val|1|u=eV/c2}}, [[Fine-tuning (physics)|fine-tuning]] would be necessary in order to prevent large contributions to the neutrino mass via radiative corrections.<ref>{{cite journal |last1=Bell |first1=Nicole F. |last2=Cirigliano |first2=V. |last3=Ramsey-Musolf |first3=M. J. |last4=Vogel |first4=P. |last5=Wise |first5=Mark B. |title=How Magnetic is the Dirac Neutrino? |journal=Physical Review Letters |date=4 October 2005 |volume=95 |issue=15 |article-number=151802 |doi=10.1103/PhysRevLett.95.151802 |pmid=16241715 |arxiv=hep-ph/0504134 |bibcode=2005PhRvL..95o1802B }}</ref> The measurement of neutrino magnetic moments is an active area of research. Experimental results have put the neutrino magnetic moment at less than {{val|1.2|e=-10}}&nbsp;times the electron's magnetic moment.
+
+On the other hand, elementary particles with spin but without electric charge, such as the [[photon]] and [[Z boson]], do not have a magnetic moment.
+
+== Direction ==
+{{further|Angular momentum operator}}
+
+=== Spin projection quantum number and multiplicity ===
+In classical mechanics, the angular momentum of a particle possesses not only a magnitude (how fast the body is rotating), but also a direction (either up or down on the [[axis of rotation]] of the particle). Quantum-mechanical spin also contains information about direction, but in a more subtle form. Quantum mechanics states that the [[Spatial vector|component]] of angular momentum for a spin-''s'' particle measured along any direction can only take on the values<ref>Quanta: A handbook of concepts, P.&nbsp;W. Atkins, Oxford University Press, 1974, {{ISBN|0-19-855493-1}}.</ref>
+: <math>S_i = \hbar s_i, \quad s_i \in \{ -s, -(s - 1), \dots, s - 1, s \},</math>
+where {{mvar|S<sub>i</sub>}} is the spin component along the {{mvar|i}}-th axis (either {{mvar|x}}, {{mvar|y}}, or {{mvar|z}}), {{mvar|s<sub>i</sub>}} is the spin projection quantum number along the {{mvar|i}}-th axis, and {{mvar|s}} is the principal spin quantum number (discussed in the previous section). Conventionally the direction chosen is the {{mvar|z}}&nbsp;axis:
+: <math>S_z = \hbar s_z, \quad s_z \in \{ -s, -(s - 1), \dots, s - 1, s \},</math>
+where {{mvar|S<sub>z</sub>}} is the spin component along the {{mvar|z}}&nbsp;axis, {{mvar|s<sub>z</sub>}} is the spin projection quantum number along the {{mvar|z}}&nbsp;axis.
+
+One can see that there are {{math|2''s'' + 1}} possible values of {{mvar|s<sub>z</sub>}}. The number "{{math|2''s'' + 1}}" is the [[Multiplicity (chemistry)|multiplicity]] of the spin system. For example, there are only two possible values for a [[spin-1/2|spin-{{sfrac|1|2}}]] particle: {{math|''s<sub>z</sub>'' {{=}} +{{sfrac|1|2}}}} and {{math|''s<sub>z</sub>'' {{=}} −{{sfrac|1|2}}}}. These correspond to [[quantum state]]s in which the spin component is pointing in the +''z'' or −''z'' directions respectively, and are often referred to as "spin up" and "spin down". For a spin-{{sfrac|3|2}} particle, like a [[delta baryon]], the possible values are +{{sfrac|3|2}}, +{{sfrac|1|2}}, −{{sfrac|1|2}}, −{{sfrac|3|2}}.
+
+=== Vector ===
+
+For a given [[quantum state]], one could think of a spin vector <math display="inline"> \lang S \rang </math> whose components are the [[expectation value (quantum physics)|expectation values]] of the spin components along each axis, i.e., <math display="inline"> \lang S \rang = [\lang S_x \rang, \lang S_y \rang, \lang S_z \rang]</math>. This vector then would describe the "direction" in which the spin is pointing, corresponding to the classical concept of the [[axis of rotation]]. It turns out that the spin vector is not very useful in actual quantum-mechanical calculations, because it cannot be measured directly: {{mvar|s<sub>x</sub>}}, {{mvar|s<sub>y</sub>}} and {{mvar|s<sub>z</sub>}} cannot possess simultaneous definite values, because of a quantum [[uncertainty principle|uncertainty relation]] between them. However, for statistically large collections of particles that have been placed in the same pure quantum state, such as through the use of a [[Stern–Gerlach apparatus]], the spin vector does have a well-defined experimental meaning: It specifies the direction in ordinary space in which a subsequent detector must be oriented in order to achieve the maximum possible probability (100%) of detecting every particle in the collection. For spin-{{sfrac|1|2}} particles, this probability drops off smoothly as the angle between the spin vector and the detector increases, until at an angle of 180°—that is, for detectors oriented in the opposite direction to the spin vector—the expectation of detecting particles from the collection reaches a minimum of 0%.
+
+As a qualitative concept, the spin vector is often handy because it is easy to picture classically. For instance, quantum-mechanical spin can exhibit phenomena analogous to classical [[gyroscope|gyroscopic effects]]. For example, one can exert a kind of "[[torque]]" on an electron by putting it in a [[magnetic field]] (the field acts upon the electron's intrinsic [[magnetic dipole moment]]—see the following section). The result is that the spin vector undergoes [[precession]], just like a classical gyroscope.  This phenomenon is known as [[electron spin resonance]] (ESR). The equivalent behaviour of protons in atomic nuclei is used in [[nuclear magnetic resonance]] (NMR) spectroscopy and imaging.
+
+Mathematically, quantum-mechanical spin states are described by vector-like objects known as [[spinor]]s. There are subtle differences between the behavior of spinors and vectors under [[coordinate rotation]]s. For example, rotating a spin-{{sfrac|1|2}} particle by 360° does not bring it back to the same quantum state, but to the state with the opposite quantum [[phase (waves)|phase]]; this is detectable, in principle, with [[Interference (wave propagation)|interference]] experiments. To return the particle to its exact original state, one needs a 720° rotation. (The [[plate trick]] and [[Möbius strip]] give non-quantum  analogies.) A spin-zero particle can only have a single quantum state, even after torque is applied. Rotating a spin-2 particle 180° can bring it back to the same quantum state, and a spin-4 particle should be rotated 90° to bring it back to the same quantum state. The spin-2 particle can be analogous to a straight stick that looks the same even after it is rotated 180°, and a spin-0 particle can be imagined as sphere, which looks the same after whatever angle it is turned through.
+
+== Mathematical formulation ==
+=== Definitions ===
+==== Intrinsic angular momentum  ====
+
+A particle is said to possess intrinsic spin <math>s</math> if the quantum-mechanical states of that particle in its own rest frame are eigenstates of the operator [[total angular momentum|<math>\mathbf{J}^2</math>]] with eigenvalue <math>\hbar^2 s(s+1)</math>.<ref>{{cite book |last=Tung |first=Wu-Ki |title=Group Theory in Physics: An Introduction to Symmetry Principles, Group Representations, and Special Functions In Classical And Quantum Physics |publisher=World Scientific |year=2020 |section=§8.4.1 |location=London, England, UK |isbn=978-0-00098975-8 }}</ref><ref>{{cite book |last1=Berestetskii |first1=Vladimir B. |last2=Lifshitz |first2=Evgeny M. |author-link2=Evgeny Lifshitz |last3=Pitaevskii |first3=Lev P. |author-link3=Lev Pitaevskii |title=Quantum Electrodynamics |series=Course of Theoretical Physics |volume=4 |edition=2nd |publisher=Butterworth-Heinemann |year=1982 |isbn=978-0-7506-3371-0 }}</ref>
+
+==== Relativistic quantum theory ====
+
+In relativistic quantum theory, spin is defined as an invariant label of a time-like unitary irreducible representation of the [[Poincaré group]].
+For time-like representations, corresponding to massive particles, the unitary irreducible representations are characterized by the mass <math>M</math> and the spin <math>s</math>, where <math>s</math> labels an irreducible [[projective representation]] of the rotation group <math>SO(3)</math>.<ref>{{cite book |last=Tung |first=Wu-Ki |title=Group Theory in Physics: An Introduction to Symmetry Principles, Group Representations, and Special Functions In Classical And Quantum Physics |publisher=World Scientific |year=2020 |section=Theorem 10.10 |location=London, England, UK |isbn=978-0-00098975-8 }}</ref><ref>{{cite book |last=Weinberg |first=Steven |author-link=Steven Weinberg |title=The Quantum Theory of Fields |volume=1 |publisher=Cambridge University Press |year=2005 |isbn=978-0-521-67053-1 }}</ref>
+
+=== Operator ===
+Spin obeys [[commutation relations]]<ref>{{Cite book| last=Messiah|first=Albert| author-link=Albert Messiah| title=Quantum Mechanics |publisher=Dover Publications |year=2014 |isbn=978-1-306-51279-4 | location=Mineola, NY | page=540| language=en| chapter=Angular Momentum in Quantum Mechanics | oclc=874097814}}</ref> analogous to those of the [[angular momentum operator|orbital angular momentum]]:
+<math display="block">\left[\hat S_j, \hat S_k\right] = i \hbar \varepsilon_{jkl} \hat S_l,</math>
+where {{mvar|ε<sub>jkl</sub>}} is the [[Levi-Civita symbol]]. It follows (as with [[angular momentum]]) that the [[eigenvectors]] of <math>\hat S^2</math> and <math>\hat S_z</math> (expressed as [[Bra-ket notation|kets]] in the total {{mvar|S}} [[Basis (linear algebra)|basis]]) are<ref name="griffiths" />{{Rp|page=166}}
+<math display="block">\begin{align}
+  \hat S^2 |s, m_s\rangle &= \hbar^2 s(s + 1) |s, m_s\rangle, \\
+  \hat S_z |s, m_s\rangle &= \hbar m_s |s, m_s\rangle.
+\end{align}</math>
+
+The spin [[Creation and annihilation operators|raising and lowering operators]] acting on these eigenvectors give
+<math display="block">\hat S_\pm |s, m_s\rangle = \hbar \sqrt{s(s + 1) - m_s(m_s \pm 1)} |s, m_s \pm 1\rangle,</math>
+where <math>\hat S_\pm = \hat S_x \pm i \hat S_y</math>.<ref name="griffiths" />{{Rp|page=166}}
+
+But unlike orbital angular momentum, the eigenvectors are not [[spherical harmonics]]. They are not functions of {{mvar|θ}} and {{mvar|φ}}. There is also no reason to exclude half-integer values of {{mvar|s}} and {{mvar|m<sub>s</sub>}}.
+
+All quantum-mechanical particles possess an intrinsic spin <math>s</math> (though this value may be equal to zero). The projection of the spin <math>s</math> on any axis is quantized in units of the [[reduced Planck constant]], such that the [[state function]] of the particle is, say, not <math>\psi = \psi(\mathbf r)</math>, but <math>\psi = \psi(\mathbf r,s_z)</math>, where <math>s_z</math> can take only the values of the following discrete set:
+<math display="block">s_z \in \{-s\hbar, -(s - 1)\hbar, \dots, +(s - 1)\hbar, +s\hbar\}.</math>
+
+One distinguishes [[boson]]s (integer spin) and [[fermion]]s (half-integer spin). The total angular momentum conserved in interaction processes is then the sum of the orbital angular momentum and the spin.
+
+=== Pauli matrices ===
+{{main|Pauli matrices}}
+The [[Operator (physics)#Operators in quantum mechanics|quantum-mechanical operators]] associated with spin-{{sfrac|1|2}} [[observables]] are
+<math display="block">\hat{\mathbf{S}} = \frac{\hbar}{2} \boldsymbol{\sigma},</math>
+where in Cartesian components
+<math display="block">S_x = \frac{\hbar}{2} \sigma_x, \quad S_y = \frac{\hbar}{2} \sigma_y, \quad S_z = \frac{\hbar}{2} \sigma_z.</math>
+
+For the special case of spin-{{sfrac|1|2}} particles, {{mvar|σ<sub>x</sub>}}, {{mvar|σ<sub>y</sub>}} and {{mvar|σ<sub>z</sub>}} are the three [[Pauli matrices]]:
+<math display="block">
+\sigma_x = \begin{pmatrix}
+ 0 & 1\\
+ 1 & 0
+\end{pmatrix},
+\quad
+\sigma_y = \begin{pmatrix}
+ 0 & -i\\
+ i & 0
+\end{pmatrix},
+\quad
+\sigma_z = \begin{pmatrix}
+ 1 & 0\\
+ 0 & -1
+\end{pmatrix}.
+</math>
+
+=== Pauli exclusion principle ===
+The [[Pauli exclusion principle]] states that the [[wavefunction]]
+<math>\psi(\mathbf r_1, \sigma_1, \dots, \mathbf r_N, \sigma_N)</math> for a system of {{mvar|N}} identical particles having spin {{mvar|s}}  must change upon interchanges of any two of the {{mvar|N}} particles as
+<math display="block">\psi(\dots, \mathbf r_i, \sigma_i, \dots, \mathbf r_j, \sigma_j, \dots ) =
+ (-1)^{2s} \psi(\dots, \mathbf r_j, \sigma_j, \dots, \mathbf r_i, \sigma_i, \dots).</math>
+
+Thus, for [[boson]]s the prefactor {{math|(−1)<sup>2''s''</sup>}} will reduce to +1, for [[fermion]]s to −1. 
+This permutation postulate for {{mvar|N}}-particle state functions has most important consequences in daily life, e.g. the [[periodic table]] of the chemical elements.
+
+=== Rotations ===
+{{see also|Symmetry in quantum mechanics}}
+As described above, quantum mechanics states that [[Spatial vector|components]] of angular momentum measured along any direction can only take a number of discrete values. The most convenient quantum-mechanical description of particle's spin is therefore with a set of complex numbers corresponding to amplitudes of finding a given value of projection of its intrinsic angular momentum on a given axis. For instance, for a spin-{{sfrac|1|2}} particle, we would need two numbers {{math|''a''<sub>±1/2</sub>}}, giving amplitudes of finding it with projection of angular momentum equal to {{math|+{{sfrac|''ħ''|2}}}} and {{math|−{{sfrac|''ħ''|2}}}}, satisfying the requirement
+<math display="block">|a_{+1/2}|^2 + |a_{-1/2}|^2 = 1.</math>
+
+For a generic particle with spin {{mvar|s}}, we would need {{math|2''s'' + 1}} such parameters. Since these numbers depend on the choice of the axis, they transform into each other non-trivially when this axis is rotated. It is clear that the transformation law must be linear, so we can represent it by associating a matrix with each rotation, and the product of two transformation matrices corresponding to rotations A and B must be equal (up to phase) to the matrix representing rotation AB. Further, rotations preserve the quantum-mechanical inner product, and so should our transformation matrices:
+<math display="block">
+ \sum_{m=-j}^j a_m^* b_m = \sum_{m=-j}^j \left(\sum_{n=-j}^j U_{nm} a_n\right)^* \left(\sum_{k=-j}^j U_{km} b_k\right),
+</math>
+<math display="block">
+ \sum_{n=-j}^j \sum_{k=-j}^j U_{np}^* U_{kq} = \delta_{pq}.
+</math>
+
+Mathematically speaking, these matrices furnish a unitary [[projective representation]] of the [[rotation group SO(3)]]. Each such representation corresponds to a representation of the covering group of SO(3), which is [[SU(2)]].<ref>{{cite book |last1=Hall |first1=Brian C. |title=Quantum Theory for Mathematicians |series=Graduate Texts in Mathematics |date=2013 |volume=267 |doi=10.1007/978-1-4614-7116-5 |bibcode=2013qtm..book.....H |isbn=978-1-4614-7115-8 |pages=354–358 }}</ref> There is one {{mvar|n}}-dimensional irreducible representation of SU(2) for each dimension, though this representation is {{mvar|n}}-dimensional real for odd {{mvar|n}} and {{mvar|n}}-dimensional complex for even {{mvar|n}} (hence of real dimension {{math|2''n''}}). For a rotation by angle {{mvar|θ}} in the plane with normal vector <math display="inline"> \hat{\boldsymbol{\theta}}</math>,
+<math display="block">U = e^{-\frac{i}{\hbar} \boldsymbol{\theta} \cdot \mathbf{S}},</math>
+where <math display="inline"> \boldsymbol{\theta} = \theta \hat{\boldsymbol{\theta}}</math>, and {{math|'''S'''}} is the vector of [[#Operator|spin operators]].
+
+{{math proof
+|proof=
+Working in the coordinate system where <math display="inline">\hat{\theta} = \hat{z}</math>, we would like to show that {{mvar|S<sub>x</sub>}} and {{mvar|S<sub>y</sub>}} are rotated into each other by the angle {{mvar|θ}}. Starting with {{mvar|S<sub>x</sub>}}. Using units where {{math|1=''ħ'' = 1}}:
+<math display="block">\begin{align}
+  S_x \rightarrow U^\dagger S_x U &= e^{i \theta S_z} S_x e^{-i \theta S_z} \\
+                                  &= S_x + (i \theta) \left[S_z, S_x\right] + \left(\frac{1}{2!}\right) (i \theta)^2 \left[S_z, \left[S_z, S_x\right]\right] + \left(\frac{1}{3!}\right) (i \theta)^3 \left[S_z, \left[S_z, \left[S_z, S_x\right]\right]\right] + \cdots
+\end{align}</math>
+
+Using the [[#Operator|spin operator commutation relations]], we see that the commutators evaluate to {{mvar|i S<sub>y</sub>}} for the odd terms in the series, and to {{mvar|S<sub>x</sub>}} for all of the even terms. Thus:
+<math display="block">\begin{align}
+  U^\dagger S_x U
+&= S_x \left[ 1 - \frac{\theta^2}{2!} + \cdots \right] - S_y \left[ \theta - \frac{\theta^3}{3!} \cdots \right] \\
+&= S_x \cos\theta - S_y \sin\theta,
+\end{align}</math>
+as expected. Note that since we only relied on the spin operator commutation relations, this proof holds for any dimension (i.e., for any principal spin quantum number {{mvar|s}})<ref>{{Cite book |last1=Sakurai |first1=Jun John |url=https://www.academia.edu/download/64391583/modern%20quantum%20mechanics.pdf |title=Modern quantum mechanics |last2=Napolitano |first2=Jim |date=2017 |publisher=Cambridge university press |isbn=978-1-108-42241-3 |edition=2nd |location=Cambridge}}</ref>{{rp|164}}
+}}
+
+A generic rotation in 3-dimensional space can be built by compounding operators of this type using [[Euler angles]]:
+<math display="block">\mathcal{R}(\alpha, \beta, \gamma) = e^{-i\alpha S_x} e^{-i\beta S_y} e^{-i\gamma S_z}.</math>
+
+An irreducible representation of this group of operators is furnished by the [[Wigner D-matrix]]:
+<math display="block">
+  D^s_{m'm}(\alpha, \beta, \gamma) \equiv
+  \langle sm' | \mathcal{R}(\alpha, \beta, \gamma) | sm \rangle =
+  e^{-im'\alpha} d^s_{m'm}(\beta)e^{-i m\gamma},
+</math>
+where
+<math display="block">d^s_{m'm}(\beta) = \langle sm' | e^{-i\beta s_y} | sm \rangle</math>
+is [[Wigner D-matrix#Wigner (small) d-matrix|Wigner's small d-matrix]]. Note that for {{math|1=''γ'' = 2π}} and {{math|1=''α'' = ''β'' = 0}}; i.e., a full rotation about the {{mvar|z}}&nbsp;axis, the Wigner D-matrix elements become
+<math display="block">D^s_{m'm}(0, 0, 2\pi) = d^s_{m'm}(0) e^{-i m 2 \pi} = \delta_{m'm} (-1)^{2m}.</math>
+
+Recalling that a generic spin state can be written as a superposition of states with definite {{mvar|m}}, we see that if {{mvar|s}} is an integer, the values of {{mvar|m}} are all integers, and this matrix corresponds to the identity operator. However, if {{mvar|s}} is a half-integer, the values of {{mvar|m}} are also all half-integers, giving {{math|1=(−1)<sup>2''m''</sup> = −1}} for all {{mvar|m}}, and hence upon rotation by 2{{pi}} the state picks up a minus sign. This fact is a crucial element of the proof of the [[spin–statistics theorem]].
+
+=== Lorentz transformations ===
+{{unreferenced section|date=May 2021}}
+We could try the same approach to determine the behavior of spin under general [[Lorentz transformation]]s, but we would immediately discover a major obstacle. Unlike SO(3), the group of Lorentz transformations [[SO(3,1)]] is [[Compact group|non-compact]] and therefore does not have any faithful, unitary, finite-dimensional representations.
+
+In case of spin-{{sfrac|1|2}} particles, it is possible to find a construction that includes both a finite-dimensional representation and a scalar product that is preserved by this representation. We associate a 4-component [[Dirac spinor]] {{mvar|ψ}} with each particle. These spinors transform under Lorentz transformations according to the law
+<math display="block">\psi' = \exp{\left(\tfrac{1}{8} \omega_{\mu\nu} [\gamma_{\mu}, \gamma_{\nu}]\right)} \psi,</math>
+where {{mvar|γ<sub>ν</sub>}} are [[gamma matrices]], and {{mvar|ω<sub>μν</sub>}} is an antisymmetric 4&nbsp;×&nbsp;4 matrix parametrizing the transformation. It can be shown that the scalar product
+<math display="block">\langle\psi|\phi\rangle = \bar{\psi}\phi = \psi^\dagger \gamma_0 \phi</math>
+is preserved. It is not, however, positive-definite, so the representation is not unitary.
+
+=== Measurement of spin along the {{mvar|x}}, {{mvar|y}}, or {{mvar|z}} axes ===
+Each of the ([[Hermitian matrix|Hermitian]]) Pauli matrices of spin-{{sfrac|1|2}} particles has two [[eigenvalues]], +1 and −1. The corresponding [[Normalisable wavefunction|normalized]] [[eigenvectors]] are
+<math display="block">\begin{array}{lclc}
+  \psi_{x+} = \left|\frac{1}{2}, \frac{+1}{2}\right\rangle_x =
+    \displaystyle\frac{1}{\sqrt{2}} \!\!\!\!\! & \begin{pmatrix}{1}\\{1}\end{pmatrix},  &
+  \psi_{x-} = \left|\frac{1}{2}, \frac{-1}{2}\right\rangle_x =
+    \displaystyle\frac{1}{\sqrt{2}} \!\!\!\!\! & \begin{pmatrix}{1}\\{-1}\end{pmatrix}, \\
+  \psi_{y+} = \left|\frac{1}{2}, \frac{+1}{2}\right\rangle_y =
+    \displaystyle\frac{1}{\sqrt{2}} \!\!\!\!\! & \begin{pmatrix}{1}\\{i}\end{pmatrix},  & 
+  \psi_{y-} = \left|\frac{1}{2}, \frac{-1}{2}\right\rangle_y =
+    \displaystyle\frac{1}{\sqrt{2}} \!\!\!\!\! & \begin{pmatrix}{1}\\{-i}\end{pmatrix}, \\
+  \psi_{z+} = \left|\frac{1}{2}, \frac{+1}{2}\right\rangle_z =                          &
+    \begin{pmatrix} 1 \\ 0 \end{pmatrix}, &
+  \psi_{z-} = \left|\frac{1}{2}, \frac{-1}{2}\right\rangle_z =                          &
+    \begin{pmatrix} 0 \\ 1 \end{pmatrix}.
+\end{array}</math>
+
+(Because any eigenvector multiplied by a constant is still an eigenvector, there is ambiguity about the overall sign. In this article, the convention is chosen to make the first element imaginary and negative if there is a sign ambiguity. The present convention is used by software such as [[SymPy]]; while many physics textbooks, such as Sakurai and Griffiths, prefer to make it real and positive.)
+
+By the [[Postulates of quantum mechanics#Postulates of quantum mechanics|postulates of quantum mechanics]], an experiment designed to measure the electron spin on the {{mvar|x}}, {{mvar|y}}, or {{mvar|z}}&nbsp;axis can only yield an eigenvalue of the corresponding spin operator ({{mvar|S<sub>x</sub>}}, {{mvar|S<sub>y</sub>}} or {{mvar|S<sub>z</sub>}}) on that axis, i.e. {{math|{{sfrac|''ħ''|2}}}} or {{math|−{{sfrac|''ħ''|2}}}}. The [[quantum state]] of a particle (with respect to spin), can be represented by a two-component [[spinor]]:
+<math display="block">\psi = \begin{pmatrix} a + bi \\ c + di \end{pmatrix}.</math>
+
+When the spin of this particle is measured with respect to a given axis (in this example, the {{mvar|x}}&nbsp;axis), the probability that its spin will be measured as {{math|{{sfrac|''ħ''|2}}}} is just <math>\big|\langle \psi_{x+}|\psi\rangle\big|^2</math>. Correspondingly, the probability that its spin will be measured as {{math|−{{sfrac|''ħ''|2}}}} is just <math>\big|\langle\psi_{x-}|\psi\rangle\big|^2</math>. Following the measurement, the spin state of the particle [[wavefunction collapse|collapses]] into the corresponding eigenstate. As a result, if the particle's spin along a given axis has been measured to have a given eigenvalue, all measurements will yield the same eigenvalue (since <math>\big|\langle\psi_{x+} | \psi_{x+}\rangle\big|^2 = 1</math>, etc.), provided that no measurements of the spin are made along other axes.
+
+=== Measurement of spin along an arbitrary axis ===
+{{unreferenced section|date=May 2021}}
+The operator to measure spin along an arbitrary axis direction is easily obtained from the Pauli spin matrices. Let {{math|1=''u'' = (''u<sub>x</sub>'', ''u<sub>y</sub>'', ''u<sub>z</sub>'')}} be an arbitrary unit vector. Then the operator for spin in this direction is simply
+<math display="block">S_u = \frac{\hbar}{2} (u_x \sigma_x + u_y \sigma_y + u_z \sigma_z).</math>
+
+The operator {{mvar|S<sub>u</sub>}} has eigenvalues of {{math|±{{sfrac|''ħ''|2}}}}, just like the usual spin matrices. This method of finding the operator for spin in an arbitrary direction generalizes to higher spin states, one takes the [[dot product]] of the direction with a vector of the three operators for the three {{mvar|x}}-, {{mvar|y}}-, {{mvar|z}}-axis directions.
+
+A normalized spinor for spin-{{sfrac|1|2}} in the {{math|(''u<sub>x</sub>'', ''u<sub>y</sub>'', ''u<sub>z</sub>'')}} direction (which works for all spin states except spin down, where it will give {{sfrac|0|0}}) is
+<math display="block">\frac{1}{\sqrt{2 + 2u_z}} \begin{pmatrix} 1 + u_z \\ u_x + iu_y \end{pmatrix}.</math>
+
+The above spinor is obtained in the usual way by diagonalizing the {{mvar|σ<sub>u</sub>}} matrix and finding the eigenstates corresponding to the eigenvalues. In quantum mechanics, vectors are termed "normalized" when multiplied by a normalizing factor, which results in the vector having a length of unity.
+
+=== Compatibility of spin measurements ===
+{{unreferenced section|date=May 2021}}
+Since the Pauli matrices do not [[commutativity|commute]], measurements of spin along different axes are incompatible. That is, a measurement along one axis may change the result of a subsequent measurement along a different axis. For example, if we measure along the {{mvar|x}}&nbsp;axis, our state will become <math>|\psi_{x\pm} \rangle</math>, each of which is an even mixture of <math>|\psi_{z+} \rangle</math> and <math>|\psi_{z-} \rangle</math>. This means that after the measurement along the {{mvar|x}}&nbsp;axis, a measurement along the z-axis has an even chance of being <math>|\psi_{z+} \rangle</math> or <math>|\psi_{z-} \rangle</math>, regardless of the prior state.
+
+=== Higher spins ===
+{{See also|3D rotation group#A note on Lie algebras}}
+The spin-{{sfrac|1|2}} operator {{math|1='''S''' = {{sfrac|''ħ''|2}}'''σ'''}} forms the [[fundamental representation]] of [[Representation theory of SU(2)|SU(2)]]. By taking [[Kronecker product]]s of this representation with itself repeatedly, one may construct all higher irreducible representations. That is, the resulting [[spin operator]]s for higher-spin systems in three spatial dimensions can be calculated for arbitrarily large {{mvar|s}} using this [[spin operator]] and [[Ladder operator#Angular momentum|ladder operators]]. For example, taking the Kronecker product of two spin-{{sfrac|1|2}} yields a four-dimensional representation, which is separable into a 3-dimensional spin-1 ([[triplet state]]s) and a 1-dimensional spin-0 representation ([[singlet state]]).
+
+The resulting irreducible representations yield the following spin matrices and eigenvalues in the z-basis:
+{{ordered list
+| For spin 1 they are
+<math display="block">\begin{align}
+                         S_x &= \frac{\hbar}{\sqrt{2}}
+                           \begin{pmatrix}
+                             0 & 1 & 0 \\
+                             1 & 0 & 1 \\
+                             0 & 1 & 0
+                           \end{pmatrix}, &
+  \left|1, +1\right\rangle_x &= \frac{1}{2} \begin{pmatrix} 1 \\{\sqrt{2}}\\ 1 \end{pmatrix},  &
+  \left|1,  0\right\rangle_x &= \frac{1}{\sqrt{2}} \begin{pmatrix} -1 \\ 0 \\ 1 \end{pmatrix}, &
+  \left|1, -1\right\rangle_x &= \frac{1}{2} \begin{pmatrix} 1 \\{-\sqrt{2}}\\ 1 \end{pmatrix}  \\
+                         S_y &= \frac{\hbar}{\sqrt{2}}
+                           \begin{pmatrix}
+                             0 & -i  &  0 \\
+                             i &  0  & -i \\
+                             0 &  i  &  0
+                           \end{pmatrix}, &
+  \left|1, +1\right\rangle_y &= \frac{1}{2} \begin{pmatrix} -1 \\ -i\sqrt{2} \\ 1 \end{pmatrix}, &
+  \left|1,  0\right\rangle_y &= \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix},    &
+  \left|1, -1\right\rangle_y &= \frac{1}{2} \begin{pmatrix} -1 \\  i\sqrt{2} \\ 1 \end{pmatrix}  \\
+                         S_z &= \hbar
+                           \begin{pmatrix}
+                             1 & 0 &  0 \\
+                             0 & 0 &  0 \\
+                             0 & 0 & -1
+                           \end{pmatrix}, &
+  \left|1, +1\right\rangle_z &= \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, &
+  \left|1,  0\right\rangle_z &= \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, &
+  \left|1, -1\right\rangle_z &= \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}  \\
+\end{align}</math>
+| For spin {{sfrac|3|2}} they are
+<math display="block">\begin{array}{lclc}
+  S_x = \frac\hbar2
+    \begin{pmatrix}
+      0        &\sqrt{3} &0        &0\\
+      \sqrt{3} &0        &2        &0\\
+      0        &2        &0        &\sqrt{3}\\
+      0        &0        &\sqrt{3} &0
+    \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{+3}{2}\right\rangle_x =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix} 1 \\{\sqrt{3}}\\{\sqrt{3}}\\ 1 \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{+1}{2}\right\rangle_x =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix}{-\sqrt{3}}\\ -1 \\ 1 \\{\sqrt{3}}\end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{-1}{2}\right\rangle_x =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix}{\sqrt{3}}\\ -1 \\ -1 \\{\sqrt{3}}\end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{-3}{2}\right\rangle_x =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix} -1 \\{\sqrt{3}}\\{-\sqrt{3}}\\ 1 \end{pmatrix} \\
+  S_y = \frac\hbar2
+    \begin{pmatrix}
+      0         &-i\sqrt{3} &0         &0\\
+      i\sqrt{3} &0          &-2i       &0\\
+      0         &2i         &0         &-i\sqrt{3}\\
+      0         &0          &i\sqrt{3} &0
+    \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{+3}{2}\right\rangle_y =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix}{i}\\{-\sqrt{3}}\\{-i\sqrt{3}}\\ 1 \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{+1}{2}\right\rangle_y =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix}{-i\sqrt{3}}\\ 1 \\{-i}\\{\sqrt{3}}\end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{-1}{2}\right\rangle_y =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix}{i\sqrt{3}}\\ 1 \\{i}\\{\sqrt{3}}\end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{-3}{2}\right\rangle_y =\!\!\! & \frac{1}{2\sqrt{2}} \begin{pmatrix}{-i}\\{-\sqrt{3}}\\{i\sqrt{3}}\\ 1 \end{pmatrix} \\
+  S_z = \frac\hbar2
+    \begin{pmatrix}
+      3 &0 &0  &0\\
+      0 &1 &0  &0\\
+      0 &0 &-1 &0\\
+      0 &0 &0  &-3
+     \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{+3}{2}\right\rangle_z =\!\!\! & \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{+1}{2}\right\rangle_z =\!\!\! & \begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{-1}{2}\right\rangle_z =\!\!\! & \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}, \!\!\! &
+\left|\frac{3}{2}, \frac{-3}{2}\right\rangle_z =\!\!\! & \begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix} \\
+\end{array}</math>
+
+|For spin {{sfrac|5|2}} they are
+<math display="block">\begin{align}
+\boldsymbol{S}_x &= \frac{\hbar}{2}
+ \begin{pmatrix}
+ 0 &\sqrt{5} &0 &0 &0 &0 \\
+ \sqrt{5} &0 &2\sqrt{2} &0 &0 &0 \\
+ 0 &2\sqrt{2} &0 &3 &0 &0 \\
+ 0 &0 &3 &0 &2\sqrt{2} &0 \\
+ 0 &0 &0 &2\sqrt{2} &0 &\sqrt{5} \\
+ 0 &0 &0 &0 &\sqrt{5} &0
+ \end{pmatrix}, \\
+\boldsymbol{S}_y &= \frac{\hbar}{2}
+ \begin{pmatrix}
+ 0 &-i\sqrt{5} &0 &0 &0 &0 \\
+ i\sqrt{5} &0 &-2i\sqrt{2} &0 &0 &0 \\
+ 0 &2i\sqrt{2} &0 &-3i &0 &0 \\
+ 0 &0 &3i &0 &-2i\sqrt{2} &0 \\
+ 0 &0 &0 &2i\sqrt{2} &0 &-i\sqrt{5} \\
+ 0 &0 &0 &0 &i\sqrt{5} &0
+ \end{pmatrix}, \\
+\boldsymbol{S}_z &= \frac{\hbar}{2}
+ \begin{pmatrix}
+ 5 &0 &0 &0 &0 &0 \\
+ 0 &3 &0 &0 &0 &0 \\
+ 0 &0 &1 &0 &0 &0 \\
+ 0 &0 &0 &-1 &0 &0 \\
+ 0 &0 &0 &0 &-3 &0 \\
+ 0 &0 &0 &0 &0 &-5
+ \end{pmatrix}.
+\end{align}</math>
+| The generalization of these matrices for arbitrary spin {{mvar|s}} is
+<math display="block">\begin{align}
+  \left(S_x\right)_{ab} & = \frac{\hbar}{2}  \left(\delta_{a,b+1} + \delta_{a+1,b}\right) \sqrt{(s + 1)(a + b - 1) - ab}, \\
+  \left(S_y\right)_{ab} & = \frac{i\hbar}{2} \left(\delta_{a,b+1} - \delta_{a+1,b}\right) \sqrt{(s + 1)(a + b - 1) - ab}, \\
+  \left(S_z\right)_{ab} & = \hbar (s + 1 - a) \delta_{a,b} = \hbar (s + 1 - b) \delta_{a,b},
+\end{align}</math>
+where indices <math>a, b</math> are integer numbers such that
+<math display="block">1 \le a \le 2s + 1, \quad 1 \le b \le 2s + 1.</math>
+}}
+
+Also useful in the [[quantum mechanics]] of multiparticle systems, the general [[Pauli group]] {{mvar|G<sub>n</sub>}} is defined to consist of all {{mvar|n}}-fold [[tensor]] products of Pauli matrices.
+
+The analog formula of [[Pauli matrices#Exponential of a Pauli vector|Euler's formula in terms of the Pauli matrices]]
+<math display="block">
+  \hat{R}(\theta, \hat{\mathbf{n}}) = e^{i \frac{\theta}{2} \hat{\mathbf{n}} \cdot \boldsymbol{\sigma}} =
+    I \cos \frac{\theta}{2} + i \left(\hat{\mathbf{n}} \cdot \boldsymbol{\sigma}\right) \sin \frac{\theta}{2}
+</math>
+for higher spins is tractable, but less simple.<ref>{{Cite journal | doi = 10.3842/SIGMA.2014.084|last1 = Curtright |last2 = Fairlie |last3 = Zachos |first1 = T. L. |first2 = D. B. |first3 = C. K. |author-link=Thomas Curtright |author-link2=David Fairlie |author-link3=Cosmas Zachos |year = 2014 |title = A compact formula for rotations as spin matrix polynomials |journal =SIGMA |volume=10 |page=084 |arxiv = 1402.3541 |bibcode = 2014SIGMA..10..084C }}</ref>
+
+== Parity ==
+{{Main|Parity (physics)}}
+In tables of the [[spin quantum number]] {{mvar|s}} for nuclei or particles, the spin is often followed by a "+" or "−".{{citation needed|date=February 2024}} This refers to the [[Parity (physics)|parity]] with "+" for even parity (wave function unchanged by spatial inversion) and "−" for odd parity (wave function negated by spatial inversion). For example, see the [[isotopes of bismuth]], in which the list of isotopes includes the column [[Spin quantum number#Nuclear spin|nuclear spin]] and parity. For Bi-209, the longest-lived isotope, the entry 9/2− means that the nuclear spin is 9/2 and the parity is odd.
+
+== Measuring spin ==
+The nuclear spin of atoms can be determined by sophisticated improvements to the original [[Stern–Gerlach experiment]].<ref>{{cite journal |last1=Hamilton |first1=Donald R. |title=Molecular Beams and Nuclear Moments |journal=American Journal of Physics |date=December 1941 |volume=9 |issue=6 |pages=319–337 |doi=10.1119/1.1991712 |bibcode=1941AmJPh...9..319H }}</ref> A single-energy (monochromatic) [[molecular beam]] of atoms in an inhomogeneous magnetic field will split into beams representing each possible spin quantum state. For an atom with electronic spin {{mvar|S}} and nuclear spin {{mvar|I}}, there are {{math|(2''S'' + 1)(2''I'' + 1)}} spin states. For example, neutral [[Sodium|Na]] atoms, which have {{math|''S'' {{=}} 1/2}}, were passed through a series of inhomogeneous magnetic fields that selected one of the two electronic spin states and separated the nuclear spin states, from which four beams were observed. Thus, the nuclear spin for <sup>23</sup>Na atoms was found to be {{math|''I'' {{=}} 3/2}}.<ref>{{cite journal |last1=Rabi |first1=I. I. |last2=Cohen |first2=V. W. |title=The Nuclear Spin of Sodium |journal=Physical Review |date=April 1933 |volume=43 |issue=7 |pages=582–583 |doi=10.1103/PhysRev.43.582 |bibcode=1933PhRv...43..582R }}</ref><ref>{{cite journal |last1=Estermann |first1=I. |title=Molecular Beam Technique |journal=Reviews of Modern Physics |date=July 1946 |volume=18 |issue=3 |pages=300–323 |doi=10.1103/RevModPhys.18.300 |bibcode=1946RvMP...18..300E }}</ref>
+
+The spin of [[pions]], a type of elementary particle, was determined by the principle of [[detailed balance]] applied to those collisions of protons that produced charged pions and [[deuterium]].
+<math display="block"> p + p \rightarrow \pi^+ +d </math>
+The known spin values for protons and deuterium allows analysis of the collision cross-section to show that <math>\pi^+</math> has spin <math>s_\pi = 0</math>. A different approach is needed for neutral pions. In that case the decay produced two [[gamma ray]] photons with spin one:
+<math display="block"> \pi^0 \rightarrow 2\gamma </math>
+This result supplemented with additional analysis leads to the conclusion that the neutral pion also has spin zero.<ref>{{Cite book |last=Perkins |first=Donald H. |title=Introduction to high energy physics |date=2008 |publisher=Cambridge Univ. Press |isbn=978-0-521-62196-0 |edition=4. Aufl., 8. print |location=Cambridge}}</ref>{{rp|66}}
+
+== Applications ==
+Spin has important theoretical implications and practical applications. Well-established ''direct'' applications of spin include:
+* [[Nuclear magnetic resonance]] (NMR) spectroscopy in chemistry;
+* [[Electron spin resonance]] (ESR or EPR) spectroscopy in chemistry and physics;
+* [[Magnetic resonance imaging]] (MRI) in medicine, a type of applied NMR, which relies on proton spin density;
+* [[Giant magnetoresistive effect|Giant magnetoresistive]] (GMR) drive-head technology in modern [[hard disk]]s.
+
+Electron spin plays an important role in [[magnetism]], with applications for instance in computer memories. The manipulation of ''nuclear spin'' by radio-frequency waves ([[nuclear magnetic resonance]]) is important in chemical spectroscopy and medical imaging.
+
+[[Spin–orbit coupling]] leads to the [[fine structure]] of atomic spectra, which is used in [[atomic clock]]s and in the modern definition of the [[second]]. Precise measurements of the {{mvar|g}}-factor of the electron have played an important role in the development and verification of [[quantum electrodynamics]]. ''Photon spin'' is associated with the [[Polarization (waves)|polarization]] of light ([[photon polarization]]).
+
+An emerging application of spin is as a binary information carrier in [[spin transistor]]s. The original concept, proposed in 1990, is known as Datta–Das [[spin transistor]].<ref>{{cite journal |doi =  10.1063/1.102730 |author =  Datta, S. |author-link = Supriyo Datta |author2= Das, B. |title = Electronic analog of the electrooptic modulator |journal = Applied Physics Letters |volume = 56 |pages = 665–667 |year = 1990 |issue = 7 |bibcode = 1990ApPhL..56..665D }}</ref> Electronics based on spin transistors are referred to as [[spintronics]]. The manipulation of spin in [[ZnO-based diluted magnetic semiconductors|dilute magnetic semiconductor materials]], such as metal-doped [[zinc oxide|ZnO]] or [[titanium dioxide|TiO<sub>2</sub>]] imparts a further degree of freedom and has the potential to facilitate the fabrication of more efficient electronics.<ref>{{cite journal |last1=Assadi |first1=M. H. N. |last2=Hanaor |first2=D. A. H. |title=Theoretical study on copper's energetics and magnetism in TiO<sub>2</sub> polymorphs |journal=Journal of Applied Physics |year=2013 |volume=113 |issue=23 |pages=233913–233913–5 |doi=10.1063/1.4811539 |arxiv = 1304.1854 |bibcode = 2013JAP...113w3913A }}</ref>
+
+There are many ''indirect'' applications and manifestations of spin and the associated [[Pauli exclusion principle]], starting with the [[periodic table]] of chemistry.
+
+== History ==
+{{See also | History of quantum mechanics}}
+[[File:Wolfgang Pauli young.jpg|thumb|[[Wolfgang Pauli]] lecturing]]
+Spin was first discovered in the context of the [[emission spectrum]] of [[alkali metal]]s. Starting around 1910, many experiments on different atoms produced a collection of relationships involving [[quantum numbers]] for atomic energy levels partially summarized in [[Bohr atom|Bohr's model for the atom]]<ref name="Whittaker">{{Cite book |last=Whittaker |first=Edmund T. |title=A history of the theories of aether & electricity. 2: The modern theories, 1900–1926 |date=1989 |publisher=Dover Publ |isbn=978-0-486-26126-3 |edition=Repr |location=New York}}</ref>{{rp|106}} Transitions between levels obeyed [[selection rules]] and the rules were known to be correlated with even or odd [[atomic number]]. Additional information was known from changes to atomic spectra observed in strong magnetic fields, known as the [[Zeeman effect]]. In 1924, [[Wolfgang Ernst Pauli|Wolfgang Pauli]] used this large collection of empirical observations to propose a new degree of freedom,<ref name=Frohlich>{{Cite book |last=Fröhlich |first=Jürg |title=The Spin. Progress in Mathematical Physics, vol 55. |date=2009 |publisher=Birkhäuser Basel |isbn=978-3-7643-8798-3 |editor-last=Duplantier |editor-first=Bertrand |location=Basel |pages=1–60 |language=en |chapter=Spin, or actually: Spin and Quantum Statistics |doi=10.1007/978-3-7643-8799-0_1 |arxiv=0801.2724 |editor-last2=Raimond |editor-first2=Jean-Michel |editor-last3=Rivasseau |editor-first3=Vincent}}</ref> introducing what he called a "two-valuedness not describable classically"<ref name=PauliNobel>{{cite web |url=https://www.nobelprize.org/prizes/physics/1945/pauli/lecture/ |author=Wolfgang Pauli |title=Exclusion Principle and Quantum Mechanics |date=December 13, 1946 |work=Nobel Lecture |publisher=[[Nobel Prize]]}}</ref> associated with the electron in the outermost [[electron shell|shell]].
+
+The physical interpretation of Pauli's "degree of freedom" was initially unknown. [[Ralph Kronig]], one of [[Alfred Landé]]'s assistants, suggested in early 1925 that it was produced by the self-rotation of the electron. When Pauli heard about the idea, he criticized it severely, noting that the electron's hypothetical surface would have to be moving faster than the [[speed of light]] in order for it to rotate quickly enough to produce the necessary angular momentum. This would violate the [[theory of relativity]]. Largely due to Pauli's criticism, Kronig decided not to publish his idea.<ref>{{cite book |last=Pais |first=Abraham |date=1991 |title=Niels Bohr's Times |location=Oxford |publisher=Clarendon Press |pages=[https://archive.org/details/nielsbohrstimesi00pais_0/page/244 244]|isbn=978-0-19-852049-8 |author-link=Abraham Pais |url=https://archive.org/details/nielsbohrstimesi00pais_0 |url-access=registration }}</ref>
+
+In the autumn of 1925, the same thought came to Dutch physicists [[George Uhlenbeck]] and [[Samuel Goudsmit]] at [[Leiden University]]. Under the advice of [[Paul Ehrenfest]], they published their results.<ref>{{Cite journal |last1=Uhlenbeck, G. |first1=G. |author-link1=George Uhlenbeck |last2=Goudsmit |first2=S. |author-link2=Samuel Goudsmit|date=November 1925 |title=Ersetzung der Hypothese vom unmechanischen Zwang durch eine Forderung bezüglich des inneren Verhaltens jedes einzelnen Elektrons |trans-title=Replacement of the hypothesis of unmechanical constraint with a requirement regarding the internal behavior of each individual electron |journal=Die Naturwissenschaften |language=de |volume=13 |issue=47 |pages=953–954 |doi=10.1007/bf01558878 }}</ref> The young physicists immediately regretted the publication: [[Hendrik Lorentz]] and [[Werner Heisenberg]] both pointed out problems with the concept of a spinning electron.<ref>{{cite journal |last1=Pais |first1=Abraham |title=George Uhlenbeck and the Discovery of Electron Spin |journal=Physics Today |date=December 1989 |volume=42 |issue=12 |pages=34–40 |article-number=00000199d450d7e8a5bddcd144150000 |doi=10.1063/1.881186 |bibcode=1989PhT....42l..34P }}</ref>
+
+Pauli was especially unconvinced and continued to pursue his two-valued degree of freedom. This allowed him to formulate the [[Pauli exclusion principle]], stating that no two electrons can have the same [[quantum state]] in the same quantum system.
+
+Fortunately, by February 1926, [[Llewellyn Thomas]] managed to resolve a factor-of-two discrepancy between experimental results for the [[fine structure]] in the hydrogen spectrum and calculations based on Uhlenbeck and Goudsmit's (and Kronig's unpublished) model.<ref name=griffiths/>{{rp|385}} This discrepancy was due to a relativistic effect, the difference between the electron's rotating [[rest frame]] and the nuclear rest frame; the effect is now known as [[Thomas precession]].<ref name=Frohlich/> Thomas' result convinced Pauli that electron spin was the correct interpretation of his two-valued degree of freedom, while he continued to insist that the classical rotating charge model is invalid.<ref name=PauliNobel/><ref name=Giulini>{{cite journal |last1=Giulini |first1=Domenico |title=Electron spin or 'classically non-describable two-valuedness' |journal=Studies in History and Philosophy of Science Part B: Studies in History and Philosophy of Modern Physics |date=September 2008 |volume=39 |issue=3 |pages=557–578 |doi=10.1016/j.shpsb.2008.03.005 |arxiv=0710.3128 |bibcode=2008SHPMP..39..557G |hdl=11858/00-001M-0000-0013-13C8-1 }}</ref>
+
+In 1927, Pauli formalized the theory of spin using the theory of quantum mechanics invented by [[Erwin Schrödinger]] and [[Werner Heisenberg]]. He pioneered the use of [[Pauli matrices]] as a [[group representation|representation]] of the spin operators and introduced a two-component [[spinor]] wave-function.
+
+Pauli's theory of spin was non-relativistic. In 1928, [[Paul Dirac]] published his relativistic electron equation, using a four-component spinor (known as a "[[Dirac spinor]]") for the electron wave-function. In 1940, Pauli proved the ''[[spin–statistics theorem]]'', which states that [[fermion]]s have half-integer spin, and [[boson]]s have integer spin.<ref name=Frohlich/>
+
+In retrospect, the first direct experimental evidence of the electron spin was the [[Stern–Gerlach experiment]] of 1922. However, the correct explanation of this experiment was only given in 1927.<ref>
+{{cite journal
+ |author=B. Friedrich |author2=D. Herschbach
+ |title=Stern and Gerlach: How a Bad Cigar Helped Reorient Atomic Physics
+ |journal=[[Physics Today]]
+ |volume=56 |issue=12 |page=53
+ |year=2003
+ |doi=10.1063/1.1650229
+ |bibcode = 2003PhT....56l..53F
+ |doi-access=free
+}}</ref>
+The original interpretation assumed the two spots observed in the experiment were due to quantized [[orbital angular momentum]]. However, in 1927 {{Ill|Ronald G. J. Fraser|de}} showed that sodium atoms are isotropic with no orbital angular momentum and suggested that the observed magnetic properties were due to electron spin.<ref>{{Cite journal |date=March 1927 |title=The effective cross section of the oriented hydrogen atom |journal=Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character |volume=114 |issue=767 |pages=212–221 |doi=10.1098/rspa.1927.0036 |doi-access=free |bibcode=1927RSPSA.114..212F |last1=Fraser |first1=Ronald G. J. }}</ref> In the same year, Thomas Erwin Phipps and {{ill|John Bellamy Taylor|de}} applied the Stern–Gerlach technique to hydrogen atoms; the ground state of hydrogen has zero angular momentum but the measurements again showed two peaks.<ref>{{cite book |title=Quantum Physics of Atoms, Molecules, Solids, Nuclei and Particles |edition=2nd |page=[https://archive.org/details/quantumphysicsof00eisb/page/274 274] |author1=Resnick, R. |author2=Eisberg, R. |publisher=John Wiley & Sons |year=1985 |isbn=978-0-471-87373-0 |url=https://archive.org/details/quantumphysicsof00eisb/page/274 }}</ref>
+Once the quantum theory became established, it became clear that the original interpretation could not have been correct: 
+the possible values of orbital angular momentum along one axis is always an odd number, unlike the observations. Hydrogen atoms have a single electron with two spin states giving the two spots observed; silver atoms have closed shells which do not contribute to the magnetic moment and only the unmatched outer electron's spin responds to the field.
+
+== See also ==
+{{cols|colwidth=21em}}
+* [[Chirality (physics)]]
+* [[Dynamic nuclear polarization]]
+* [[Helicity (particle physics)]]
+* [[Holstein–Primakoff transformation]]
+* [[Kramers' theorem]]
+* [[Pauli equation]]
+* [[Pauli–Lubanski pseudovector]]
+* [[Rarita–Schwinger equation]]
+* [[Representation theory of SU(2)]]
+* [[Spin angular momentum of light]]
+* [[Spin engineering]]
+* [[Spin-flip]]
+* [[Spin isomers of hydrogen]]
+* [[Spin–orbit interaction]]
+* [[Spin tensor]]
+* [[Spintronics]]
+* [[Spin wave]]
+* [[Yrast]]
+{{colend}}
+
+== References ==
+{{reflist|group=note}}
+{{reflist|30em}}
+
+== Further reading ==
+{{refbegin}}
+* {{cite book|last1=Cohen-Tannoudji|first1= Claude|last2= Diu|first2= Bernard|last3= Laloë|first3=Franck|year=2006|title=Quantum Mechanics|publisher= John Wiley & Sons|isbn=978-0-471-56952-7|edition=2 volume set}}
+* {{cite book|first1=E. U.|last1= Condon |first2= G. H. |last2=Shortley |year=1935|title=The Theory of Atomic Spectra|publisher= Cambridge University Press| isbn= 978-0-521-09209-8|chapter=Especially Chapter 3}}
+* {{cite journal |last1=Hipple |first1=J. A. |last2=Sommer |first2=H. |last3=Thomas |first3=H. A. |title=A Precise Method of Determining the Faraday by Magnetic Resonance |journal=Physical Review |date=15 December 1949 |volume=76 |issue=12 |pages=1877–1878 |doi=10.1103/PhysRev.76.1877.2 |bibcode=1949PhRv...76.1877H }}
+* {{cite book|last=Edmonds|first=A. R.|year=1957|title=Angular Momentum in Quantum Mechanics|publisher=Princeton University Press|isbn=978-0-691-07912-7|url-access=registration|url=https://archive.org/details/angularmomentumi0000edmo}}
+* {{cite book|last=Jackson|first= John David |year=1998|title=Classical Electrodynamics|edition=3rd |publisher=John Wiley & Sons| isbn =978-0-471-30932-1}}
+* {{cite book |last1=Leader |first1=Elliot |title=Spin in Particle Physics |date=2023 |doi=10.1017/9781009402040 |isbn=978-1-009-40204-0 }}
+* {{cite book| last1=Serway| first1=Raymond A.| last2=Jewett| first2=John W.| title=Physics for Scientists and Engineers| edition=6th| publisher=Brooks/Cole| year=2004| isbn=978-0-534-40842-8| url=https://archive.org/details/physicssciengv2p00serw}}
+* {{cite book|last=Thompson|first= William J. |year=1994|title=Angular Momentum: An Illustrated Guide to Rotational Symmetries for Physical Systems|publisher=Wiley| isbn =978-0-471-55264-2}}
+* {{cite book | last=Tipler|first= Paul | title=Physics for Scientists and Engineers: Mechanics, Oscillations and Waves, Thermodynamics|edition= 5th  | publisher=W. H. Freeman | year=2004 | isbn=978-0-7167-0809-4}}
+{{refend}}
+
+== External links ==
+{{Commons category|Spin (intrinsic angular momentum)}}
+* {{wikiquote-inline}}
+* [https://lorentz.leidenuniv.nl/history/spin/goudsmit.html Goudsmit on the discovery of electron spin] {{Webarchive|url=https://web.archive.org/web/20250528163210/https://www.lorentz.leidenuniv.nl/history/spin/goudsmit.html |date=2025-05-28 }}
+* ''[[Nature (journal)|Nature]]'': "[https://www.nature.com/collections/idgejiafca  Milestones in 'spin' since 1896.] {{Webarchive|url=https://web.archive.org/web/20230709214445/https://www.nature.com/collections/idgejiafca/ |date=2023-07-09 }}"
+* [http://nanohub.org/resources/6025 ECE 495N Lecture 36: Spin] {{Webarchive|url=https://web.archive.org/web/20160801225659/https://nanohub.org/resources/6025 |date=2016-08-01 }} Online lecture by S. Datta
+
+{{Physics operator}}
+{{Quantum mechanics topics}}
+{{Authority control}}
+
+[[Category:Rotational symmetry]]
+[[Category:Quantum field theory]]
+[[Category:Physical quantities]]

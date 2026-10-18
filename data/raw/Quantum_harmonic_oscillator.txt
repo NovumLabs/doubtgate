@@ -1,0 +1,450 @@
+{{Short description|Quantum mechanical model}}
+{{Use American English|date = February 2019}}
+{{Quantum mechanics}}
+{{redirect-distinguish|QHO|QHO (airport)}}
+[[File:QuantumHarmonicOscillatorAnimation.gif|thumb|300px|right|Some trajectories of a [[harmonic oscillator]] according to [[Newton's laws]] of [[classical mechanics]] (A–B), and according to the [[Schrödinger equation]] of [[quantum mechanics]] (C–H). In A–B, the particle (represented as a ball attached to a [[Hooke's law|spring]]) oscillates back and forth. In C–H, some solutions to the Schrödinger equation are shown, where the horizontal axis is position, and the vertical axis is the real part (blue) or imaginary part (red) of the [[wavefunction]]. C, D, E, F, but not G, H, are [[energy eigenstate]]s. H is a [[Coherent states|coherent state]]—a quantum state that approximates the classical trajectory.]]
+
+The '''quantum harmonic oscillator''' is the [[quantum mechanics|quantum-mechanical]] analog of the [[harmonic oscillator|classical harmonic oscillator]]. Because an arbitrary smooth [[Potential energy|potential]] can usually be approximated as a [[Harmonic oscillator#Simple harmonic oscillator|harmonic potential]] at the vicinity of a stable [[equilibrium point]],  it is one of the most important model systems in quantum mechanics. Furthermore, it is one of the few quantum-mechanical systems for which an exact, [[List_of_quantum-mechanical_systems_with_analytical_solutions|analytical solution]] is known.{{sfn|Griffiths|2004}}{{sfn|Liboff|2002}}<ref>{{Cite web | last =Rashid | first =Muneer A. | author-link =Munir Ahmad Rashid | title =Transition amplitude for time-dependent linear harmonic oscillator with Linear time-dependent terms added to the Hamiltonian | website =M.A. Rashid – [[National University of Sciences and Technology, Pakistan|Center for Advanced Mathematics and Physics]] | publisher =[[National Center for Physics]] | year =2006 | url =http://www.ncp.edu.pk/docs/12th_rgdocs/Munir-Rasheed.pdf | format =[[PDF]]-[[Microsoft PowerPoint]] | access-date =19 October 2010 | archive-date =3 March 2016 | archive-url =https://web.archive.org/web/20160303233341/http://www.ncp.edu.pk/docs/12th_rgdocs/Munir-Rasheed.pdf | url-status =dead }}</ref><ref>Harald J.W. Müller-Kirsten, ''Introduction to Quantum Mechanics: Schrödinger Equation and Path Integral'', 2nd ed. (2012) World Scientific, {{ISBN|9789814397742}}. This reference includes in detail the method of operators, Hermite functions, contour integration, pp. 130-141.</ref>
+
+==One-dimensional harmonic oscillator== 
+
+===Hamiltonian and energy eigenstates===
+[[Image:HarmOsziFunktionen.png|thumb|Wavefunction representations for the first eight bound eigenstates, ''n'' = 0 to 7. The horizontal axis shows the position ''x''.]]
+[[Image:Aufenthaltswahrscheinlichkeit harmonischer Oszillator.png|thumb|Corresponding probability densities.]]
+
+The [[Hamiltonian (quantum mechanics)|Hamiltonian]] of the particle is:
+<math display="block">\hat H = \frac{{\hat p}^2}{2m} + \frac{1}{2} k {\hat x}^2 = \frac{{\hat p}^2}{2m} + \frac{1}{2} m \omega^2 {\hat x}^2 \, ,</math>
+where {{mvar|m}} is the particle's mass, {{mvar|k}} is the force constant, <math display="inline">\omega = \sqrt{k / m}</math> is the [[angular frequency]] of the oscillator, <math>\hat{x}</math> is the [[position operator]] (given by {{mvar|x}} in the coordinate basis), and <math>\hat{p}</math>  is the [[momentum operator]] (given by <math>\hat p = -i \hbar \, \partial / \partial x</math> in the coordinate basis). The first term in the Hamiltonian represents the kinetic energy of the particle, and the second term represents its potential energy, as in [[Hooke's law]].{{sfnp|Zwiebach|2022|pp=233-234}}
+
+The time-independent [[Schrödinger equation]] (TISE) is,
+<math display="block"> \hat H \left| \psi \right\rangle = E \left| \psi \right\rangle  ~,</math>
+where <math>E</math> denotes a real number (which needs to be determined) that will specify a time-independent [[energy level]], or [[eigenvalue]], and the solution  <math>| \psi \rangle</math> denotes that level's energy [[eigenstate]].{{sfnp|Zwiebach|2022|p=234}}
+
+Then solve the differential equation representing this eigenvalue problem in the coordinate basis, for the [[wave function]] <math>\langle x | \psi \rangle = \psi (x) </math>, using a [[spectral method]]. It turns out that there is a family of solutions. In this basis, they amount to [[Hermite polynomials#Hermite functions| Hermite functions]],{{sfnp|Zwiebach|2022|p=241}}<ref>{{cite book|first=Gregory J. |last=Gbur |author-link=Greg Gbur |title=Mathematical Methods for Optical Physics and Engineering |publisher=Cambridge University Press |year=2011 |isbn=978-0-521-51610-5 |pages=631–633}}</ref>
+<math display="block"> \psi_n(x) = \frac{1}{\sqrt{2^n\,n!}}  \left(\frac{m\omega}{\pi \hbar}\right)^{1/4}  e^{
+- \frac{m\omega x^2}{2 \hbar}} H_n{\left(\sqrt{\frac{m\omega}{\hbar}} x \right)}, \qquad n = 0,1,2,\ldots. </math>
+
+The functions <math>H_n</math> are the physicists' [[Hermite polynomials]],
+<math display="block">H_n(z)=(-1)^n~ e^{z^2}\frac{d^n}{dz^n}\left(e^{-z^2}\right).</math>
+
+The corresponding energy levels are{{sfnp|Zwiebach|2022|p=240}}
+<math display="block"> E_n = \hbar \omega\bigl(n + \tfrac{1}{2}\bigr).</math>The expectation values of position and momentum combined with variance of each variable can be derived from the wavefunction to understand the behavior of the energy eigenkets. They are shown to be <math display="inline">\langle \hat{x} \rangle = 0 </math> and <math display="inline">\langle \hat{p} \rangle = 0  </math> owing to the symmetry of the problem, whereas:
+
+<math display="block">\begin{align}
+\left\langle x^2 \right\rangle &= (2n+1)\frac{\hbar}{2m\omega} = \sigma_x^2 \\[1ex]
+\left\langle p^2 \right\rangle &= (2n+1)\frac{m\hbar\omega}{2} = \sigma_p^2
+\end{align} </math>
+
+The variance in both position and momentum are observed to increase for higher energy levels. The lowest energy level has value of <math display="inline">\sigma_x \sigma_p = \frac{\hbar}{2} </math> which is its minimum value due to uncertainty relation and also corresponds to a Gaussian wavefunction.{{sfnp|Zwiebach|2022|pp=249-250}}
+
+This energy spectrum is noteworthy for four reasons.  First, the energies are quantized, meaning that only discrete energy values (integer-plus-half multiples of {{math|''ħω''}}) are possible; this is a general feature of quantum-mechanical systems when a particle is confined. Second, these discrete energy levels are equally spaced, unlike in the [[Bohr model]] of the atom, or the [[particle in a box]]. Third, the lowest achievable energy (the energy of the {{math|1=''n'' = 0}} state, called the [[ground state]]) is not equal to the minimum of the potential well, but {{math|''ħω''/2}} above it; this is called [[zero-point energy]]. Because of the zero-point energy, the position and momentum of the oscillator in the ground state are not fixed (as they would be in a classical oscillator), but have a small range of variance, in accordance with the [[Heisenberg uncertainty principle]]. Fourth, the energy levels are nondegenerate implying that every eigenvalue is associated with only one solution (state).<ref name=":0">{{Cite book |last=McQuarrie |first=Donald |title=Physical Chemistry: A Molecular Approach |date=August 7, 2023 |publisher=University Science Books |isbn=9781891389962 |edition=1st |pages=157–173 |language=English}}</ref>
+
+The ground state probability density is concentrated at the origin, which means the particle spends most of its time at the bottom of the potential well, as one would expect for a state with little energy. As the energy increases, the probability density peaks at the classical "turning points", where the state's energy coincides with the potential energy. (See the discussion below of the highly excited states.) This is consistent with the classical harmonic oscillator, in which the particle spends more of its time (and is therefore more likely to be found) near the turning points, where it is moving the slowest. The [[correspondence principle]] is thus satisfied. Moreover, special nondispersive [[wave packet]]s, with minimum uncertainty, called [[Coherent state#The wavefunction of a coherent state|coherent state]]s oscillate very much like classical objects, as illustrated in the figure; they are ''not'' eigenstates of the Hamiltonian.
+
+===Ladder operator method===
+[[Image:QHarmonicOscillator.png|right|thumb|Probability densities <nowiki>|</nowiki>''ψ<sub>n</sub>''(''x'')<nowiki>|</nowiki><sup>2</sup> <!--or in pseudoTeX: <math>\left |\psi_n(x)\right |^2</math> --> for the bound eigenstates, beginning with the ground state (''n'' = 0) at the bottom and increasing in energy toward the top. The horizontal axis shows the position {{mvar|x}}, and brighter colors represent higher probability densities.]]
+
+The "[[ladder operator]]" method, developed by [[Paul Dirac]], allows extraction of the energy eigenvalues without directly solving the differential equation.{{sfnp|Zwiebach|2022|pp=246-249}} It is generalizable to more complicated problems, notably in [[quantum field theory]].  Following this approach, we define the operators <math>\hat a</math> and its [[Hermitian adjoint|adjoint]] <math>\hat a^\dagger</math>,
+<math display="block">\begin{align}
+         \hat a &=\sqrt{m\omega \over 2\hbar} \left(\hat x + {i \over m \omega} \hat p \right) \\
+  \hat a^\dagger &=\sqrt{m\omega \over 2\hbar} \left(\hat x - {i \over m \omega} \hat p \right)
+\end{align}</math>Note these operators classically are exactly the [[Generator (mathematics)|generators]] of normalized rotation in the phase space of <math>x</math> and <math>m\frac{dx}{dt}</math>, ''i.e'' they describe the forwards and backwards evolution in time of a classical harmonic oscillator.{{clarify|reason=Probably correct, e.g. phase space is incompressible and therefore this is a rotation, Obscure reference, expand argument about time evolution operator, representation theory and unitarity on [[Ladder operators]] page and link here|date=June 2024}}
+
+These operators lead to the following representation of <math>\hat{x}</math> and  <math>\hat{p}</math>,
+<math display="block">\begin{align}
+  \hat x &=  \sqrt{\frac{\hbar}{2 m\omega}}(\hat a^\dagger + \hat a) \\
+  \hat p &= i\sqrt{\frac{\hbar m \omega}{2}}(\hat a^\dagger - \hat a) ~.
+\end{align}</math>
+
+The operator <math>\hat{a}</math> is not [[Hermitian operator|Hermitian]], since itself and its adjoint <math>\hat{a}^{\dagger}</math> are not equal. The energy eigenstates <math>\left| n \right\rangle</math>, when operated on by these ladder operators, give
+<math display="block">\begin{align}
+  \hat a^\dagger|n\rangle &= \sqrt{n + 1} | n + 1\rangle \\
+         \hat a|n\rangle &= \sqrt{n} | n - 1\rangle.
+\end{align}</math>
+
+From the relations above, we can also define a number operator {{mvar|N}}, which has the following property:
+<math display="block">\begin{align}
+                       \hat N &= \hat a^\dagger \hat a \\
+  \hat N\left| n \right\rangle &= n\left| n \right\rangle.
+\end{align}</math>
+
+The following [[commutator]]s can be easily obtained by substituting the [[canonical commutation relation]],
+<math display="block">[\hat a, \hat a^\dagger] = 1,\qquad[\hat N, \hat a^\dagger] = \hat a^{\dagger},\qquad[\hat N, \hat a] = -\hat a, </math>
+
+and the Hamilton operator can be expressed as
+<math display="block">\hat H = \hbar\omega\left(\hat N + \frac{1}{2}\right),</math>
+
+so the eigenstates of <math>\hat N</math>  are also the eigenstates of energy.
+To see that, we can apply <math>\hat{H}</math> to a number state <math>|n\rangle</math>:
+
+<math display="block">
+\hat{H} |n\rangle = \hbar \omega \left(\hat{N} + \frac{1}{2}\right) |n\rangle.
+</math>
+
+Using the property of the number operator <math>\hat{N}</math>:
+
+<math display="block">
+\hat{N} |n\rangle = n |n\rangle,
+</math>
+
+we get:
+
+<math display="block">
+\hat{H} |n\rangle = \hbar \omega \left(n + \frac{1}{2}\right) |n\rangle.
+</math>
+
+Thus, since <math>|n\rangle</math> solves the TISE for the Hamiltonian operator <math>\hat{H}</math>, is also one of its eigenstates with the corresponding eigenvalue:
+
+<math display="block">
+E_n = \hbar \omega \left(n + \frac{1}{2}\right) .
+</math>
+
+QED.
+
+The commutation property yields
+<math display="block">\begin{align}
+ \hat N\hat a^{\dagger}|n\rangle &= \left(\hat a^\dagger \hat N + [\hat N, \hat a^\dagger]\right)|n\rangle \\
+                        &= \left(\hat a^\dagger \hat N + \hat a^\dagger\right)|n\rangle \\
+                        &= (n + 1)\hat a^\dagger|n\rangle,
+\end{align} </math>
+
+and similarly,
+<math display="block">\hat N\hat a|n\rangle = (n - 1)\hat a | n \rangle.</math>
+
+This means that <math>\hat a</math> acts on <math>|n\rangle</math> to produce, up to a multiplicative constant, <math>|n-1\rangle</math>, and <math>\hat a^\dagger</math> acts on <math>|n\rangle</math> to produce <math>|n+1\rangle</math>. For this reason, <math>\hat a</math> is called an '''annihilation operator''' ("lowering operator"), and <math>\hat a^\dagger</math> a '''creation operator''' ("raising operator"). The two operators together are called [[ladder operator]]s. 
+
+Given any energy eigenstate, we can act on it with the lowering operator, <math>\hat a</math>, to produce another eigenstate with <math>\hbar \omega</math> less energy. By repeated application of the lowering operator, it seems that we can produce energy eigenstates down to <math>E = - \infty</math>. However, since
+<math display="block">n = \langle n | \hat N | n \rangle = \langle n | \hat a^\dagger \hat a | n \rangle = \Bigl(\hat a | n \rangle \Bigr)^\dagger \hat a | n \rangle \geqslant 0,</math>
+
+the smallest eigenvalue of the number operator is 0, and
+<math display="block">\hat a \left| 0 \right\rangle = 0. </math>
+
+In this case, subsequent applications of the lowering operator will just produce zero, instead of additional energy eigenstates. Furthermore, we have shown above that
+<math display="block">\hat H \left|0\right\rangle = \frac{\hbar\omega}{2} \left|0\right\rangle</math>
+
+Finally, by acting on <math>|0\rangle</math> with the raising operator and multiplying by suitable [[Wave function#Normalization condition|normalization factors]], we can produce an infinite set of energy eigenstates 
+<math display="block">\left\{\left| 0 \right\rangle, \left| 1 \right\rangle, \left| 2 \right\rangle, \ldots , \left| n \right\rangle, \ldots\right\},</math>
+
+such that
+<math display="block">\hat H \left| n \right\rangle = \hbar\omega \left( n + \frac{1}{2} \right) \left| n \right\rangle, </math>
+which matches the energy spectrum given in the preceding section.
+
+Arbitrary eigenstates can be expressed in terms of <math>|0\rangle</math>,{{sfnp|Zwiebach|2022|p=248}}
+<math display="block">|n\rangle = \frac{(\hat a^\dagger)^n}{\sqrt{n!}} |0\rangle. </math>
+{{math proof|<math display="block">\begin{align}
+   \langle n | \hat a \hat a^\dagger | n \rangle &= \langle n|\left([\hat a, \hat a^\dagger] + \hat a^\dagger \hat a\right) \left| n \right\rangle = \langle n| \left(N + 1\right) |n\rangle = n + 1 \\[1ex]
+     \Rightarrow \hat a^\dagger | n\rangle &= \sqrt{n + 1} | n + 1\rangle \\[1ex]
+                    \Rightarrow|n\rangle &= \frac{1}{\sqrt{n}} \hat a^\dagger \left| n - 1 \right\rangle = \frac{1}{\sqrt{n(n - 1)}} \left(\hat a^\dagger\right)^2 \left| n - 2 \right\rangle = \cdots = \frac{1}{\sqrt{n!}} \left(\hat a^\dagger\right)^n \left|0\right\rangle.
+\end{align}</math>}}
+
+====Analytical questions====
+
+The preceding analysis is algebraic, using only the commutation relations between the raising and lowering operators. Once the algebraic analysis is complete, one should turn to analytical questions. First, one should find the ground state, that is, the solution of the equation <math>a\psi_0 = 0</math>. In the position representation, this is the first-order differential equation
+<math display="block">\left(x+\frac{\hbar}{m\omega}\frac{d}{dx}\right)\psi_0 = 0,</math>
+whose solution is easily found to be the [[Gaussian_function|Gaussian]]<ref group="nb">The normalization constant is <math>C = \left(\frac{m\omega}{\pi \hbar}\right)^{{1}/{4}}</math>, and satisfies the normalization condition <math>\int_{-\infty}^{\infty}\psi_0(x)^{*}\psi_0(x)dx = 1</math>.</ref>
+<math display="block">\psi_0(x)=Ce^{-\frac{m\omega x^2}{2\hbar}}.</math>
+Conceptually, it is important that there is only one solution of this equation; if there were, say, two linearly independent ground states, we would get two independent chains of eigenvectors for the harmonic oscillator. Once the ground state is computed, one can show inductively that the excited states are Hermite polynomials times the Gaussian ground state, using the explicit form of the raising operator in the position representation. One can also prove that, as expected from the uniqueness of the ground state, the Hermite functions energy eigenstates <math>\psi_n</math> constructed by the ladder method form a ''complete'' orthonormal set of functions.<ref>{{citation|first=Brian C.|last=Hall | title=Quantum Theory for Mathematicians|series=Graduate Texts in Mathematics|volume=267|isbn=978-1461471158 |publisher=Springer|year=2013 |bibcode=2013qtm..book.....H | at = Theorem 11.4}}</ref>
+
+Given that Hermite functions are either even or odd, it can be shown that the average displacement and average momentum is 0 for all states in QHO.<ref name=":0" />
+
+Explicitly connecting with the previous section, the ground state  |0⟩  in the position representation is determined by <math> a| 0\rangle =0</math>,
+<math display="block">  \left\langle x \mid a \mid 0 \right\rangle = 0 \qquad
+  \Rightarrow \left(x + \frac{\hbar}{m\omega}\frac{d}{dx}\right)\left\langle x\mid 0\right\rangle = 0 \qquad
+  \Rightarrow           </math>
+<math display="block"> \left\langle x\mid 0\right\rangle = \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4} \exp\left( -\frac{m\omega}{2\hbar}x^2 \right) 
+    = \psi_0  ~,</math>
+hence
+<math display="block"> \langle x \mid a^\dagger \mid 0 \rangle = \psi_1 (x) ~,</math>
+so that <math>\psi_1(x,t)=\langle x \mid e^{-3i\omega t/2} a^\dagger \mid 0 \rangle </math>, and so on.
+
+===Natural length and energy scales===
+{{see also|Path integral formulation#Simple harmonic oscillator}}
+
+The quantum harmonic oscillator possesses natural scales for length and energy, which can be used to simplify the problem. These can be found by [[nondimensionalization#Quantum harmonic oscillator|nondimensionalization]].
+
+The result is that, if ''energy'' is measured in units of  {{math|''ħω''}} and ''distance'' in units of {{math|{{sqrt|''ħ''/(''mω'')}}}}, then the Hamiltonian simplifies to
+<math display="block"> H = -\frac{1}{2} {d^2 \over dx^2} +\frac{1}{2}  x^2 ,</math>
+while the energy eigenfunctions and eigenvalues simplify to Hermite functions and integers offset by a half,
+<math display="block">\psi_n(x)= \left\langle x \mid n \right\rangle = {1 \over \sqrt{2^n n!}}~ \pi^{-1/4} \exp\left(-x^2 / 2\right)~ H_n(x),</math>
+<math display="block">E_n = n + \tfrac{1}{2} ~,</math>
+where {{math|''H''<sub>''n''</sub>(''x'')}} are the [[Hermite polynomials]].
+
+To avoid confusion, these "natural units" will mostly not be adopted in this article. However, they frequently come in handy when performing calculations, by bypassing clutter.
+
+For example, the [[fundamental solution]] ([[Propagator#Basic_examples:_propagator_of_free_particle_and_harmonic_oscillator|propagator]]) of {{math|''H'' − ''i∂<sub>t</sub>''}}, the time-dependent Schrödinger operator for this oscillator, simply boils down to the [[Mehler kernel]],<ref>[[Wolfgang Pauli|Pauli, W.]]  (2000), ''Wave Mechanics: Volume 5 of Pauli Lectures on Physics'' (Dover Books on Physics). {{ISBN|978-0486414621}} ; Section 44.</ref><ref>[[Edward Condon|Condon, E. U.]]  (1937). "Immersion of the Fourier transform in a continuous group of functional transformations", ''Proc. Natl. Acad. Sci. USA''  '''23''', 158–164. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1076889/pdf/pnas01779-0028.pdf online]</ref>
+<math display="block">\left\langle x \right| \exp (-itH) \left| y \right\rangle \equiv K(x,y;t)= \frac{1}{\sqrt{2\pi i \sin t}} \exp \left(\frac{i}{2\sin t}\left (\left(x^2+y^2\right)\cos t - 2xy\right )\right )~,</math>
+where {{math|1= ''K''(''x'',''y'';0) = ''δ''(''x'' − ''y'')}}. The most general solution for a given initial configuration {{math|''ψ''(''x'',0)}} then is simply
+<math display="block">\psi(x,t)=\int dy~ K(x,y;t) \psi(y,0) \,.</math>
+===Coherent states===
+
+{{main|Coherent state}}
+
+[[File:Coherent state gif.gif|thumb|right|450px|Coherent state dynamics for <math>\alpha = \sqrt{10}</math>, in units of the harmonic oscillator length <math>x_0=\sqrt{\hbar/m\omega}</math>, showing the probability density <math>|\psi(x,t)|^2</math> and the quantum phase (color).]]
+
+The [[Coherent state#The wavefunction of a coherent state|coherent state]]s (also known as Glauber states) of the harmonic oscillator are special nondispersive [[wave packet]]s, with minimum uncertainty {{math|1=''σ<sub>x</sub>'' ''σ<sub>p</sub>'' = {{frac|''ℏ''|2}}}}, whose [[observable]]s' [[Expectation value (quantum mechanics)|expectation values]] evolve like a classical system.  They are eigenvectors of the annihilation operator, ''not'' the Hamiltonian, and form an [[Overcompleteness|overcomplete]] basis which consequentially lacks orthogonality.{{sfnp|Zwiebach|2022|pp=481-492}}
+
+The coherent states are indexed by <math>\alpha \in \mathbb{C}</math> and expressed in the {{math|{{braket|ket|''n''}}}} basis as
+
+<math display="block">\begin{align}
+|\alpha\rangle &= \sum_{n=0}^\infty |n\rangle \langle n | \alpha \rangle \\
+&= e^{-\frac{1}{2} |\alpha|^2} \sum_{n=0}^\infty\frac{\alpha^n}{\sqrt{n!}} |n\rangle  \\
+&= e^{-\frac{1}{2} |\alpha|^2} e^{\alpha a^\dagger} e^{-{\alpha^* a}} |0\rangle.
+\end{align}</math>
+
+Since coherent states are not energy eigenstates, their time evolution is not a simple shift in wavefunction phase. The time-evolved states are, however, also coherent states but with phase-shifting parameter {{mvar|α}} instead: <math>\alpha(t) = \alpha(0) e^{-i\omega t} = \alpha_0 e^{-i\omega t}</math>.
+
+<math display="block">\begin{align}
+|\alpha(t)\rangle &= \sum_{n=0}^\infty e^{-i\left(n+\frac{1}{2}\right) \omega t}|n\rangle \langle n | \alpha \rangle \\
+&=  e^{\frac{-i\omega t}{2}}e^{-\frac{1}{2} |\alpha|^2} \sum_{n=0}^\infty\frac{(\alpha e^{-i\omega t})^n}{\sqrt{n!}} |n\rangle \\
+&= e^{-\frac{i\omega t}{2}}|\alpha e^{-i\omega t}\rangle
+\end{align} </math>
+
+Because <math>a \left| 0 \right\rangle = 0 </math> and via the Kermack-McCrae identity, the last form is equivalent to a [[Unitary operator|unitary]] [[displacement operator]] acting on the ground state: <math>|\alpha\rangle=e^{\alpha \hat a^\dagger - \alpha^*\hat a}|0\rangle = D(\alpha)|0\rangle</math>. Calculating the expectation values:
+
+<math display="block">\begin{align}
+\langle \hat{x} \rangle_{\alpha(t)} &= \sqrt{\frac{2\hbar}{m\omega}} \left|\alpha_0\right| \cos{(\omega t - \phi)} \\[1ex]
+\langle \hat{p} \rangle_{\alpha(t)} &= -\sqrt{2m\hbar \omega} \left|\alpha_0\right| \sin{(\omega t - \phi)}
+\end{align} </math>
+
+where <math>\phi </math> is the phase contributed by complex {{mvar|α}}. These equations confirm the oscillating behavior of the particle. 
+
+The uncertainties calculated using the numeric method are:
+
+<math display="block">\begin{align}
+\sigma_x(t) &= \sqrt{\frac{\hbar}{2m\omega}} \\
+\sigma_p(t) &= \sqrt{\frac{m\hbar\omega}{2}}
+\end{align} </math>
+
+which gives <math display="inline">\sigma_x(t)\sigma_p(t) = \frac{\hbar}{2}  </math>. Since the only wavefunction that can have lowest position–momentum uncertainty, <math display="inline">\frac{\hbar}{2}  </math>, is a Gaussian wavefunction, and since the coherent state wavefunction has minimum position–momentum uncertainty, we note that the general Gaussian wavefunction in quantum mechanics has the form:<math display="block">\psi_\alpha(x')= \left(\frac{m\omega}{\pi\hbar}\right)^{\frac{1}{4}} e^{\frac{i}{\hbar} \langle\hat{p}\rangle_\alpha (x' - \frac{\langle\hat{x}\rangle_\alpha}{2}) - \frac{m\omega}{2\hbar}(x' - \langle\hat{x}\rangle_\alpha)^2} .</math>Substituting the expectation values as a function of time, gives the required time varying wavefunction.<br />
+
+The probability of each energy eigenstates can be calculated to find the energy distribution of the wavefunction:
+
+<math display="block">P(E_n) = \left|\langle n | \alpha \rangle\right|^2 =  \frac{e^{-|\alpha|^2}|\alpha|^{2n}}{n!}</math>
+
+which corresponds to a [[Poisson distribution]].
+
+===Highly excited states===
+{{multiple image
+| width = 320
+| direction = vertical
+| image1 = Excited_state_for_quantum_harmonic_oscillator.svg
+| image2 = QHOn30pdf.svg
+| footer = Wavefunction (top) and probability density (bottom) for the {{math|1=''n'' = 30}} excited state of the quantum harmonic oscillator. Vertical dashed lines indicate the classical turning points, while the dotted line represents the classical probability density.
+}}
+When {{mvar|n}} is large, the eigenstates are localized into the classical allowed region, that is, the region in which a classical particle with energy {{math|''E''<sub>''n''</sub>}} can move. The eigenstates are peaked near the turning points: the points at the ends of the classically allowed region where the classical particle changes direction. This phenomenon can be verified through [[Hermite_polynomials#Asymptotic_expansion|asymptotics of the Hermite polynomials]],  and also through the [[WKB approximation]]. 
+
+The frequency of oscillation at {{mvar|x}} is proportional to the momentum {{math|''p''(''x'')}} of a classical particle of energy {{math|''E''<sub>''n''</sub>}}  and position {{mvar|x}}.  Furthermore, the square of the amplitude (determining the probability density) is ''inversely'' proportional to  {{math|''p''(''x'')}},  reflecting the length of time the classical particle spends near {{mvar|x}}. The system behavior in a small neighborhood of the turning point does not have a simple classical explanation, but can be modeled using an [[Airy function]]. Using properties of the Airy function,  one may estimate the probability of finding the particle outside the classically allowed region,  to be approximately 
+<math display="block">\frac{2}{n^{1/3}3^{2/3}\Gamma^2(\tfrac{1}{3})}=\frac{1}{n^{1/3}\cdot  7.46408092658...}</math>
+This is also given, asymptotically, by the integral 
+<math display="block">\frac{1}{2\pi}\int_{0}^{\infty}e^{(2n+1)\left (x-\tfrac{1}{2}\sinh(2x)  \right )}dx ~.</math>
+
+===Phase space solutions===
+In the [[phase space formulation]] of quantum mechanics, eigenstates of the quantum harmonic oscillator in [[quasiprobability distribution#Fock state|several different representations]] of the [[quasiprobability distribution]] can be written in closed form. The most widely used of these is for the [[Wigner quasiprobability distribution]].
+
+The Wigner quasiprobability distribution for the energy eigenstate {{math|{{!}}''n''⟩}} is, in the natural units described above,<ref>{{Cite journal |last1=Cerisola |first1=Federico |last2=Mayo |first2=Franco |last3=Roncaglia |first3=Augusto J. |date=2023-10-11 |title=A Wigner Quasiprobability Distribution of Work |journal=Entropy |language=en |volume=25 |issue=10 |pages=1439 |doi=10.3390/e25101439 |doi-access=free |issn=1099-4300 |pmc=10606729 |pmid=37895560 |arxiv=2303.08755 |bibcode=2023Entrp..25.1439C }}</ref>
+<math display="block">F_n(x, p) = \frac{(-1)^n}{\pi \hbar} L_n{\left(2(x^2 + p^2)\right)} e^{-(x^2 + p^2)} \,,</math>
+where ''L<sub>n</sub>'' are the [[Laguerre polynomials]]. This example illustrates how the Hermite and Laguerre polynomials are [[Hermite polynomials#Wigner distributions of Hermite functions|linked]] through the [[Wigner–Weyl transform|Wigner map]].
+
+Meanwhile, the [[Husimi Q representation|Husimi Q function]] of the harmonic oscillator eigenstates have an even simpler form. If we work in the natural units described above, we have
+<math display="block">Q_n(x,p)=\frac{(x^2+p^2)^n}{n!}\frac{e^{-(x^2+p^2)}}{\pi}</math>
+This claim can be verified using the [[Segal–Bargmann_space#The Segal.E2.80.93Bargmann transform|Segal–Bargmann transform]]. Specifically, since the [[Segal–Bargmann space#The canonical commutation relations|raising operator in the Segal–Bargmann representation]] is simply multiplication by <math>z=x+ip</math> and the ground state is the constant function 1, the normalized harmonic oscillator states in this representation are simply <math>z^n/\sqrt{n!}</math> . At this point, we can appeal to the formula for the Husimi Q function in terms of the Segal–Bargmann transform.
+
+===Two-dimensional harmonic oscillators===
+The two-dimensional Cartesian harmonic oscillator and the two-dimensional isotropic harmonic oscillator in cylindrical coordinates have been treated in detail in the book of Müller-Kirsten.<ref>Harald J.W. Müller-Kirsten, ''Introduction to Quantum Mechanics: Schrödinger Equation and Path Integral'', 2nd ed. (2012), World Scientific, pp. 111-114.</ref>
+
+==''N''-dimensional isotropic harmonic oscillator==
+{{anchor|N-dimensional harmonic oscillator}}
+The one-dimensional harmonic oscillator is readily generalizable to {{math|''N''}} dimensions, where {{math|1=''N'' = 1, 2, 3, ...}}. In one dimension, the position of the particle was specified by a single [[coordinate system|coordinate]], {{math|''x''}}. In {{math|''N''}} dimensions, this is replaced by {{math|''N''}} position coordinates, which we label {{math|''x''<sub>1</sub>, ..., ''x''<sub>''N''</sub>}}. Corresponding to each position coordinate is a momentum; we label these {{math|''p''<sub>1</sub>, ..., ''p''<sub>''N''</sub>}}. The [[canonical commutation relations]] between these operators are
+<math display="block">\begin{align}
+{[}x_i , p_j{]} &= i\hbar\delta_{i,j} \\
+{[}x_i , x_j{]} &= 0                  \\
+{[}p_i , p_j{]} &= 0
+\end{align}</math>
+
+The Hamiltonian for this system is
+<math display="block"> H = \sum_{i=1}^N \left( {p_i^2 \over 2m} + {1\over 2} m \omega^2 x_i^2 \right).</math>
+
+As the form of this Hamiltonian makes clear, the {{math|''N''}}-dimensional harmonic oscillator is exactly analogous to {{math|''N''}} independent one-dimensional harmonic oscillators with the same mass and spring constant. In this case, the quantities {{math|''x''<sub>1</sub>, ..., ''x''<sub>''N''</sub>}} would refer to the positions of each of the {{math|''N''}} particles. This is a convenient property of the {{math|''r''<sup>2</sup>}} potential, which allows the potential energy to be separated into terms depending on one coordinate each.
+
+This observation makes the solution straightforward. For a particular set of quantum numbers <math>\{n\}\equiv
+\{n_1, n_2, \dots, n_N\}</math> the energy eigenfunctions for the {{math|''N''}}-dimensional oscillator are expressed in terms of the 1-dimensional eigenfunctions as:
+
+<math display="block">\langle \mathbf{x}|\psi_{\{n\}}\rangle = \prod_{i=1}^N\langle x_i\mid \psi_{n_i}\rangle</math>
+
+In the ladder operator method, we define {{math|''N''}} sets of ladder operators,
+
+<math display="block">\begin{align}
+a_i &= \sqrt{m\omega \over 2\hbar} \left(x_i + {i \over m \omega} p_i \right), \\
+a^{\dagger}_i &= \sqrt{m \omega \over 2\hbar} \left( x_i - {i \over m \omega} p_i \right).
+\end{align}</math>
+
+By an analogous procedure to the one-dimensional case, we can then show that each of the {{math|''a<sub>i</sub>''}} and {{math|''a''<sub>''i''</sub><sup>†</sup>}} operators lower and raise the energy by {{math|''ℏω''}} respectively. The Hamiltonian is
+<math display="block">H = \hbar \omega \, \sum_{i=1}^N \left(a_i^\dagger \,a_i + \frac{1}{2}\right).</math>
+This Hamiltonian is invariant under the dynamic symmetry group {{math|''U''(''N'')}} (the unitary group in {{math|''N''}} dimensions), defined by
+<math display="block">
+U\, a_i^\dagger \,U^\dagger = \sum_{j=1}^N  a_j^\dagger\,U_{ji}\quad\text{for all}\quad
+U \in U(N),</math>
+where <math>U_{ji}</math> is an element in the defining matrix representation of {{math|''U''(''N'')}}.
+
+The energy levels of the system are
+<math display="block"> E = \hbar \omega \left[(n_1 + \cdots + n_N) + {N\over 2}\right].</math>
+<math display="block">n_i = 0, 1, 2, \dots \quad (\text{the energy level in dimension } i).</math>
+
+As in the one-dimensional case, the energy is quantized. The ground state energy is {{math|''N''}} times the one-dimensional ground energy, as we would expect using the analogy to {{math|''N''}} independent one-dimensional oscillators. There is one further difference: in the one-dimensional case, each energy level corresponds to a unique quantum state. In {{math|''N''}}-dimensions, except for the ground state, the energy levels are ''degenerate'', meaning there are several states with the same energy.
+
+The degeneracy can be calculated relatively easily.  As an example, consider the 3-dimensional case: Define {{math|1=''n'' = ''n''<sub>1</sub> + ''n''<sub>2</sub> + ''n''<sub>3</sub>}}. All states with the same {{math|''n''}} will have the same energy.  For a given {{math|''n''}}, we choose a particular {{math|''n''<sub>1</sub>}}. Then {{math|1=''n''<sub>2</sub> + ''n''<sub>3</sub> = ''n'' − ''n''<sub>1</sub>}}. There are {{math|''n'' − ''n''<sub>1</sub> + 1}} possible pairs {{math|{{mset|''n''<sub>2</sub>, ''n''<sub>3</sub>}}}}.  {{math|''n''<sub>2</sub>}} can take on the values {{math|0}} to {{math|''n'' − ''n''<sub>1</sub>}}, and for each {{math|''n''<sub>2</sub>}} the value of {{math|''n''<sub>3</sub>}} is fixed. The degree of degeneracy therefore is:
+<math display="block">g_n = \sum_{n_1=0}^n n - n_1 + 1 = \frac{(n+1)(n+2)}{2}</math>
+Formula for general {{math|''N''}} and {{math|''n''}} [{{math|''g''<sub>''n''</sub>}} being the dimension of the symmetric irreducible {{math|''n''}}-th power representation of the unitary group {{math|''U''(''N'')}}]:
+<math display="block">g_n = \binom{N+n-1}{n} = \frac{(N+n-1)!}{n! (N-1)!}, \;\;\; n = n_1+n_2+n_3 + \cdots .</math>
+The special case {{math|''N''}} = 3, given above, follows directly from this general equation.  This is however, only true for distinguishable particles, i.e. in Maxwell-Boltzmann statistics (not in quantum statistics) or one particle in {{math|''N''}} dimensions (as dimensions are distinguishable). For the case of {{math|''N''}} bosons in a one-dimension harmonic trap, the degeneracy scales as the number of ways to partition an integer {{math|''n''}} using integers less than or equal to {{math|''N''}}. It can be shown that the large-<math>E</math> asymptotic behavior of the degeneracy <math>g_n</math> is practically independent of the energy <math>E</math> - different from the classical case in which this diverges.<ref>Harald J.W. Müller-Kirsten, ''Basics of Statistical Physics'', 3rd ed.(2022), World Scientific, {{ISBN|9789811256097}}, pp. 203-204.</ref> This degeneracy is
+
+<math display="block">g_n = p(N_{-},n).  </math>
+
+This arises due to the constraint of putting {{math|''N''}} quanta into a state ket where <math display="inline">\sum_{k=0}^\infty k n_k = n  </math>   and <math display="inline"> \sum_{k=0}^\infty  n_k = N </math>, which are the same constraints as in integer partition.
+
+===Example: 3D isotropic harmonic oscillator===
+{{see also|Particle in a spherically symmetric potential#3D isotropic harmonic oscillator}}
+[[File:2D_Spherical_Harmonic_Orbitals.png|thumb|300px|right|Schrödinger 3D spherical harmonic orbital solutions in 2D density plots; the [[Mathematica]] source code that used for generating the plots is at the top]]
+The Schrödinger equation for a particle in a spherically-symmetric three-dimensional harmonic oscillator can be solved explicitly by [[separation of variables]]. This procedure is analogous to the separation performed in the [[Hydrogen-like atom#Schrödinger equation in a spherically symmetric potential|hydrogen-like atom]] problem, but with a different [[Particle in a spherically symmetric potential|spherically symmetric potential]]
+<math display="block">V(r) = {1\over 2} \mu \omega^2 r^2,</math>
+where {{mvar|μ}} is the mass of the particle. Because {{mvar|m}} will be used below for the magnetic quantum number, mass is indicated by  {{mvar|μ}}, instead of {{mvar|m}}, as earlier in this article.
+
+The solution to the equation is:<ref>[[Albert Messiah]], ''Quantum Mechanics'', 1967, North-Holland, Ch XII,  § 15, p 456.[https://archive.org/details/QuantumMechanicsVolumeI/page/n239 online]</ref>
+<math display="block">\psi_{klm}(r,\theta,\phi) = N_{kl} r^{l}e^{-\nu r^2}L_k^{\left(l+{1\over 2}\right)}(2\nu r^2) Y_{lm}(\theta,\phi)</math>
+where
+:<math>N_{kl}=\sqrt{\sqrt{\frac{2\nu^3}{\pi }}\frac{2^{k+2l+3}\;k!\;\nu^l}{(2k+2l+1)!!}}~~</math> is a normalization constant; <math>\nu \equiv {\mu \omega \over 2 \hbar}~</math>;
+:<math>{L_k}^{(l+{1\over 2})}(2\nu r^2)</math> 
+are [[Laguerre polynomials#Generalized Laguerre polynomials|generalized Laguerre polynomials]]; The order {{mvar|k}} of the polynomial is a non-negative integer, coinciding with the number of nodes of the radial part of the wavefunction;
+*<math>Y_{lm}(\theta,\phi)\,</math> is a [[spherical harmonics|spherical harmonic function]];
+*{{mvar|ħ}} is the reduced [[Planck constant]]: <math>\hbar\equiv\frac{h}{2\pi}~.</math>
+
+The energy eigenvalue is
+<math display="block">E=\hbar \omega \left(2k + l + \frac{3}{2}\right) .</math>
+The energy is usually described by the single [[quantum number]]
+<math display="block">n\equiv 2k+l  \,.</math>
+
+Because {{mvar|k}} is a non-negative integer, for every even {{mvar|n}} we have {{math|1=''ℓ'' = 0, 2, ..., ''n'' − 2, ''n''}} and for every odd {{mvar|n}}  we have {{math|1=''ℓ'' = 1, 3, ..., ''n'' − 2, ''n''}} . The magnetic quantum number {{mvar|m}} is an integer satisfying {{math|−''ℓ'' ≤ ''m'' ≤ ''ℓ''}}, so for every {{mvar|n}} and ''ℓ'' there are 2''ℓ''&nbsp;+&nbsp;1 different [[quantum state]]s, labeled by {{mvar|m}} . Thus, the degeneracy at level {{mvar|n}} is
+<math display="block">\sum_{l=\ldots,n-2,n} (2l+1) = {(n+1)(n+2)\over 2} \,,</math>
+where the sum starts from 0 or 1, according to whether {{mvar|n}} is even or odd.
+This result is in accordance with the dimension formula above, and amounts to the dimensionality of a symmetric representation of {{math|SU(3)}},<ref>{{cite journal|last=Fradkin |first=D. M. |title=Three-dimensional isotropic harmonic oscillator and SU3. |journal=American Journal of Physics |volume=33 |number=3 |year=1965 |pages=207–211|doi=10.1119/1.1971373 }}</ref> the relevant degeneracy group.
+
+==Applications==
+===Harmonic oscillators lattice: phonons===
+{{see also|Canonical quantization}}
+
+The notation of a harmonic oscillator can be extended to a one-dimensional lattice of many particles. Consider a one-dimensional quantum mechanical ''harmonic chain'' of ''N'' identical atoms. This is the simplest quantum mechanical model of a lattice, and we will see how [[phonon]]s arise from it. The formalism that we will develop for this model is readily generalizable to two and three dimensions.
+As in the previous section, we denote the positions of the masses by  {{math|''x''<sub>1</sub>, ''x''<sub>2</sub>, ...}}, as measured from their equilibrium positions (i.e.  {{math|1=''x<sub>i</sub>'' = 0}} if the particle {{mvar|i}} is at its equilibrium position). In two or more dimensions, the {{math|''x<sub>i</sub>''}} are vector quantities. The [[Hamiltonian (quantum mechanics)|Hamiltonian]] for this system is
+
+<math display="block">\mathbf{H} = \sum_{i=1}^N {p_i^2 \over 2m} + {1\over 2} m \omega^2 \sum_{\{ij\} (nn)} (x_i - x_j)^2 \,,</math>
+where {{mvar|m}} is the (assumed uniform) mass of each atom, and  {{math|''x<sub>i</sub>''}} and  {{math|''p<sub>i</sub>''}} are the position and [[momentum]] operators for the ''i'' th atom and the sum is made over the nearest neighbors (nn).  However, it is customary to rewrite the Hamiltonian in terms of the [[normal modes]] of the [[wavevector]] rather than in terms of the particle coordinates so that one can work in the more convenient [[Fourier space]].
+[[File:Superposition of three oscillating dipoles.gif|thumb|239x239px|Superposition of three oscillating dipoles- illustrate the time propagation of the common wave function for different n,l,m]]
+We introduce, then, a set of {{mvar|N}} "normal coordinates" {{math|''Q<sub>k</sub>''}}, defined as the [[discrete Fourier transform]]s of the {{mvar|x}}s, and {{mvar|N}} "conjugate momenta"  {{mvar|Π}} defined as the Fourier transforms of the {{mvar|p}}s,
+<math display="block">Q_k = {1\over\sqrt{N}} \sum_{l} e^{ikal} x_l</math>
+<math display="block">\Pi_{k} = {1\over\sqrt{N}} \sum_{l}  e^{-ikal} p_l \,.</math>
+
+The quantity {{math|''k<sub>n</sub>''}} will turn out to be the [[Wavenumber|wave number]] of the phonon, i.e. 2''π''  divided by the [[wavelength]]. It takes on quantized values, because the number of atoms is finite.
+
+This preserves the desired commutation relations in either real space or wave vector space
+[[File:Superposition of three oscillating dipoles 2.gif|thumb|243x243px|Another illustration of the time propagation of the common wave function for three different atoms emphasizes the effect of the angular momentum on the distribution behavior]]
+<math display="block"> \begin{align} 
+\left[x_l , p_m \right]&=i\hbar\delta_{l,m} \\ 
+\left[ Q_k , \Pi_{k'} \right] &={1\over N} \sum_{l,m} e^{ikal} e^{-ik'am}  [x_l , p_m ] \\
+ &= {i \hbar\over N} \sum_{m} e^{iam(k-k')} = i\hbar\delta_{k,k'} \\
+\left[ Q_k , Q_{k'} \right] &= \left[ \Pi_k , \Pi_{k'} \right] = 0 ~.
+\end{align}</math>
+
+From the general result
+<math display="block"> \begin{align} 
+\sum_{l}x_l x_{l+m}&={1\over N}\sum_{kk'}Q_k Q_{k'}\sum_{l} e^{ial\left(k+k'\right)}e^{iamk'}= \sum_{k}Q_k Q_{-k}e^{iamk} \\ 
+\sum_{l}{p_l}^2 &= \sum_{k}\Pi_k \Pi_{-k}   ~,
+\end{align}</math>
+it is easy to show, through elementary trigonometry, that the potential energy term is
+<math display="block"> \begin{align}
+{1\over 2} m \omega^2 \sum_{j} \left(x_j - x_{j+1}\right)^2 &= {1\over 2} m \omega^2\sum_{k}Q_k Q_{-k} \left(2-e^{ika}-e^{-ika}\right) \\
+&= {1\over 2} m \sum_{k}{\omega_k}^2 Q_k Q_{-k} ~ ,
+\end{align}</math>
+where
+<math display="block">\omega_k = \sqrt{2 \omega^2 (1 - \cos(ka))} ~.</math>
+
+The Hamiltonian may be written in wave vector space as
+<math display="block">\mathbf{H} = {1\over {2m}}\sum_k \left(
+{ \Pi_k\Pi_{-k} } + m^2 \omega_k^2 Q_k Q_{-k} 
+\right) ~.</math>
+
+Note that the couplings between the position variables have been transformed away; if the {{mvar|Q}}s and {{mvar| Π}}s were [[Hermitian operator|Hermitian]] (which they are not), the transformed Hamiltonian would describe {{mvar|N}} ''uncoupled'' harmonic oscillators.
+
+The form of the quantization depends on the choice of boundary conditions; for simplicity, we impose ''periodic'' boundary conditions, defining the {{math|(''N'' + 1)}}-th atom as equivalent to the first atom. Physically, this corresponds to joining the chain at its ends. The resulting quantization is
+
+<math display="block">k=k_n = {2n\pi \over Na}
+\quad \hbox{for}\ n = 0, \pm1, \pm2, \ldots , \pm {N \over 2}. </math>
+
+The upper bound to {{mvar|n}} comes from the minimum wavelength, which is twice the lattice spacing {{mvar|a}}, as discussed above.
+
+The harmonic oscillator eigenvalues or energy levels for the mode {{math|''ω<sub>k</sub>''}} are 
+<math display="block">E_n = \left({1\over2}+n\right)\hbar\omega_k   \quad\hbox{for}\quad n=0,1,2,3,\ldots</math>
+
+If we ignore the [[zero-point energy]] then the levels are evenly spaced at 
+<math display="block">0 , \ \hbar\omega , \ 2\hbar\omega , \ 3\hbar\omega , \ \cdots </math>
+
+So an '''exact''' amount of [[energy]] {{math|''ħω''}},  must be supplied to the harmonic oscillator lattice to push it to the next energy level. In analogy to the [[photon]] case when the [[electromagnetic field]] is quantised, the quantum of vibrational energy is called a [[phonon]].
+
+All quantum systems show wave-like and particle-like properties. The particle-like properties of the phonon are best understood using the methods of [[second quantization]] and operator techniques described elsewhere.<ref name="Mahan">{{cite book| last=Mahan |first=GD |title=Many particle physics|publisher= Springer|location=New York | isbn=978-0306463389 |year=1981}}</ref>
+
+In the [[continuum limit]], {{math|''a'' → 0}}, {{math|''N'' → ∞}}, while {{math|''Na''}} is held fixed. The canonical coordinates {{math|''Q<sub>k</sub>''}} devolve to the decoupled momentum modes of a scalar field, <math>\phi_k</math>, whilst the location index {{mvar|i}} (''not the displacement dynamical variable'') becomes the parameter {{mvar|x}} argument of the scalar field, <math>\phi (x,t)</math>.
+
+===Molecular vibrations===
+{{main|Molecular vibration}}
+
+* The vibrations of a [[diatomic molecule]] are an example of a two-body version of the quantum harmonic oscillator. In this case, the angular frequency is given by <math display="block">\omega = \sqrt{\frac{k}{\mu}} </math> where <math>\mu = \frac{m_1 m_2}{m_1 + m_2}</math> is the [[reduced mass]] and <math>m_1</math> and <math>m_2</math> are the masses of the two atoms.<ref>{{Cite web | title=Quantum Harmonic Oscillator | website=Hyperphysics | access-date=24 September 2009 | url=http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/hosc.html}}</ref>
+* Modelling phonons, as discussed above.
+* A charge <math>q</math> with mass <math>m</math> in a uniform magnetic field <math>\mathbf{B}</math> is an example of a one-dimensional quantum harmonic oscillator: [[Landau quantization]].
+* The harmonic oscillator model approximates the internuclear potential of a diatomic molecule, with lower vibrational states closely resembling the model and higher states deviating due to anharmonicity.<ref name=":0" />
+
+=== Hooke's law ===
+
+* The [[Hooke's atom]] is a simple model of the [[helium]] atom using the quantum harmonic oscillator.
+* Hooke's law models a mass moving on a spring where the force acting on the mass is proportional to its displacement.<ref name=":0" />
+* The general solution for a mass on a spring can be derived from this assumption.<ref name=":0" />
+* The displacement of the mass reaches a maxima and a minima at A and -A where A is called the amplitude.
+* This system is considered a conservative system where total energy remains unchanged and is being continuously redistributed between kinetic and potential energy.
+
+===The inverted harmonic oscillator===
+The inverted harmonic oscillator has been investigated in detail by G. Barton.<ref>G. Barton. "The inverted harmonic oscillator", Ann. Phys. (N.Y.) 166 (1986) 322.</ref> See also H.J.W. Müller-Kirsten<ref>Harald J. Müller-Kirsten, ''Introduction to Quantum Mechanics: Schrödinger Equation and Path Integral'', 2nd ed. (2012) World Scientific, pp. 130-141.</ref> and C. Yuce, A. Killen and A. Coruh.<ref>C. Yuce, A. Killen and A. Coruh, Inverted Oscillator, quant-ph/0703234.</ref>
+
+===The Dirac oscillator===
+The consideration of the harmonic oscillator  e.g. from the  energy <math>E={\bold p}^2/2m + m\omega^2q^2/2</math> in analogy to a derivation of the Dirac equation – so-to-speak from the "square root" of the equation <math>p_{\mu}p^{\mu} + m^2=0</math> – has been explored by Lorella M. Jones.<ref>Lorella M. Jones, Another Dirac Oscillator, University of Illinois at Urbana-Champaign report ILLL-(TH)-91-24 (1991).</ref>
+
+==See also==
+*{{Annotated link|Quantum pendulum}}
+*{{Annotated link|Quantum machine}}
+*{{Annotated link|Gas in a harmonic trap}}
+*{{Annotated link|Creation and annihilation operators}}
+*{{Annotated link|Coherent state}}
+*{{Annotated link|Morse potential}}
+*{{Annotated link|Bertrand's theorem}}
+*{{Annotated link|Mehler kernel}}
+*{{Annotated link|Molecular vibration#Quantum mechanics|Molecular vibration}}
+
+==Notes==
+{{reflist|group=nb}}
+
+==References==
+{{Reflist}}
+
+==Bibliography==
+* {{Cite book | last=Griffiths |first=David J. | title=Introduction to Quantum Mechanics | edition=2nd | publisher=Prentice Hall | year=2004 | isbn=978-0-13-805326-0 | author-link=David Griffiths (physicist)}}
+* {{Cite book| last=Liboff |first=Richard L. | title=Introductory Quantum Mechanics | publisher=Addison–Wesley | year=2002 | isbn=978-0-8053-8714-8| author-link=Liboff, Richard L.}}
+* {{Cite book | last=Müller-Kirsten |first=Harald J.W. | title=Introduction to Quantum Mechanics: Schrödinger Equation and Path Integral | edition=2nd | publisher=World Scientific | year=2012 | isbn=978-0-9810-4397-5 | author-link=Harald J.W. Müller-Kirsten}}
+* {{Cite book| last=Zwiebach |first=Barton |author-link=Barton Zwiebach |publisher=MIT Press |title=Mastering Quantum Mechanics: Essentials, Theory, and Applications |year=2022 |isbn=978-0-262-04613-8}}
+
+==External links==
+*[http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/hosc.html Quantum Harmonic Oscillator]
+*[http://behindtheguesses.blogspot.com/2009/03/quantum-harmonic-oscillator-ladder.html Rationale for choosing the ladder operators]
+*[http://www.brummerblogs.com/curvature/3d-harmonic-oscillator-eigenfunctions/  Live 3D intensity plots of quantum harmonic oscillator] {{Webarchive|url=https://web.archive.org/web/20110712013635/http://www.brummerblogs.com/curvature/3d-harmonic-oscillator-eigenfunctions/ |date=12 July 2011 }}
+*[https://users.aalto.fi/~thunebe1/courses/monqo.pdf Driven and damped quantum harmonic oscillator (lecture notes of course "quantum optics in electric circuits")]
+
+{{Use dmy dates|date=August 2019}}
+
+{{DEFAULTSORT:Quantum Harmonic Oscillator}}
+[[Category:Quantum models]]
+[[Category:Oscillators]]

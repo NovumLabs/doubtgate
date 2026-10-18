@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/doubtgate/__init__.py
+src/doubtgate/validate.py
+src/doubtgate.egg-info/PKG-INFO
+src/doubtgate.egg-info/SOURCES.txt
+src/doubtgate.egg-info/dependency_links.txt
+src/doubtgate.egg-info/requires.txt
+src/doubtgate.egg-info/top_level.txt
+tests/test_validate.py
